@@ -34,7 +34,7 @@ export const SectionFive = () => {
     >
       <Grid
         templateColumns={{ lg: 'repeat(5, 1fr)', sm: 'repeat(2, 1fr)' }}
-        px={{ base: '2rem', lg: '5rem' }}
+        // px={{ base: '2rem', lg: '5rem' }}
         gap='2rem'
         pt={{ lg: '1rem' }}
       >
