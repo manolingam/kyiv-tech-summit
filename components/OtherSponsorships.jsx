@@ -5,8 +5,7 @@ import {
   Text,
   List,
   ListItem,
-  ListIcon,
-  Divider
+  ListIcon
 } from '@chakra-ui/react';
 
 import { CheckCircleIcon } from '@chakra-ui/icons';
@@ -18,7 +17,7 @@ export const OtherSponsorships = () => {
       py={{ base: '2rem', lg: '1rem' }}
       px={{ base: '2rem', lg: '5rem' }}
     >
-      <SimpleGrid columns='3' gap='2rem'>
+      <SimpleGrid columns={{ lg: 3, sm: 1 }} gap='2rem'>
         <Flex direction='column' justifyContent='space-between'>
           <Flex
             direction='column'
@@ -113,7 +112,7 @@ export const OtherSponsorships = () => {
           </VStack>
           <Text
             fontFamily='figTree'
-            mt='auto'
+            mt={{ sm: '2rem', lg: 'auto' }}
             bg='#5800FF'
             color='white'
             p='5px'
@@ -167,7 +166,7 @@ export const OtherSponsorships = () => {
           </VStack>
           <Text
             fontFamily='figTree'
-            mt='auto'
+            mt={{ sm: '2rem', lg: 'auto' }}
             bg='#5BB318'
             color='white'
             p='5px'
