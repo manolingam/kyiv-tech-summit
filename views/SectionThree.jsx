@@ -22,11 +22,11 @@ export const SectionThree = () => {
             fontFamily='figTree'
             fontWeight='bold'
             fontSize='1.5rem'
-            color='#5800FF'
+            color='#0057b7'
           >
             To Be Announced*
           </Text>
-          <Text fontFamily='openSans'>
+          <Text fontFamily='openSans' fontSize='1.2rem'>
             For safety and inclusion purposes, only participants local to Kyiv
             (and nearby proximity) are invited to join in-person. Everyone else:
             you can participate online - it’s a global hybrid event!{' '}
@@ -37,7 +37,7 @@ export const SectionThree = () => {
           <Text fontFamily='openSans' fontSize='.8rem' fontWeight='bold'>
             Hackathon
           </Text>
-          <Text fontFamily='openSans'>
+          <Text fontFamily='openSans' fontSize='1.2rem'>
             Prizes will be awarded, bounties available. Pre-existing projects
             AND new projects are allowed to be submitted. What’s most important
             is that the project is providing an impactful solution!
@@ -52,7 +52,7 @@ export const SectionThree = () => {
             fontFamily='figTree'
             fontWeight='bold'
             fontSize='1.5rem'
-            color='#5800FF'
+            color='#0057b7'
           >
             September 6-9 2022
           </Text>
@@ -62,21 +62,22 @@ export const SectionThree = () => {
           <Text fontFamily='openSans' fontSize='.8rem' fontWeight='bold'>
             Events
           </Text>
-          <Text fontFamily='openSans'>
+          <Text fontFamily='openSans' fontSize='1.2rem'>
             All offline events will be live-streamed and accessible to online
             participants.
           </Text>
         </VStack>
       </SimpleGrid>
       <Flex direction='column' alignItems='flex-start' mr='auto' mt='1rem'>
-        <Text fontFamily='openSans' fontSize='.8rem'>
+        <Text fontFamily='openSans' fontSize='.8rem' fontWeight='bold'>
           Find more details on our events page:{' '}
         </Text>
         <ChakraLink
           href='https://kyiv-tech-summit.devpost.com'
           isExternal
           textDecoration='underline'
-          color='#5A8F7B'
+          color='#ffd700'
+          fontWeight='bold'
           fontSize='.8rem'
         >
           kyiv-tech-summit.devpost.com

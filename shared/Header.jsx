@@ -26,7 +26,7 @@ export const Header = ({ windowWidth }) => {
           <ChakraImage
             src='/assets/logos/kyiv_tech_summit.png'
             alt='logo'
-            w={{ lg: '300px', sm: '150px' }}
+            w={{ lg: '300px', sm: '170px' }}
           />
         </Flex>
       </Link>
@@ -35,7 +35,7 @@ export const Header = ({ windowWidth }) => {
         href='https://twitter.com/KyivTechSummit'
         isExternal
         w='25px'
-        fontSize='25px'
+        fontSize={{ lg: '25px', sm: '20px' }}
       >
         <span>
           <i className='fab fa-twitter'></i>

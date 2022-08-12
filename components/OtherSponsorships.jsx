@@ -66,6 +66,7 @@ export const OtherSponsorships = () => {
             color='white'
             p='5px'
             borderRadius='10px'
+            textAlign='center'
           >
             1/1 Sponsorship remaining
           </Text>
@@ -117,6 +118,7 @@ export const OtherSponsorships = () => {
             color='white'
             p='5px'
             borderRadius='10px'
+            textAlign='center'
           >
             2/2 Sponsorship remaining
           </Text>
@@ -171,6 +173,7 @@ export const OtherSponsorships = () => {
             color='white'
             p='5px'
             borderRadius='10px'
+            textAlign='center'
           >
             1/1 Sponsorship remaining
           </Text>

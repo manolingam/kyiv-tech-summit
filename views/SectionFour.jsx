@@ -6,6 +6,65 @@ import {
   Text
 } from '@chakra-ui/react';
 
+const partners = [
+  {
+    image: '/assets/logos/near.png',
+    link: 'https://near.org/'
+  },
+  {
+    image: '/assets/logos/ethereum.png',
+    link: 'https://ethereum.org/'
+  },
+  {
+    image: '/assets/logos/celo.png',
+    link: 'https://celo.org/'
+  },
+  {
+    image: '/assets/logos/zksync.png',
+    link: 'https://zksync.io/'
+  },
+  {
+    image: '/assets/logos/gnosis.png',
+    link: 'https://gnosis.io/'
+  },
+  {
+    image: '/assets/logos/polygon.png',
+    link: 'https://polygon.technology/'
+  },
+  {
+    image: '/assets/logos/gitcoin.png',
+    link: 'https://gitcoin.co/'
+  },
+  {
+    image: '/assets/logos/brave.png',
+    link: 'https://brave.com/'
+  },
+  {
+    image: '/assets/logos/developerDao.png',
+    link: 'https://www.developerdao.com/'
+  },
+  {
+    image: '/assets/logos/sandbox.png',
+    link: 'https://www.sandbox.game/'
+  },
+  {
+    image: '/assets/logos/givingBlock.png',
+    link: 'https://thegivingblock.com/'
+  },
+  {
+    image: '/assets/logos/snapshot.png',
+    link: 'https://snapshot.org/'
+  },
+  {
+    image: '/assets/logos/aragon.png',
+    link: 'https://aragon.org/'
+  },
+  {
+    link: 'https://www.optimism.io/',
+    image: '/assets/logos/optimism.png'
+  }
+];
+
 export const SectionFour = () => {
   return (
     <Flex
@@ -22,148 +81,28 @@ export const SectionFour = () => {
         placeItems='center'
         gridGap='1rem'
       >
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/near.png' alt='' m='auto' />
-        </Box>
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/ethereum.png' alt='' />
-        </Box>
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/celo.png' alt='' />
-        </Box>
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/zksync.png' alt='' />
-        </Box>
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/gnosis.png' alt='' />
-        </Box>
-
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/polygon.png' alt='' />
-        </Box>
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/gitcoin.png' alt='' />
-        </Box>
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/brave.png' alt='' />
-        </Box>
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/developerDao.png' alt='' />
-        </Box>
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/sandbox.png' alt='' />
-        </Box>
-
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/givingBlock.png' alt='' />
-        </Box>
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/snapshot.png' alt='' />
-        </Box>
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/aragon.png' alt='' />
-        </Box>
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          display='flex'
-          alignItems='center'
-        >
-          <ChakraImage src='/assets/logos/optimism.png' alt='' />
-        </Box>
+        {partners.map((partner, index) => {
+          return (
+            <Box
+              key={index}
+              bg='white'
+              p='1rem'
+              borderRadius='10px'
+              h='150px'
+              display='flex'
+              alignItems='center'
+              onClick={() => window.open(partner.link, '_blank')}
+              cursor='pointer'
+            >
+              <ChakraImage
+                src={partner.image}
+                alt='partner'
+                maxH='150px'
+                m='auto'
+              />
+            </Box>
+          );
+        })}
         <Box
           bg='white'
           p='1rem'

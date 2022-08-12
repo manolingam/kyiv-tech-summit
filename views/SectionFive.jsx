@@ -12,7 +12,7 @@ import {
   ModalHeader,
   ModalCloseButton,
   ModalFooter,
-  useDisclosure
+  Link as ChakraLink
 } from '@chakra-ui/react';
 
 import { useState } from 'react';
@@ -34,7 +34,6 @@ export const SectionFive = () => {
     >
       <Grid
         templateColumns={{ lg: 'repeat(5, 1fr)', sm: 'repeat(2, 1fr)' }}
-        // px={{ base: '2rem', lg: '5rem' }}
         gap='2rem'
         pt={{ lg: '1rem' }}
       >
@@ -58,16 +57,16 @@ export const SectionFive = () => {
           </Text>
         </GridItem>
         <GridItem colSpan={{ lg: 4, sm: 2 }}>
-          <Text fontFamily='openSans' mb='10px'>
+          <Text fontFamily='openSans' fontSize='1.2rem' mb='10px'>
             Kyiv Tech Summit (KTS) is a not-for-profit, community-driven,
             initiative.
           </Text>
-          <Text fontFamily='openSans' mb='10px'>
+          <Text fontFamily='openSans' fontSize='1.2rem' mb='10px'>
             Many of our partners are providing their services at a substantial
             discount or pro-bono, as the world understands the importance of
             this critical initiative
           </Text>
-          <Text fontFamily='openSans' mb='10px'>
+          <Text fontFamily='openSans' fontSize='1.2rem' mb='10px'>
             Kyiv Tech Summit will require some operational expenses to ensure
             the quality and safety of the event. Half of the sponsorship
             allocation will be allocated for hackathon bounties. The remaining
@@ -76,44 +75,66 @@ export const SectionFive = () => {
             detailed financial and transparency report will be published
             shortly).
           </Text>
-          <Text fontFamily='openSans' mb='10px'>
+          <Text fontFamily='openSans' fontSize='1.2rem' mb='10px'>
             Kyiv Tech Summit will have global media outreach - both via
             Ukrainian and international media platforms, as well as influencers
             and bloggers. Of the networks we have already spoken to, 100% have
             confirmed their attendance.
           </Text>
-          <Text fontFamily='openSans'>
+          <Text fontFamily='openSans' fontSize='1.2rem'>
             Finally, we are taking all necessary precautions to ensure the
             safety of all attendees, media, and staff throughout the event. (A
             detailed safety report will be published shortly).
           </Text>
+
+          <Flex
+            direction={{ lg: 'row', sm: 'column' }}
+            w='100%'
+            justifyContent='center'
+            mt={{ sm: '2rem' }}
+          >
+            <Button
+              w='100%'
+              onClick={() => setGeneranSponsorshipsOpen(true)}
+              fontFamily='figTree'
+              fontSize='1.2rem'
+              bg='#0057b7'
+              color='white'
+              mr={{ lg: '1rem' }}
+              mb={{ sm: '1rem' }}
+              _hover={{ opacity: '0.8' }}
+            >
+              View general sponsorships
+            </Button>
+            <Button
+              w='100%'
+              fontFamily='figTree'
+              fontSize='1.2rem'
+              color='#0057b7'
+              onClick={() => setOtherSponsorshipsOpen(true)}
+            >
+              View other sponsorships
+            </Button>
+          </Flex>
         </GridItem>
       </Grid>
 
-      <Flex
-        direction={{ lg: 'row', sm: 'column' }}
-        w='100%'
-        justifyContent='center'
-        mt={{ sm: '2rem' }}
+      <Text
+        fontFamily='figTree'
+        mt='2rem'
+        textAlign='center'
+        fontStyle='italic'
       >
-        <Button
-          onClick={() => setGeneranSponsorshipsOpen(true)}
-          fontFamily='figTree'
-          bg='#5800FF'
-          color='white'
-          mr={{ lg: '1rem' }}
-          mb={{ sm: '1rem' }}
+        To become a sponsor, please contact us at{' '}
+        <ChakraLink
+          color='#0057b7'
+          href='mailto:info@kyivtechsummit.com'
+          isExternal
+          fontWeight='bold'
         >
-          View general sponsorships
-        </Button>
-        <Button
-          fontFamily='figTree'
-          color='#5800FF'
-          onClick={() => setOtherSponsorshipsOpen(true)}
-        >
-          View other sponsorships
-        </Button>
-      </Flex>
+          info@kyivtechsummit.com
+        </ChakraLink>{' '}
+      </Text>
 
       <Modal
         size='full'
