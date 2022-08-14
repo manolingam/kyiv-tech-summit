@@ -16,7 +16,7 @@ export const Meta = () => {
         />
         <meta property='og:image' content={logo} />
         <meta property='og:url' content='https://www.kyivtechsummit.com/' />
-        <meta name='twitter:card' content='summary' />
+        <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:title' content='Kyiv Tech Summit' />
         <meta
           name='twitter:description'
