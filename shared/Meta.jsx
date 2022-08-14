@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 const logo =
-  'https://res.cloudinary.com/saimano/image/upload/v1660494491/Kyiv%20Tech%20Summit/kyiv_tech_summit_mono_ppebu3.png';
+  'https://res.cloudinary.com/saimano/image/upload/v1660493830/Kyiv%20Tech%20Summit/kyiv_tech_summit_mono_eb2vw2.png';
 
 export const Meta = () => {
   return (
