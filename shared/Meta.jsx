@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import logo from '../public/assets/logos/kyiv_tech_summit.png';
+import logo from '../public/assets/logos/kyiv_tech_summit_mono.png';
 
 export const Meta = () => {
   return (
@@ -15,7 +15,7 @@ export const Meta = () => {
         />
         <meta property='og:image' content={logo} />
         <meta property='og:url' content='https://www.kyivtechsummit.com/' />
-        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:card' content='summary' />
         <meta name='twitter:title' content='Kyiv Tech Summit' />
         <meta
           name='twitter:description'
