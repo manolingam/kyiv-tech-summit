@@ -89,7 +89,11 @@ export const SectionSeven = () => {
               bg='#0057b7'
               color='white'
               borderRadius='25px'
-              href='https://forms.gle/SDGLyBSuSXQL8PHB7'
+              href={
+                index === 1
+                  ? 'https://kyiv-tech-summit.devpost.com'
+                  : 'https://forms.gle/SDGLyBSuSXQL8PHB7'
+              }
               isExternal
               _hover={{ textDecoration: 'none', opacity: '0.8' }}
             >

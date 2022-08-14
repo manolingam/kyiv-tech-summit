@@ -95,6 +95,7 @@ export const SectionFour = () => {
               cursor='pointer'
             >
               <ChakraImage
+                style={{ filter: 'grayscale(1' }}
                 src={partner.image}
                 alt='partner'
                 maxH='150px'
