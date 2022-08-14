@@ -14,19 +14,25 @@ export const SectionTwo = () => {
       <VStack
         justifyContent='center'
         alignItems='center'
-        bg='#251D3A'
-        py='1.5rem'
+        bg='#ffd700'
+        py='2rem'
         px={{ base: '2rem', lg: '5rem' }}
       >
         <Text
           fontFamily='figTree'
           fontSize='1.5rem'
-          color='white'
+          color='#0057b7'
           fontWeight='bold'
         >
           Our Goal
         </Text>
-        <Text fontFamily='openSans' textAlign='center' color='white' w='70%'>
+        <Text
+          fontFamily='figTree'
+          fontSize='1.2rem'
+          textAlign='center'
+          color='#0057b7'
+          w={{ lg: '70%', sm: '100%' }}
+        >
           Build technology that makes war-time life easier and safer for
           Ukrainians and the world. Onboard Web2 talent into the Web3 digital
           working economy through existing Web3 communities.
@@ -35,11 +41,10 @@ export const SectionTwo = () => {
       <SimpleGrid
         columns={{ lg: 2, sm: 1 }}
         p='2rem'
-        bg='#F1F1F1'
         placeItems='center'
         px={{ base: '2rem', lg: '5rem' }}
       >
-        <Text fontFamily='openSans'>
+        <Text fontFamily='openSans' fontSize='1.2rem'>
           Since the full-scale Russian invasion of Ukraine on 24th February
           2022, the situation has quickly become dire for millions of
           Ukrainians. Outside of the humanitarian crisis and military needs
@@ -51,40 +56,44 @@ export const SectionTwo = () => {
           <Text
             w='100%'
             textAlign='center'
-            bg='white'
-            p='10px'
+            bg='#251D3A'
+            color='white'
+            p='15px'
             borderRadius='15px'
-            fontFamily='openSans'
+            fontFamily='figTree'
           >
             Broken communications and infrastructure
           </Text>
           <Text
             w='100%'
             textAlign='center'
-            bg='white'
-            p='10px'
+            bg='#251D3A'
+            color='white'
+            p='15px'
             borderRadius='15px'
-            fontFamily='openSans'
+            fontFamily='figTree'
           >
             Massive disinformation campaign waged by russia
           </Text>
           <Text
             w='100%'
             textAlign='center'
-            bg='white'
-            p='10px'
+            bg='#251D3A'
+            color='white'
+            p='15px'
             borderRadius='15px'
-            fontFamily='openSans'
+            fontFamily='figTree'
           >
             Refugee crisis
           </Text>
           <Text
             w='100%'
             textAlign='center'
-            bg='white'
-            p='10px'
+            bg='#251D3A'
+            color='white'
+            p='15px'
             borderRadius='15px'
-            fontFamily='openSans'
+            fontFamily='figTree'
           >
             Humanitarian situation on the ground
           </Text>
@@ -100,7 +109,7 @@ export const SectionTwo = () => {
             Safety First
           </Text>
         </GridItem>
-        <GridItem colSpan={4} mt={{ sm: '1rem' }}>
+        <GridItem colSpan={4} fontSize='1.2rem' mt={{ sm: '1rem', lg: '0rem' }}>
           <Text fontFamily='openSans'>
             Kyiv Tech Summit will take place at a yet-to-be-disclosed secure
             location, with a focus on activating only the community already in
@@ -115,7 +124,7 @@ export const SectionTwo = () => {
       </Grid>
       <Text
         fontFamily='figTree'
-        bg='#5800FF'
+        bg='#0057b7'
         color='white'
         mt='1rem'
         p='1rem'

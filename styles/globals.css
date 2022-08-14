@@ -18,10 +18,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #5800ff;
+  background: #0057b7;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #5800ff;
+  background: #0057b7;
 }

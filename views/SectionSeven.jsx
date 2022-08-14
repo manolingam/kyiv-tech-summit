@@ -1,4 +1,33 @@
-import { Flex, SimpleGrid, Link as ChakraLink, Text } from '@chakra-ui/react';
+import {
+  Flex,
+  SimpleGrid,
+  Link as ChakraLink,
+  Text,
+  HStack
+} from '@chakra-ui/react';
+
+const contributionOptions = [
+  {
+    name: 'Sponsorship',
+    class: 'fa-solid fa-hand-holding-dollar'
+  },
+  {
+    name: 'Partnership',
+    class: 'fa-solid fa-handshake'
+  },
+  {
+    name: 'Volunteer',
+    class: 'fa-solid fa-hand-holding-hand'
+  },
+  {
+    name: 'Mentorship',
+    class: 'fa-solid fa-book-open-reader'
+  },
+  {
+    name: 'Hacker Participation',
+    class: 'fa-solid fa-code'
+  }
+];
 
 export const SectionSeven = () => {
   return (
@@ -7,93 +36,77 @@ export const SectionSeven = () => {
       direction='column'
       alignItems='center'
       justifyContent='center'
+      py={{ base: '2rem', lg: '1rem' }}
       px={{ base: '2rem', lg: '5rem' }}
-      py={{ base: '2rem', lg: '2rem' }}
+      bg='#F1F1F1'
     >
-      <Text fontFamily='figTree' fontSize='1.5rem' fontWeight='bold'>
+      <Text fontFamily='openSans' fontWeight='bold'>
         Opportunities to Contribute
       </Text>
 
       <SimpleGrid
+        w={{ lg: '60%', sm: '80%' }}
         columns={{ lg: 3, sm: 1 }}
-        placeItems='center'
-        w='60%'
         gap='1rem'
         mt='2rem'
       >
-        <Text
-          w='100%'
-          textAlign='center'
-          bg='#F1F1F1'
-          p='10px'
-          borderRadius='15px'
-          fontFamily='openSans'
-        >
-          Sponsorship
-        </Text>
-        <Text
-          w='100%'
-          textAlign='center'
-          bg='#F1F1F1'
-          p='10px'
-          borderRadius='15px'
-          fontFamily='openSans'
-        >
-          Partnership
-        </Text>
-        <Text
-          w='100%'
-          textAlign='center'
-          bg='#F1F1F1'
-          p='10px'
-          borderRadius='15px'
-          fontFamily='openSans'
-        >
-          Volunteer
-        </Text>
+        {contributionOptions.slice(0, 3).map((contribution, index) => {
+          return (
+            <ChakraLink
+              key={index}
+              w='100%'
+              p='.5rem'
+              borderRadius='25px'
+              href='https://forms.gle/SDGLyBSuSXQL8PHB7'
+              bg='#0057b7'
+              color='white'
+              _hover={{ textDecoration: 'none', opacity: '0.8' }}
+              isExternal
+            >
+              <HStack h='100%' justifyContent='center'>
+                <span>
+                  <i className={contribution.class}></i>
+                </span>
+                <Text fontFamily='figTree'>{contribution.name}</Text>
+              </HStack>
+            </ChakraLink>
+          );
+        })}
       </SimpleGrid>
 
       <SimpleGrid
+        w={{ lg: '40%', sm: '80%' }}
         columns={{ lg: 2, sm: 1 }}
-        placeItems='center'
-        w={{ lg: '40%', sm: '60%' }}
         gap='1rem'
         mt='1rem'
       >
-        <Text
-          w='100%'
-          textAlign='center'
-          bg='#F1F1F1'
-          p='10px'
-          borderRadius='15px'
-          fontFamily='openSans'
-        >
-          Mentorship
-        </Text>
-        <Text
-          w='100%'
-          textAlign='center'
-          bg='#F1F1F1'
-          p='10px'
-          borderRadius='15px'
-          fontFamily='openSans'
-        >
-          Hacker Participation
-        </Text>
+        {contributionOptions.slice(3, 5).map((contribution, index) => {
+          return (
+            <ChakraLink
+              key={index}
+              w='100%'
+              p='.5rem'
+              bg='#0057b7'
+              color='white'
+              borderRadius='25px'
+              href={
+                index === 1
+                  ? 'https://kyiv-tech-summit.devpost.com'
+                  : 'https://forms.gle/SDGLyBSuSXQL8PHB7'
+              }
+              isExternal
+              _hover={{ textDecoration: 'none', opacity: '0.8' }}
+            >
+              <HStack h='100%' justifyContent='center'>
+                <span>
+                  <i className={contribution.class}></i>
+                </span>
+                <Text fontFamily='figTree'>{contribution.name}</Text>
+              </HStack>
+            </ChakraLink>
+          );
+        })}
       </SimpleGrid>
-
-      <Text fontFamily='figTree' mt='2rem' fontSize='.8rem'>
-        Submit your information using this{' '}
-        <ChakraLink
-          color='#5800FF'
-          textDecoration='underline'
-          href='https://forms.gle/SDGLyBSuSXQL8PHB7'
-          isExternal
-        >
-          form
-        </ChakraLink>{' '}
-        and our team will be in touch!
-      </Text>
     </Flex>
   );
 };

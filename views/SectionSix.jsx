@@ -71,9 +71,15 @@ export const SectionSix = () => {
         alignItems='center'
         px={{ base: '2rem', lg: '5rem' }}
         py={{ base: '2rem', lg: '2rem' }}
-        bg='#F1F1F1'
+        // bg='#F1F1F1'
       >
-        <Text fontFamily='figTree' textAlign='center' maxW='70%' mb='2rem'>
+        <Text
+          fontFamily='figTree'
+          fontSize='1.2rem'
+          textAlign='center'
+          maxW='70%'
+          mb='2rem'
+        >
           Kyiv Tech Summit is organized by Atlantis World, Unchain and
           UkraineDAO core contributors in collaboration with a dozen of
           community and partner supporters.
@@ -116,18 +122,29 @@ export const SectionSix = () => {
                 direction='column'
                 alignItems='center'
                 justifyContent='center'
-                bg='white'
+                bg='#251D3A'
                 minH='150px'
                 p='1rem'
-                borderRadius='15px'
+                borderRadius='5px'
               >
-                <Text fontFamily='openSans' fontWeight='bold'>
+                <Text
+                  color='white'
+                  fontSize='1.2rem'
+                  fontFamily='openSans'
+                  fontWeight='bold'
+                >
                   {organizer.name}
                 </Text>
-                <Text textAlign='center' fontFamily='openSans' fontSize='.8rem'>
+                <Text
+                  color='white'
+                  textAlign='center'
+                  fontFamily='openSans'
+                  fontSize='0.8rem'
+                  mt='5px'
+                >
                   {organizer.role}
                 </Text>
-                <HStack mt='15px'>
+                <HStack mt='15px' color='white'>
                   <ChakraLink
                     href={organizer.twitter}
                     isExternal
