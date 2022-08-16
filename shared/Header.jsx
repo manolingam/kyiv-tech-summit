@@ -1,7 +1,8 @@
 import {
   Flex,
   Image as ChakraImage,
-  Link as ChakraLink
+  Link as ChakraLink,
+  Box
 } from '@chakra-ui/react';
 
 import Link from 'next/link';
@@ -31,16 +32,37 @@ export const Header = ({ windowWidth }) => {
         </Flex>
       </Link>
 
-      <ChakraLink
-        href='https://twitter.com/KyivTechSummit'
-        isExternal
-        w='25px'
-        fontSize={{ lg: '25px', sm: '20px' }}
-      >
-        <span>
-          <i className='fab fa-twitter'></i>
-        </span>
-      </ChakraLink>
+      <Box>
+        <ChakraLink
+          href='https://t.me/kyivtechsummit'
+          isExternal
+          fontSize={{ lg: '25px', sm: '20px' }}
+          mr={{ lg: '20px', sm: '15px' }}
+        >
+          <span>
+            <i className='fa-brands fa-telegram'></i>
+          </span>
+        </ChakraLink>
+        <ChakraLink
+          href='https://discord.gg/YQ9VBW8K'
+          isExternal
+          fontSize={{ lg: '25px', sm: '20px' }}
+          mr={{ lg: '20px', sm: '15px' }}
+        >
+          <span>
+            <i className='fa-brands fa-discord'></i>
+          </span>
+        </ChakraLink>
+        <ChakraLink
+          href='https://twitter.com/KyivTechSummit'
+          isExternal
+          fontSize={{ lg: '25px', sm: '20px' }}
+        >
+          <span>
+            <i className='fab fa-twitter'></i>
+          </span>
+        </ChakraLink>
+      </Box>
     </Flex>
   );
 };
