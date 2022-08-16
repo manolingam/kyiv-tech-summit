@@ -166,7 +166,7 @@ export const GeneralSponsorships = () => {
               fontWeight='bold'
               textAlign='center'
             >
-              4/7
+              2/7
             </Th>
             <Th
               fontFamily='figTree'
