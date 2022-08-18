@@ -44,7 +44,7 @@ export const Header = ({ windowWidth }) => {
           </span>
         </ChakraLink>
         <ChakraLink
-          href='https://discord.gg/YQ9VBW8K'
+          href='https://discord.gg/nJGCev3Y2c'
           isExternal
           fontSize={{ lg: '25px', sm: '20px' }}
           mr={{ lg: '20px', sm: '15px' }}
