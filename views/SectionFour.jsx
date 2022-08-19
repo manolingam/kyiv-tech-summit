@@ -3,7 +3,12 @@ import {
   SimpleGrid,
   Box,
   Image as ChakraImage,
-  Text
+  Text,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon
 } from '@chakra-ui/react';
 
 const partners = [
@@ -68,57 +73,74 @@ const partners = [
 export const SectionFour = () => {
   return (
     <Flex
+      w='100%'
       direction='column'
       px={{ base: '2rem', lg: '5rem' }}
       py={{ base: '2rem', lg: '2rem' }}
-      bg='#F1F1F1'
     >
-      <Text fontFamily='openSans' fontWeight='bold' mb='2rem'>
-        Friends & Partners of Unchain / UkraineDAO / Atlantis World
-      </Text>
-      <SimpleGrid
-        columns={{ lg: 5, md: 3, sm: 2 }}
-        placeItems='center'
-        gridGap='1rem'
-      >
-        {partners.map((partner, index) => {
-          return (
-            <Box
-              key={index}
-              bg='white'
+      <Accordion allowToggle bg='#F1F1F1'>
+        <AccordionItem>
+          <AccordionButton>
+            <Text
+              fontFamily='figTree'
               p='1rem'
-              borderRadius='10px'
-              h='150px'
-              display='flex'
-              alignItems='center'
-              onClick={() => window.open(partner.link, '_blank')}
-              cursor='pointer'
+              fontWeight='bold'
+              textAlign='center'
+              w='100%'
             >
-              <ChakraImage
-                style={{ filter: 'grayscale(1' }}
-                src={partner.image}
-                alt='partner'
-                maxH='150px'
-                m='auto'
-              />
-            </Box>
-          );
-        })}
-        <Box
-          bg='white'
-          p='1rem'
-          borderRadius='10px'
-          h='150px'
-          w='100%'
-          display='flex'
-          alignItems='center'
-          justifyContent='center'
-        >
-          <Text fontFamily='openSans' fontSize='0.8rem'>
-            And many more..
-          </Text>
-        </Box>
-      </SimpleGrid>
+              Friends & Partners of Unchain / UkraineDAO / Atlantis World
+            </Text>
+            <AccordionIcon />
+          </AccordionButton>
+
+          <AccordionPanel>
+            <SimpleGrid
+              columns={{ lg: 5, md: 3, sm: 2 }}
+              placeItems='center'
+              gridGap='1rem'
+              mt='1rem'
+            >
+              {partners.map((partner, index) => {
+                return (
+                  <Box
+                    key={index}
+                    bg='white'
+                    p='1rem'
+                    borderRadius='10px'
+                    h='150px'
+                    display='flex'
+                    alignItems='center'
+                    onClick={() => window.open(partner.link, '_blank')}
+                    cursor='pointer'
+                  >
+                    <ChakraImage
+                      style={{ filter: 'grayscale(1)' }}
+                      src={partner.image}
+                      alt='partner'
+                      maxH='150px'
+                      m='auto'
+                    />
+                  </Box>
+                );
+              })}
+              <Box
+                bg='white'
+                p='1rem'
+                borderRadius='10px'
+                h='150px'
+                w='100%'
+                display='flex'
+                alignItems='center'
+                justifyContent='center'
+              >
+                <Text fontFamily='openSans' fontSize='0.8rem'>
+                  And many more..
+                </Text>
+              </Box>
+            </SimpleGrid>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
     </Flex>
   );
 };

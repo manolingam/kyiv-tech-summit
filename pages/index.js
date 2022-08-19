@@ -5,6 +5,8 @@ import { SectionFour } from '../views/SectionFour';
 import { SectionFive } from '../views/SectionFive';
 import { SectionSix } from '../views/SectionSix';
 import { SectionSeven } from '../views/SectionSeven';
+import { SectionEight } from '../views/SectionEight';
+import { SectionNine } from '../views/SectionNine';
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <SectionFive />
       <SectionSix />
       <SectionSeven />
+      <SectionEight />
+      <SectionNine />
     </>
   );
 }
