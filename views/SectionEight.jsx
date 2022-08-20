@@ -6,48 +6,32 @@ import {
   Text
 } from '@chakra-ui/react';
 
-const partners = [
+const sponsors = [
   {
-    image: '/assets/partners/cryptoDiffer.png',
-    link: 'https://cryptodiffer.com/'
+    image: '/assets/sponsors/near.png',
+    link: 'https://near.org/'
   },
   {
-    image: '/assets/partners/devPost.png',
-    link: 'https://devpost.com/'
-  },
-  {
-    image: '/assets/partners/nym.png',
+    image: '/assets/sponsors/nym.png',
     link: 'https://nymtech.net/'
-  },
-  {
-    image: '/assets/partners/orange.png',
-    link: 'https://tsecrypto.com/'
-  },
-  {
-    image: '/assets/partners/sigmaSoftware.jpeg',
-    link: 'https://university.sigma.software/en/'
-  },
-  {
-    image: '/assets/partners/top7.png',
-    link: 'https://top7forukraine.fund/'
   }
 ];
 
-export const SectionSeven = () => {
+export const SectionEight = () => {
   return (
     <Flex
       w='100%'
       direction='column'
       px={{ base: '2rem', lg: '5rem' }}
-      py={{ base: '2rem', lg: '2rem' }}
+      pb={{ base: '2rem', lg: '2rem' }}
     >
       <SimpleGrid
         columns={{ lg: 4, md: 3, sm: 2 }}
         placeItems='center'
         gridGap='1rem'
-        mt='1rem'
-        p='2rem'
         bg='#251D3A'
+        p='2rem'
+        mt='1rem'
         borderRadius='5px'
       >
         <Box
@@ -62,10 +46,10 @@ export const SectionSeven = () => {
           p='1rem'
         >
           <Text fontFamily='openSans' fontSize='1.2rem'>
-            Our Partners
+            Our Sponsors
           </Text>
         </Box>
-        {partners.map((partner, index) => {
+        {sponsors.map((sponsor, index) => {
           return (
             <Box
               key={index}
@@ -73,15 +57,16 @@ export const SectionSeven = () => {
               h='125px'
               display='flex'
               alignItems='center'
+              border='2px solid #251D3A'
               borderRadius='10px'
               bg='white'
               p='1rem'
-              onClick={() => window.open(partner.link, '_blank')}
+              onClick={() => window.open(sponsor.link, '_blank')}
               cursor='pointer'
             >
               <ChakraImage
                 style={{ filter: 'grayscale(1)' }}
-                src={partner.image}
+                src={sponsor.image}
                 alt='partner'
                 w='100px'
                 m='auto'

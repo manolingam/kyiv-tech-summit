@@ -11,6 +11,7 @@ const organizers = [
   {
     name: 'Inna Kosianets',
     role: 'Operations / Contributors - Web3 Activist',
+    image: '/assets/profiles/Inna.png',
     twitter: 'https://twitter.com/CyberF0x_',
     linkedin: 'https://www.linkedin.com/in/inna-kosianets-70512a58/',
     telegram: 'https://t.me/Cyber_F0x'
@@ -18,6 +19,7 @@ const organizers = [
   {
     name: 'Rev Miller',
     role: 'Operations / Partnerships - Co-founder @ Unchain',
+    image: '/assets/profiles/r3v.png',
     twitter: 'https://twitter.com/revrfg',
     linkedin: 'https://www.linkedin.com/in/revmiller/',
     telegram: 'https://t.me/revmiller'
@@ -25,6 +27,7 @@ const organizers = [
   {
     name: 'CJ Hetherington',
     role: 'Operations / Partnerships - Co-founder @ Atlantis World',
+    image: '/assets/profiles/CJ.png',
     twitter: 'https://twitter.com/cjhtech',
     linkedin: 'https://www.linkedin.com/in/cjhweb3/',
     telegram: 'https://t.me/cjhtech'
@@ -32,6 +35,7 @@ const organizers = [
   {
     name: 'Tyler Morrey',
     role: 'Operations / Community - Co-founder @ pieFi ',
+    image: '/assets/profiles/Tyler.png',
     twitter: 'https://twitter.com/TylerMorrey',
     linkedin: 'https://www.linkedin.com/in/tylermorrey/',
     telegram: 'https://t.me/upsidetyler'
@@ -39,6 +43,7 @@ const organizers = [
   {
     name: 'Nadiia Yakubets',
     role: 'PR / Communications - PR & Comms @ Unchain ',
+    image: '/assets/profiles/Nadiia.png',
     twitter: 'https://twitter.com/nadiayakubets',
     linkedin: 'https://www.linkedin.com/in/nadiia-yakubets-561654114/',
     telegram: 'https://t.me/NadiiaYakubets'
@@ -46,6 +51,7 @@ const organizers = [
   {
     name: 'Alona Shevchenko',
     role: 'PR / Communications - Co-founder @ UkraineDAO',
+    image: '/assets/profiles/Alona.png',
     twitter: 'https://twitter.com/cryptodrftng',
     linkedin: 'https://www.linkedin.com/in/alona-s-4a25b5b6/',
     telegram: 'https://t.me/drftng7'
@@ -59,19 +65,18 @@ export const SectionSix = () => {
         fontFamily='figTree'
         bg='#251D3A'
         color='white'
-        mt='1rem'
-        p='1rem'
         fontWeight='bold'
         textAlign='center'
+        mt='1rem'
+        p='1rem'
       >
-        Organizers
+        Organizers, Partners & Sponsors
       </Text>
       <Flex
         direction='column'
         alignItems='center'
         px={{ base: '2rem', lg: '5rem' }}
         py={{ base: '2rem', lg: '2rem' }}
-        // bg='#F1F1F1'
       >
         <Text
           fontFamily='figTree'
@@ -127,6 +132,15 @@ export const SectionSix = () => {
                 p='1rem'
                 borderRadius='5px'
               >
+                <ChakraImage
+                  w='auto'
+                  h='150px'
+                  src={organizer.image}
+                  alt={organizer.name}
+                  borderRadius='50%'
+                  style={{ filter: 'grayscale(1)' }}
+                  mb='15px'
+                />
                 <Text
                   color='white'
                   fontSize='1.2rem'
