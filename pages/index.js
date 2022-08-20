@@ -1,3 +1,5 @@
+import { Divider } from '@chakra-ui/react';
+
 import { SectionOne } from '../views/SectionOne';
 import { SectionTwo } from '../views/SectionTwo';
 import { SectionThree } from '../views/SectionThree';
@@ -14,6 +16,7 @@ export default function Home() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <Divider opacity='0.9' borderBottomWidth='2px' maxW='90%' mt='1rem' />
       <SectionFour />
       <SectionFive />
       <SectionSix />
