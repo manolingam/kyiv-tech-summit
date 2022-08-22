@@ -5,7 +5,8 @@ import {
   Text,
   List,
   ListItem,
-  ListIcon
+  ListIcon,
+  Image as ChakraImage
 } from '@chakra-ui/react';
 
 import { CheckCircleIcon } from '@chakra-ui/icons';
@@ -120,11 +121,21 @@ export const OtherSponsorships = () => {
             borderRadius='10px'
             textAlign='center'
           >
-            2/2 Sponsorship remaining
+            1/2 Sponsorship remaining
           </Text>
         </Flex>
 
-        <Flex direction='column'>
+        <Flex direction='column' position='relative' opacity='.5'>
+          <ChakraImage
+            position='absolute'
+            top='0'
+            bottom='0'
+            left='0'
+            right='0'
+            m='auto'
+            src='/assets/sold_out.png'
+            w='250px'
+          />
           <Flex
             direction='column'
             alignItems='flex-start'
@@ -175,7 +186,7 @@ export const OtherSponsorships = () => {
             borderRadius='10px'
             textAlign='center'
           >
-            1/1 Sponsorship remaining
+            0/1 Sponsorship remaining
           </Text>
         </Flex>
       </SimpleGrid>

@@ -122,17 +122,6 @@ export const SectionTwo = () => {
           </Text>
         </GridItem>
       </Grid>
-      <Text
-        fontFamily='figTree'
-        bg='#0057b7'
-        color='white'
-        mt='1rem'
-        p='1rem'
-        fontWeight='bold'
-        textAlign='center'
-      >
-        Event Details
-      </Text>
     </Flex>
   );
 };

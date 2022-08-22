@@ -70,7 +70,7 @@ export const SectionSix = () => {
         mt='1rem'
         p='1rem'
       >
-        Organizers, Partners & Sponsors
+        Organizers
       </Text>
       <Flex
         direction='column'

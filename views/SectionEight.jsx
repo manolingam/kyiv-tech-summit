@@ -24,6 +24,7 @@ export const SectionEight = () => {
       direction='column'
       px={{ base: '2rem', lg: '5rem' }}
       pb={{ base: '2rem', lg: '2rem' }}
+      id='sponsors'
     >
       <SimpleGrid
         columns={{ lg: 4, md: 3, sm: 2 }}

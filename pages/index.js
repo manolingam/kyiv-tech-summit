@@ -15,13 +15,17 @@ export default function Home() {
     <>
       <SectionOne />
       <SectionTwo />
+
+      <SectionSeven />
+      <SectionEight />
+
       <SectionThree />
+
       <Divider opacity='0.9' borderBottomWidth='2px' maxW='90%' mt='1rem' />
       <SectionFour />
       <SectionFive />
       <SectionSix />
-      <SectionSeven />
-      <SectionEight />
+
       <SectionNine />
     </>
   );

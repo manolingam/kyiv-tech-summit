@@ -20,16 +20,16 @@ const partners = [
     link: 'https://nymtech.net/'
   },
   {
-    image: '/assets/partners/orange.png',
-    link: 'https://tsecrypto.com/'
+    image: '/assets/partners/forkLog.png',
+    link: 'https://forklog.com/'
   },
   {
     image: '/assets/partners/sigmaSoftware.jpeg',
     link: 'https://university.sigma.software/en/'
   },
   {
-    image: '/assets/partners/top7.png',
-    link: 'https://top7forukraine.fund/'
+    image: '/assets/partners/incrypted.png',
+    link: 'https://incrypted.com/'
   }
 ];
 
@@ -40,6 +40,7 @@ export const SectionSeven = () => {
       direction='column'
       px={{ base: '2rem', lg: '5rem' }}
       py={{ base: '2rem', lg: '2rem' }}
+      id='partners'
     >
       <SimpleGrid
         columns={{ lg: 4, md: 3, sm: 2 }}
