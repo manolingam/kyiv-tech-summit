@@ -8,6 +8,10 @@ import {
 
 const sponsors = [
   {
+    image: '/assets/sponsors/aragon.png',
+    link: 'https://aragon.org/'
+  },
+  {
     image: '/assets/sponsors/near.png',
     link: 'https://near.org/'
   },
@@ -24,13 +28,12 @@ export const SectionEight = () => {
       direction='column'
       px={{ base: '2rem', lg: '5rem' }}
       pb={{ base: '2rem', lg: '2rem' }}
-      id='sponsors'
+      bg='#251D3A'
     >
       <SimpleGrid
         columns={{ lg: 4, md: 3, sm: 2 }}
         placeItems='center'
         gridGap='1rem'
-        bg='#251D3A'
         p='2rem'
         mt='1rem'
         borderRadius='5px'

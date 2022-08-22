@@ -16,8 +16,8 @@ export default function Home() {
       <SectionOne />
       <SectionTwo />
 
-      <SectionSeven />
       <SectionEight />
+      <SectionSeven />
 
       <SectionThree />
 

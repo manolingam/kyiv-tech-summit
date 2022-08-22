@@ -18,8 +18,23 @@ export const OtherSponsorships = () => {
       py={{ base: '2rem', lg: '1rem' }}
       px={{ base: '2rem', lg: '5rem' }}
     >
-      <SimpleGrid columns={{ lg: 3, sm: 1 }} gap='2rem'>
-        <Flex direction='column' justifyContent='space-between'>
+      <SimpleGrid columns={{ lg: 2, sm: 1 }} gap='2rem'>
+        <Flex
+          direction='column'
+          justifyContent='space-between'
+          position='relative'
+          opacity='0.5'
+        >
+          <ChakraImage
+            position='absolute'
+            top='0'
+            bottom='0'
+            left='0'
+            right='0'
+            m='auto'
+            src='/assets/sold_out.png'
+            w='250px'
+          />
           <Flex
             direction='column'
             alignItems='flex-start'
@@ -69,7 +84,7 @@ export const OtherSponsorships = () => {
             borderRadius='10px'
             textAlign='center'
           >
-            1/1 Sponsorship remaining
+            This is sold out
           </Text>
         </Flex>
 
@@ -125,7 +140,7 @@ export const OtherSponsorships = () => {
           </Text>
         </Flex>
 
-        <Flex direction='column' position='relative' opacity='.5'>
+        {/* <Flex direction='column' position='relative' opacity='.5'>
           <ChakraImage
             position='absolute'
             top='0'
@@ -188,7 +203,7 @@ export const OtherSponsorships = () => {
           >
             0/1 Sponsorship remaining
           </Text>
-        </Flex>
+        </Flex> */}
       </SimpleGrid>
     </Flex>
   );

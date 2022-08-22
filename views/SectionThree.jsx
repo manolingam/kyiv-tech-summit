@@ -36,7 +36,7 @@ export const SectionThree = () => {
             fontSize='1.5rem'
             color='#0057b7'
           >
-            To Be Announced*
+            Secret Location*
           </Text>
           <Text fontFamily='openSans' fontSize='1.2rem'>
             For safety and inclusion purposes, only participants local to Kyiv
