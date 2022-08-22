@@ -9,27 +9,33 @@ import {
 const partners = [
   {
     image: '/assets/partners/cryptoDiffer.png',
-    link: 'https://cryptodiffer.com/'
+    link: 'https://cryptodiffer.com/',
+    type: 'Media'
   },
   {
     image: '/assets/partners/devPost.png',
-    link: 'https://devpost.com/'
+    link: 'https://devpost.com/',
+    type: 'Tech'
   },
   {
     image: '/assets/partners/nym.png',
-    link: 'https://nymtech.net/'
+    link: 'https://nymtech.net/',
+    type: 'General'
   },
   {
     image: '/assets/partners/forkLog.png',
-    link: 'https://forklog.com/'
+    link: 'https://forklog.com/',
+    type: 'Media'
   },
   {
     image: '/assets/partners/sigmaSoftware.jpeg',
-    link: 'https://university.sigma.software/en/'
+    link: 'https://university.sigma.software/en/',
+    type: 'Community'
   },
   {
     image: '/assets/partners/incrypted.png',
-    link: 'https://incrypted.com/'
+    link: 'https://incrypted.com/',
+    type: 'Media'
   }
 ];
 
@@ -79,14 +85,28 @@ export const SectionSeven = () => {
               p='1rem'
               onClick={() => window.open(partner.link, '_blank')}
               cursor='pointer'
+              position='relative'
             >
               <ChakraImage
                 style={{ filter: 'grayscale(1)' }}
                 src={partner.image}
                 alt='partner'
-                w='100px'
+                w={{ lg: '100px', sm: '70px' }}
                 m='auto'
               />
+              <Text
+                position='absolute'
+                color='white'
+                fontFamily='figTree'
+                fontSize={{ lg: '.7rem', sm: '.5rem' }}
+                textTransform='uppercase'
+                bg='#251D3A'
+                bottom='0'
+                left='0'
+                p='5px'
+              >
+                {partner.type}
+              </Text>
             </Box>
           );
         })}

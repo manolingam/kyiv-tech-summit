@@ -92,7 +92,7 @@ export const OtherSponsorships = () => {
             <List spacing={3} fontFamily='openSans' fontSize='.8rem' mt='1rem'>
               <ListItem>
                 <ListIcon as={CheckCircleIcon} />
-                24/7 Meals and snacks
+                Meals and snacks
               </ListItem>
               <ListItem>
                 <ListIcon as={CheckCircleIcon} />2 Barista

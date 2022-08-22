@@ -69,7 +69,7 @@ export const SectionEight = () => {
                 style={{ filter: 'grayscale(1)' }}
                 src={sponsor.image}
                 alt='partner'
-                w='100px'
+                w={{ lg: '100px', sm: '70px' }}
                 m='auto'
               />
             </Box>
