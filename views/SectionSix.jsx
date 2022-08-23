@@ -7,6 +7,8 @@ import {
   Link as ChakraLink
 } from '@chakra-ui/react';
 
+import { sectionSixTranslation } from '../utils/language';
+
 const organizers = [
   {
     name: 'Inna Kosianets',
@@ -58,7 +60,7 @@ const organizers = [
   }
 ];
 
-export const SectionSix = () => {
+export const SectionSix = ({ language }) => {
   return (
     <Flex direction='column'>
       <Text
@@ -70,7 +72,9 @@ export const SectionSix = () => {
         mt='1rem'
         p='1rem'
       >
-        Organizers
+        {language === 'english'
+          ? Object.keys(sectionSixTranslation)[0]
+          : sectionSixTranslation[Object.keys(sectionSixTranslation)[0]]}
       </Text>
       <Flex
         direction='column'
@@ -85,9 +89,9 @@ export const SectionSix = () => {
           maxW='70%'
           mb='2rem'
         >
-          Kyiv Tech Summit is organized by Atlantis World, Unchain and
-          UkraineDAO core contributors in collaboration with a dozen of
-          community and partner supporters.
+          {language === 'english'
+            ? Object.keys(sectionSixTranslation)[1]
+            : sectionSixTranslation[Object.keys(sectionSixTranslation)[1]]}
         </Text>
 
         <Flex

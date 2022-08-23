@@ -6,7 +6,9 @@ import {
   Button
 } from '@chakra-ui/react';
 
-export const SectionOne = () => {
+import { sectionOneTranslation } from '../utils/language';
+
+export const SectionOne = ({ language }) => {
   return (
     <Grid
       templateColumns={{ lg: 'repeat(5, 1fr)', sm: 'repeat(2, 1fr)' }}
@@ -15,14 +17,14 @@ export const SectionOne = () => {
     >
       <GridItem colSpan={3}>
         <Text fontFamily='openSans' fontSize='1.5rem'>
-          Kyiv Tech Summit is a first-of-its-kind unique event. Our aim is to
-          bring together some of the best developers, technology providers,
-          designers, innovators, and product evangelists who are looking to
-          solve tangible, on-the-ground issues to aid the Ukrainian people in
-          their fight for freedom.
+          {language === 'english'
+            ? Object.keys(sectionOneTranslation)[0]
+            : sectionOneTranslation[Object.keys(sectionOneTranslation)[0]]}
         </Text>
         <Text fontFamily='openSans' fontWeight='bold' color='#0057b7' mt='1rem'>
-          This project and its outcomes will literally save lives!
+          {language === 'english'
+            ? Object.keys(sectionOneTranslation)[1]
+            : sectionOneTranslation[Object.keys(sectionOneTranslation)[2]]}
         </Text>
         <Button
           fontSize='1.2rem'
@@ -37,7 +39,9 @@ export const SectionOne = () => {
           }
           _hover={{ opacity: '0.8' }}
         >
-          Join Hackathon
+          {language === 'english'
+            ? Object.keys(sectionOneTranslation)[2]
+            : sectionOneTranslation[Object.keys(sectionOneTranslation)[2]]}
         </Button>
       </GridItem>
       <GridItem colSpan={2}>

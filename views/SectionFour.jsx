@@ -19,8 +19,9 @@ import { useState } from 'react';
 
 import { GeneralSponsorships } from '../components/GeneralSponsorships';
 import { OtherSponsorships } from '../components/OtherSponsorships';
+import { sectionFourTranslation } from '../utils/language';
 
-export const SectionFour = () => {
+export const SectionFour = ({ language }) => {
   const [isGeneralSponsorshipsOpen, setGeneranSponsorshipsOpen] =
     useState(false);
 
@@ -39,7 +40,9 @@ export const SectionFour = () => {
       >
         <GridItem colSpan={{ lg: 1, sm: 2 }}>
           <Text fontFamily='figTree' fontSize='1.5rem' fontWeight='bold'>
-            Sponsorships
+            {language === 'english'
+              ? Object.keys(sectionFourTranslation)[0]
+              : sectionFourTranslation[Object.keys(sectionFourTranslation)[0]]}
           </Text>
 
           <Text
@@ -51,40 +54,39 @@ export const SectionFour = () => {
             fontSize='.8rem'
           >
             <Highlight query='Important' styles={{ fontWeight: 'bold' }}>
-              Important Sponsorship include ½ Hackathon prize money (i.e. $15k
-              sponsorship include $7.5k bounties)
+              {language === 'english'
+                ? Object.keys(sectionFourTranslation)[1]
+                : sectionFourTranslation[
+                    Object.keys(sectionFourTranslation)[1]
+                  ]}
             </Highlight>
           </Text>
         </GridItem>
         <GridItem colSpan={{ lg: 4, sm: 2 }}>
           <Text fontFamily='openSans' fontSize='1.2rem' mb='10px'>
-            Kyiv Tech Summit (KTS) is a not-for-profit, community-driven,
-            initiative.
+            {language === 'english'
+              ? Object.keys(sectionFourTranslation)[2]
+              : sectionFourTranslation[Object.keys(sectionFourTranslation)[2]]}
           </Text>
           <Text fontFamily='openSans' fontSize='1.2rem' mb='10px'>
-            Many of our partners are providing their services at a substantial
-            discount or pro-bono, as the world understands the importance of
-            this critical initiative
+            {language === 'english'
+              ? Object.keys(sectionFourTranslation)[3]
+              : sectionFourTranslation[Object.keys(sectionFourTranslation)[3]]}
           </Text>
           <Text fontFamily='openSans' fontSize='1.2rem' mb='10px'>
-            Kyiv Tech Summit will require some operational expenses to ensure
-            the quality and safety of the event. Half of the sponsorship
-            allocation will be allocated for hackathon bounties. The remaining
-            sponsorship funds (after 50% bounties allocation and ops expenses)
-            will be donated to help those directly impacted by the war. (A
-            detailed financial and transparency report will be published
-            shortly).
+            {language === 'english'
+              ? Object.keys(sectionFourTranslation)[4]
+              : sectionFourTranslation[Object.keys(sectionFourTranslation)[4]]}
           </Text>
           <Text fontFamily='openSans' fontSize='1.2rem' mb='10px'>
-            Kyiv Tech Summit will have global media outreach - both via
-            Ukrainian and international media platforms, as well as influencers
-            and bloggers. Of the networks we have already spoken to, 100% have
-            confirmed their attendance.
+            {language === 'english'
+              ? Object.keys(sectionFourTranslation)[5]
+              : sectionFourTranslation[Object.keys(sectionFourTranslation)[5]]}
           </Text>
           <Text fontFamily='openSans' fontSize='1.2rem'>
-            Finally, we are taking all necessary precautions to ensure the
-            safety of all attendees, media, and staff throughout the event. (A
-            detailed safety report will be published shortly).
+            {language === 'english'
+              ? Object.keys(sectionFourTranslation)[6]
+              : sectionFourTranslation[Object.keys(sectionFourTranslation)[6]]}
           </Text>
 
           <Flex
@@ -97,23 +99,31 @@ export const SectionFour = () => {
               w='100%'
               onClick={() => setGeneranSponsorshipsOpen(true)}
               fontFamily='figTree'
-              fontSize='1.2rem'
+              fontSize={{ lg: '1.2rem', sm: '.8rem' }}
               bg='#0057b7'
               color='white'
               mr={{ lg: '1rem' }}
               mb={{ sm: '1rem' }}
               _hover={{ opacity: '0.8' }}
             >
-              View general sponsorships
+              {language === 'english'
+                ? Object.keys(sectionFourTranslation)[7]
+                : sectionFourTranslation[
+                    Object.keys(sectionFourTranslation)[7]
+                  ]}
             </Button>
             <Button
               w='100%'
               fontFamily='figTree'
-              fontSize='1.2rem'
+              fontSize={{ lg: '1.2rem', sm: '.8rem' }}
               color='#0057b7'
               onClick={() => setOtherSponsorshipsOpen(true)}
             >
-              View other sponsorships
+              {language === 'english'
+                ? Object.keys(sectionFourTranslation)[8]
+                : sectionFourTranslation[
+                    Object.keys(sectionFourTranslation)[8]
+                  ]}
             </Button>
           </Flex>
         </GridItem>
@@ -125,7 +135,9 @@ export const SectionFour = () => {
         textAlign='center'
         fontStyle='italic'
       >
-        To become a sponsor, please contact us at{' '}
+        {language === 'english'
+          ? Object.keys(sectionFourTranslation)[9]
+          : sectionFourTranslation[Object.keys(sectionFourTranslation)[9]]}
         <ChakraLink
           color='#0057b7'
           href='mailto:info@kyivtechsummit.com'
@@ -143,14 +155,18 @@ export const SectionFour = () => {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>General Sponsorships</ModalHeader>
+          <ModalHeader>
+            {language === 'ukrainian'
+              ? 'Детальніше про генеральне спонсорство'
+              : 'General Sponsorships'}
+          </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <GeneralSponsorships />
+            <GeneralSponsorships language={language} />
           </ModalBody>
           <ModalFooter>
             <Button onClick={() => setGeneranSponsorshipsOpen(false)}>
-              Close
+              {language === 'ukrainian' ? 'Закрити' : 'Close'}
             </Button>
           </ModalFooter>
         </ModalContent>
@@ -163,14 +179,18 @@ export const SectionFour = () => {
       >
         <ModalOverlay />
         <ModalContent bg='#F1F1F1'>
-          <ModalHeader>Other Sponsorships</ModalHeader>
+          <ModalHeader>
+            {language === 'ukrainian'
+              ? 'Детальніше про інші спонсорські пакети'
+              : 'Other Sponsorships'}
+          </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <OtherSponsorships />
+            <OtherSponsorships language={language} />
           </ModalBody>
           <ModalFooter>
             <Button onClick={() => setOtherSponsorshipsOpen(false)}>
-              Close
+              {language === 'ukrainian' ? 'Закрити' : 'Close'}
             </Button>
           </ModalFooter>
         </ModalContent>

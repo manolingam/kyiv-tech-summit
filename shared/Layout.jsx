@@ -1,20 +1,20 @@
 import { Flex } from '@chakra-ui/react';
-// import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Meta } from './Meta';
 import { Header } from './Header';
 import { Footer } from './Footer';
 
 export const Layout = ({ children }) => {
-  // const [windowWidth, setWindowWidth] = useState('');
+  const [windowWidth, setWindowWidth] = useState('');
 
-  // useEffect(() => {
-  //   setWindowWidth(window.innerWidth);
-  //   window.removeEventListener('resize', () => {});
-  //   window.addEventListener('resize', (e) => {
-  //     setWindowWidth(window.innerWidth);
-  //   });
-  // }, []);
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+    window.removeEventListener('resize', () => {});
+    window.addEventListener('resize', (e) => {
+      setWindowWidth(window.innerWidth);
+    });
+  }, []);
 
   return (
     <>
@@ -26,7 +26,7 @@ export const Layout = ({ children }) => {
         alignItems='center'
         mx='auto'
       >
-        <Header />
+        <Header windowWidth={windowWidth} />
         {children}
         <Footer />
       </Flex>

@@ -1,4 +1,6 @@
+import { useContext } from 'react';
 import { Divider } from '@chakra-ui/react';
+import { AppContext } from '../context/AppContext';
 
 import { SectionOne } from '../views/SectionOne';
 import { SectionTwo } from '../views/SectionTwo';
@@ -11,22 +13,35 @@ import { SectionEight } from '../views/SectionEight';
 import { SectionNine } from '../views/SectionNine';
 
 export default function Home() {
+  const context = useContext(AppContext);
   return (
     <>
-      <SectionOne />
-      <SectionTwo />
+      <SectionOne
+        language={context.isUkraineVersion ? 'ukrainian' : 'english'}
+      />
+      <SectionTwo
+        language={context.isUkraineVersion ? 'ukrainian' : 'english'}
+      />
 
       <SectionEight />
       <SectionSeven />
 
-      <SectionThree />
+      <SectionThree
+        language={context.isUkraineVersion ? 'ukrainian' : 'english'}
+      />
 
       <Divider opacity='0.9' borderBottomWidth='2px' maxW='90%' mt='1rem' />
-      <SectionFour />
+      <SectionFour
+        language={context.isUkraineVersion ? 'ukrainian' : 'english'}
+      />
       {/* <SectionFive /> */}
-      <SectionSix />
+      <SectionSix
+        language={context.isUkraineVersion ? 'ukrainian' : 'english'}
+      />
 
-      <SectionNine />
+      <SectionNine
+        language={context.isUkraineVersion ? 'ukrainian' : 'english'}
+      />
     </>
   );
 }
