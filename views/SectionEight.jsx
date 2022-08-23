@@ -18,6 +18,18 @@ const sponsors = [
   {
     image: '/assets/sponsors/nym.png',
     link: 'https://nymtech.net/'
+  },
+  {
+    image: '/assets/sponsors/aaveGrantsDao.png',
+    link: 'https://aavegrants.org/'
+  },
+  {
+    image: '/assets/sponsors/aurora.png',
+    link: 'https://aurora.dev/'
+  },
+  {
+    image: '/assets/sponsors/unstoppableDomains.png',
+    link: 'https://unstoppabledomains.com/'
   }
 ];
 
@@ -77,7 +89,11 @@ export const SectionEight = () => {
                   style={{ filter: 'grayscale(1)' }}
                   src={sponsor.image}
                   alt='partner'
-                  w={{ lg: '150px', md: '100px', sm: '70px' }}
+                  w={{
+                    lg: index === 3 ? '100px' : '150px',
+                    md: '100px',
+                    sm: '70px'
+                  }}
                   m='auto'
                 />
               </Box>
