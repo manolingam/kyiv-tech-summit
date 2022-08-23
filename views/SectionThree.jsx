@@ -8,7 +8,7 @@ import {
 
 export const SectionThree = () => {
   return (
-    <Flex direction='column' py={{ base: '1rem', lg: '2rem' }}>
+    <Flex direction='column' pb={{ base: '1rem', lg: '2rem' }}>
       <Text
         fontFamily='figTree'
         bg='#0057b7'

@@ -2,12 +2,6 @@ import {
   Flex,
   Image as ChakraImage,
   Link as ChakraLink
-  // Box,
-  // Popover,
-  // PopoverContent,
-  // PopoverTrigger,
-  // Button,
-  // Text
 } from '@chakra-ui/react';
 
 import Link from 'next/link';

@@ -4,8 +4,7 @@ import {
   SimpleGrid,
   Grid,
   GridItem,
-  Text,
-  Button
+  Text
 } from '@chakra-ui/react';
 
 export const SectionTwo = () => {

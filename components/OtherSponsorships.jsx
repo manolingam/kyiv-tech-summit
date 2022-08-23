@@ -84,7 +84,7 @@ export const OtherSponsorships = () => {
             borderRadius='10px'
             textAlign='center'
           >
-            This is sold out
+            sold out
           </Text>
         </Flex>
 
@@ -136,7 +136,7 @@ export const OtherSponsorships = () => {
             borderRadius='10px'
             textAlign='center'
           >
-            1/2 Sponsorship remaining
+            1/1 Sponsorship remaining
           </Text>
         </Flex>
 
