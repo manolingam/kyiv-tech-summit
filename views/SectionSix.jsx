@@ -18,7 +18,7 @@ const organizers = [
   },
   {
     name: 'Rev Miller',
-    role: 'Operations / Partnerships - Co-founder @ Unchain',
+    role: 'Operations / Partnerships - Co-founder @ Unchain & Atlantis World',
     image: '/assets/profiles/r3v.png',
     twitter: 'https://twitter.com/revrfg',
     linkedin: 'https://www.linkedin.com/in/revmiller/',
@@ -70,7 +70,7 @@ export const SectionSix = () => {
         mt='1rem'
         p='1rem'
       >
-        Organizers, Partners & Sponsors
+        Organizers
       </Text>
       <Flex
         direction='column'
@@ -103,19 +103,23 @@ export const SectionSix = () => {
             w='200px'
             h='50px'
             mb={{ sm: '1.5rem' }}
+            style={{ filter: 'grayscale(1)' }}
+          />
+          <ChakraImage
+            src='/assets/logos/unchain.png'
+            alt=''
+            w='250px'
+            h='130px'
+            mb={{ sm: '1.5rem' }}
+            style={{ filter: 'grayscale(1)' }}
           />
           <ChakraImage
             src='/assets/logos/ukrainedao.png'
             alt=''
             w='200px'
-            h='50px'
+            h='60px'
             mb={{ sm: '1.5rem' }}
-          />
-          <ChakraImage
-            src='/assets/logos/unchain.png'
-            alt=''
-            w='150px'
-            h='65px'
+            style={{ filter: 'grayscale(1)' }}
           />
         </Flex>
 

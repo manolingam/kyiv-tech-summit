@@ -5,7 +5,8 @@ import {
   Text,
   List,
   ListItem,
-  ListIcon
+  ListIcon,
+  Image as ChakraImage
 } from '@chakra-ui/react';
 
 import { CheckCircleIcon } from '@chakra-ui/icons';
@@ -17,8 +18,23 @@ export const OtherSponsorships = () => {
       py={{ base: '2rem', lg: '1rem' }}
       px={{ base: '2rem', lg: '5rem' }}
     >
-      <SimpleGrid columns={{ lg: 3, sm: 1 }} gap='2rem'>
-        <Flex direction='column' justifyContent='space-between'>
+      <SimpleGrid columns={{ lg: 2, sm: 1 }} gap='2rem'>
+        <Flex
+          direction='column'
+          justifyContent='space-between'
+          position='relative'
+          opacity='0.5'
+        >
+          <ChakraImage
+            position='absolute'
+            top='0'
+            bottom='0'
+            left='0'
+            right='0'
+            m='auto'
+            src='/assets/sold_out.png'
+            w='250px'
+          />
           <Flex
             direction='column'
             alignItems='flex-start'
@@ -68,7 +84,7 @@ export const OtherSponsorships = () => {
             borderRadius='10px'
             textAlign='center'
           >
-            1/1 Sponsorship remaining
+            sold out
           </Text>
         </Flex>
 
@@ -91,7 +107,7 @@ export const OtherSponsorships = () => {
             <List spacing={3} fontFamily='openSans' fontSize='.8rem' mt='1rem'>
               <ListItem>
                 <ListIcon as={CheckCircleIcon} />
-                24/7 Meals and snacks
+                Meals and snacks
               </ListItem>
               <ListItem>
                 <ListIcon as={CheckCircleIcon} />2 Barista
@@ -120,11 +136,21 @@ export const OtherSponsorships = () => {
             borderRadius='10px'
             textAlign='center'
           >
-            2/2 Sponsorship remaining
+            1/1 Sponsorship remaining
           </Text>
         </Flex>
 
-        <Flex direction='column'>
+        {/* <Flex direction='column' position='relative' opacity='.5'>
+          <ChakraImage
+            position='absolute'
+            top='0'
+            bottom='0'
+            left='0'
+            right='0'
+            m='auto'
+            src='/assets/sold_out.png'
+            w='250px'
+          />
           <Flex
             direction='column'
             alignItems='flex-start'
@@ -175,9 +201,9 @@ export const OtherSponsorships = () => {
             borderRadius='10px'
             textAlign='center'
           >
-            1/1 Sponsorship remaining
+            0/1 Sponsorship remaining
           </Text>
-        </Flex>
+        </Flex> */}
       </SimpleGrid>
     </Flex>
   );

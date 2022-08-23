@@ -8,12 +8,24 @@ import {
 
 export const SectionThree = () => {
   return (
-    <Flex
-      direction='column'
-      px={{ base: '2rem', lg: '5rem' }}
-      py={{ base: '1rem', lg: '2rem' }}
-    >
-      <SimpleGrid columns={{ lg: 2, sm: 1 }} placeItems='center' gridGap='3rem'>
+    <Flex direction='column' pb={{ base: '1rem', lg: '2rem' }}>
+      <Text
+        fontFamily='figTree'
+        bg='#0057b7'
+        color='white'
+        mb='1rem'
+        p='1rem'
+        fontWeight='bold'
+        textAlign='center'
+      >
+        Event Details
+      </Text>
+      <SimpleGrid
+        columns={{ lg: 2, sm: 1 }}
+        placeItems='center'
+        gridGap='3rem'
+        px={{ base: '2rem', lg: '5rem' }}
+      >
         <VStack alignItems='flex-start'>
           <Text fontFamily='openSans' fontSize='.8rem' fontWeight='bold'>
             Location
@@ -24,7 +36,7 @@ export const SectionThree = () => {
             fontSize='1.5rem'
             color='#0057b7'
           >
-            To Be Announced*
+            Secret Location*
           </Text>
           <Text fontFamily='openSans' fontSize='1.2rem'>
             For safety and inclusion purposes, only participants local to Kyiv
@@ -68,7 +80,13 @@ export const SectionThree = () => {
           </Text>
         </VStack>
       </SimpleGrid>
-      <Flex direction='column' alignItems='flex-start' mr='auto' mt='1rem'>
+      <Flex
+        direction='column'
+        alignItems='flex-start'
+        mr='auto'
+        mt='1rem'
+        px={{ base: '2rem', lg: '5rem' }}
+      >
         <Text fontFamily='openSans' fontSize='.8rem' fontWeight='bold'>
           Find more details on our events page:{' '}
         </Text>

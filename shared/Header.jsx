@@ -1,13 +1,12 @@
 import {
   Flex,
   Image as ChakraImage,
-  Link as ChakraLink,
-  Box
+  Link as ChakraLink
 } from '@chakra-ui/react';
 
 import Link from 'next/link';
 
-export const Header = ({ windowWidth }) => {
+export const Header = () => {
   return (
     <Flex
       w='100%'
@@ -32,7 +31,109 @@ export const Header = ({ windowWidth }) => {
         </Flex>
       </Link>
 
-      <Box>
+      {/* {windowWidth < 650 && (
+        <Popover placement='bottom'>
+          <PopoverTrigger>
+            <Button
+              bg='#251D3A'
+              border='2px solid #251D3A'
+              borderRadius='none'
+              fontFamily='figTree'
+              color='white'
+              p='10px'
+              _hover={{
+                bg: 'white',
+                color: '#251D3A',
+                textDecoration: 'none'
+              }}
+            >
+              <Text px={2}>Menu</Text>
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent bg='none' w='auto'>
+            <ChakraLink
+              href='#sponsors'
+              fontSize={{ lg: '15px', sm: '10px' }}
+              bg='#251D3A'
+              border='2px solid #251D3A'
+              color='white'
+              p='10px'
+              _hover={{
+                bg: 'white',
+                color: '#251D3A',
+                textDecoration: 'none'
+              }}
+            >
+              Our Sponsors
+            </ChakraLink>
+            <ChakraLink
+              href='#partners'
+              fontSize={{ lg: '15px', sm: '10px' }}
+              bg='#251D3A'
+              border='2px solid #251D3A'
+              color='white'
+              p='10px'
+              _hover={{
+                bg: 'white',
+                color: '#251D3A',
+                textDecoration: 'none'
+              }}
+            >
+              Our Partners
+            </ChakraLink>
+            <ChakraLink
+              href='https://t.me/kyivtechsummit'
+              isExternal
+              fontSize={{ lg: '15px', sm: '10px' }}
+              bg='#251D3A'
+              border='2px solid #251D3A'
+              color='white'
+              p='10px'
+              _hover={{
+                bg: 'white',
+                color: '#251D3A',
+                textDecoration: 'none'
+              }}
+            >
+              Telegram
+            </ChakraLink>
+            <ChakraLink
+              href='https://discord.gg/nJGCev3Y2c'
+              isExternal
+              fontSize={{ lg: '15px', sm: '10px' }}
+              bg='#251D3A'
+              border='2px solid #251D3A'
+              color='white'
+              p='10px'
+              _hover={{
+                bg: 'white',
+                color: '#251D3A',
+                textDecoration: 'none'
+              }}
+            >
+              Discord
+            </ChakraLink>
+            <ChakraLink
+              href='https://twitter.com/KyivTechSummit'
+              isExternal
+              fontSize={{ lg: '15px', sm: '10px' }}
+              bg='#251D3A'
+              border='2px solid #251D3A'
+              color='white'
+              p='10px'
+              _hover={{
+                bg: 'white',
+                color: '#251D3A',
+                textDecoration: 'none'
+              }}
+            >
+              Twitter
+            </ChakraLink>
+          </PopoverContent>
+        </Popover>
+      )} */}
+
+      <Flex direction='row' alignItems='center'>
         <ChakraLink
           href='https://t.me/kyivtechsummit'
           isExternal
@@ -62,7 +163,7 @@ export const Header = ({ windowWidth }) => {
             <i className='fab fa-twitter'></i>
           </span>
         </ChakraLink>
-      </Box>
+      </Flex>
     </Flex>
   );
 };
