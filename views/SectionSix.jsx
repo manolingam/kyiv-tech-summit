@@ -103,13 +103,15 @@ export const SectionSix = () => {
             w='200px'
             h='50px'
             mb={{ sm: '1.5rem' }}
+            style={{ filter: 'grayscale(1)' }}
           />
           <ChakraImage
             src='/assets/logos/unchain.png'
             alt=''
-            w='200px'
-            h='100px'
+            w='250px'
+            h='130px'
             mb={{ sm: '1.5rem' }}
+            style={{ filter: 'grayscale(1)' }}
           />
           <ChakraImage
             src='/assets/logos/ukrainedao.png'
@@ -117,6 +119,7 @@ export const SectionSix = () => {
             w='200px'
             h='60px'
             mb={{ sm: '1.5rem' }}
+            style={{ filter: 'grayscale(1)' }}
           />
         </Flex>
 
