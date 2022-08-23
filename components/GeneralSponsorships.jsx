@@ -36,7 +36,7 @@ export const GeneralSponsorships = () => {
             <Th
               fontFamily='figTree'
               fontSize='1.2rem'
-              bg='#5800FF'
+              bg='#005bbb'
               color='white'
               textTransform='none'
               textAlign='center'
@@ -46,7 +46,7 @@ export const GeneralSponsorships = () => {
             <Th
               fontFamily='figTree'
               fontSize='1.2rem'
-              bg='#ffd700'
+              bg='#ffd500'
               color='black'
               textTransform='none'
               textAlign='center'
@@ -164,7 +164,7 @@ export const GeneralSponsorships = () => {
             <Th
               fontFamily='figTree'
               fontSize='1.2rem'
-              bg='#5800FF'
+              bg='#005bbb'
               color='white'
               textTransform='none'
               textAlign='center'
@@ -174,7 +174,7 @@ export const GeneralSponsorships = () => {
             <Th
               fontFamily='figTree'
               fontSize='1.2rem'
-              bg='#ffd700'
+              bg='#ffd500'
               color='black'
               textTransform='none'
               textAlign='center'

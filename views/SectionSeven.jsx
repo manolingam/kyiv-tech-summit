@@ -9,57 +9,52 @@ import {
 const mediaPartners = [
   {
     image: '/assets/partners/incrypted.png',
-    link: 'https://incrypted.com/',
-    type: 'Media'
+    link: 'https://incrypted.com/'
   },
   {
     image: '/assets/partners/forkLog.png',
-    link: 'https://forklog.com/',
-    type: 'Media'
+    link: 'https://forklog.com/'
   },
   {
     image: '/assets/partners/coindesk.png',
-    link: 'https://www.coindesk.com/',
-    type: 'Media'
+    link: 'https://www.coindesk.com/'
   },
   {
     image: '/assets/partners/cointelegraph.png',
-    link: 'https://cointelegraph.com/',
-    type: 'Media'
+    link: 'https://cointelegraph.com/'
   },
   {
     image: '/assets/partners/cryptoDiffer.png',
-    link: 'https://cryptodiffer.com/',
-    type: 'Media'
+    link: 'https://cryptodiffer.com/'
   }
 ];
 
 const techPartners = [
   {
     image: '/assets/partners/devPost.png',
-    link: 'https://devpost.com/',
-    type: 'Tech'
+    link: 'https://devpost.com/'
   }
 ];
 
 const brandingPartner = [
   {
     image: '/assets/partners/aragon.png',
-    link: 'https://aragon.org/',
-    type: 'General'
+    link: 'https://aragon.org/'
   }
 ];
 
 const communityPartners = [
   {
     image: '/assets/partners/sigmaSoftware.jpeg',
-    link: 'https://university.sigma.software/en/',
-    type: 'Community'
+    link: 'https://university.sigma.software/en/'
   },
   {
     image: '/assets/partners/nym.png',
-    link: 'https://nymtech.net/',
-    type: 'General'
+    link: 'https://nymtech.net/'
+  },
+  {
+    image: '/assets/partners/unitCity.png',
+    link: 'https://unit.city/'
   }
 ];
 
