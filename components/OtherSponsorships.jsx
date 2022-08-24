@@ -10,8 +10,9 @@ import {
 } from '@chakra-ui/react';
 
 import { CheckCircleIcon } from '@chakra-ui/icons';
+import { otherSponsorshipsTranslation } from '../utils/language';
 
-export const OtherSponsorships = () => {
+export const OtherSponsorships = ({ language }) => {
   return (
     <Flex
       direction='column'
@@ -44,7 +45,11 @@ export const OtherSponsorships = () => {
             minH='200px'
           >
             <Text fontFamily='openSans' fontWeight='bold'>
-              Event Branding
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[0]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[0]
+                  ]}
             </Text>
             <Text fontFamily='figTree' fontWeight='bold' color='#E64848'>
               $10,000
@@ -53,27 +58,67 @@ export const OtherSponsorships = () => {
             <List spacing={3} fontFamily='openSans' fontSize='.8rem' mt='1rem'>
               <ListItem>
                 <ListIcon as={CheckCircleIcon} />
-                Lanyards
+                {language === 'english'
+                  ? Object.keys(otherSponsorshipsTranslation)[1]
+                  : otherSponsorshipsTranslation[
+                      Object.keys(otherSponsorshipsTranslation)[1]
+                    ]}
               </ListItem>
               <ListItem>
                 <ListIcon as={CheckCircleIcon} />
-                Badges
+                {language === 'english'
+                  ? Object.keys(otherSponsorshipsTranslation)[2]
+                  : otherSponsorshipsTranslation[
+                      Object.keys(otherSponsorshipsTranslation)[2]
+                    ]}
               </ListItem>
               <ListItem>
                 <ListIcon as={CheckCircleIcon} />
-                Merch
+                {language === 'english'
+                  ? Object.keys(otherSponsorshipsTranslation)[3]
+                  : otherSponsorshipsTranslation[
+                      Object.keys(otherSponsorshipsTranslation)[3]
+                    ]}
               </ListItem>
             </List>
           </Flex>
 
           <VStack alignItems='flex-start' mt='2rem'>
-            <Text fontFamily='figTree'>Logo on website</Text>
-            <Text fontFamily='figTree'>Logo on event / stage banners</Text>
             <Text fontFamily='figTree'>
-              Logo & mentions on videos/interviews
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[4]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[4]
+                  ]}
             </Text>
-            <Text fontFamily='figTree'>Speaker meeting invite</Text>
-            <Text fontFamily='figTree'>2 Conference pass</Text>
+            <Text fontFamily='figTree'>
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[5]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[5]
+                  ]}
+            </Text>
+            <Text fontFamily='figTree'>
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[6]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[6]
+                  ]}
+            </Text>
+            <Text fontFamily='figTree'>
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[7]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[7]
+                  ]}
+            </Text>
+            <Text fontFamily='figTree'>
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[8]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[8]
+                  ]}
+            </Text>
           </VStack>
           <Text
             fontFamily='figTree'
@@ -84,7 +129,11 @@ export const OtherSponsorships = () => {
             borderRadius='10px'
             textAlign='center'
           >
-            sold out
+            {language === 'english'
+              ? Object.keys(otherSponsorshipsTranslation)[9]
+              : otherSponsorshipsTranslation[
+                  Object.keys(otherSponsorshipsTranslation)[9]
+                ]}
           </Text>
         </Flex>
 
@@ -98,7 +147,11 @@ export const OtherSponsorships = () => {
             minH='200px'
           >
             <Text fontFamily='openSans' fontWeight='bold'>
-              Food Court & Bar
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[10]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[10]
+                  ]}
             </Text>
             <Text fontFamily='figTree' fontWeight='bold' color='#5800FF'>
               $10,000
@@ -107,25 +160,67 @@ export const OtherSponsorships = () => {
             <List spacing={3} fontFamily='openSans' fontSize='.8rem' mt='1rem'>
               <ListItem>
                 <ListIcon as={CheckCircleIcon} />
-                Meals and snacks
+                {language === 'english'
+                  ? Object.keys(otherSponsorshipsTranslation)[11]
+                  : otherSponsorshipsTranslation[
+                      Object.keys(otherSponsorshipsTranslation)[11]
+                    ]}
               </ListItem>
               <ListItem>
-                <ListIcon as={CheckCircleIcon} />2 Barista
+                <ListIcon as={CheckCircleIcon} />
+                {language === 'english'
+                  ? Object.keys(otherSponsorshipsTranslation)[12]
+                  : otherSponsorshipsTranslation[
+                      Object.keys(otherSponsorshipsTranslation)[12]
+                    ]}
               </ListItem>
               <ListItem>
-                <ListIcon as={CheckCircleIcon} />2 Servers
+                <ListIcon as={CheckCircleIcon} />
+                {language === 'english'
+                  ? Object.keys(otherSponsorshipsTranslation)[13]
+                  : otherSponsorshipsTranslation[
+                      Object.keys(otherSponsorshipsTranslation)[13]
+                    ]}
               </ListItem>
             </List>
           </Flex>
 
           <VStack alignItems='flex-start' mt='2rem'>
-            <Text fontFamily='figTree'>Logo on website</Text>
-            <Text fontFamily='figTree'>Logo on food court & bar</Text>
             <Text fontFamily='figTree'>
-              Logo & mentions on videos/interviews
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[4]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[4]
+                  ]}
             </Text>
-            <Text fontFamily='figTree'>Speaker meeting invite</Text>
-            <Text fontFamily='figTree'>2 Conference pass</Text>
+            <Text fontFamily='figTree'>
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[5]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[5]
+                  ]}
+            </Text>
+            <Text fontFamily='figTree'>
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[6]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[6]
+                  ]}
+            </Text>
+            <Text fontFamily='figTree'>
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[7]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[7]
+                  ]}
+            </Text>
+            <Text fontFamily='figTree'>
+              {language === 'english'
+                ? Object.keys(otherSponsorshipsTranslation)[8]
+                : otherSponsorshipsTranslation[
+                    Object.keys(otherSponsorshipsTranslation)[8]
+                  ]}
+            </Text>
           </VStack>
           <Text
             fontFamily='figTree'
@@ -136,7 +231,11 @@ export const OtherSponsorships = () => {
             borderRadius='10px'
             textAlign='center'
           >
-            1/1 Sponsorship remaining
+            {language === 'english'
+              ? Object.keys(otherSponsorshipsTranslation)[14]
+              : otherSponsorshipsTranslation[
+                  Object.keys(otherSponsorshipsTranslation)[14]
+                ]}
           </Text>
         </Flex>
 

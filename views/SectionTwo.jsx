@@ -7,7 +7,9 @@ import {
   Text
 } from '@chakra-ui/react';
 
-export const SectionTwo = () => {
+import { sectionTwoTranslation } from '../utils/language';
+
+export const SectionTwo = ({ language }) => {
   return (
     <Flex direction='column' py={{ base: '2rem', lg: '1rem' }}>
       <VStack
@@ -23,7 +25,9 @@ export const SectionTwo = () => {
           color='#0057b7'
           fontWeight='bold'
         >
-          Our Goal
+          {language === 'english'
+            ? Object.keys(sectionTwoTranslation)[0]
+            : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[0]]}
         </Text>
         <Text
           fontFamily='figTree'
@@ -32,9 +36,9 @@ export const SectionTwo = () => {
           color='#0057b7'
           w={{ lg: '70%', sm: '100%' }}
         >
-          Build technology that makes war-time life easier and safer for
-          Ukrainians and the world. Onboard Web2 talent into the Web3 digital
-          working economy through existing Web3 communities.
+          {language === 'english'
+            ? Object.keys(sectionTwoTranslation)[1]
+            : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[1]]}
         </Text>
       </VStack>
       <SimpleGrid
@@ -44,12 +48,9 @@ export const SectionTwo = () => {
         px={{ base: '2rem', lg: '5rem' }}
       >
         <Text fontFamily='openSans' fontSize='1.2rem'>
-          Since the full-scale Russian invasion of Ukraine on 24th February
-          2022, the situation has quickly become dire for millions of
-          Ukrainians. Outside of the humanitarian crisis and military needs
-          required by Ukraine, there is an unprecedented need for new tools and
-          solutions to systemically respond to the new reality of russian war in
-          Ukraine.
+          {language === 'english'
+            ? Object.keys(sectionTwoTranslation)[2]
+            : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[2]]}
         </Text>
         <VStack mt={{ sm: '2rem' }}>
           <Text
@@ -61,7 +62,9 @@ export const SectionTwo = () => {
             borderRadius='15px'
             fontFamily='figTree'
           >
-            Broken communications and infrastructure
+            {language === 'english'
+              ? Object.keys(sectionTwoTranslation)[3]
+              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[3]]}
           </Text>
           <Text
             w='100%'
@@ -72,7 +75,9 @@ export const SectionTwo = () => {
             borderRadius='15px'
             fontFamily='figTree'
           >
-            Massive disinformation campaign waged by russia
+            {language === 'english'
+              ? Object.keys(sectionTwoTranslation)[4]
+              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[4]]}
           </Text>
           <Text
             w='100%'
@@ -83,7 +88,9 @@ export const SectionTwo = () => {
             borderRadius='15px'
             fontFamily='figTree'
           >
-            Refugee crisis
+            {language === 'english'
+              ? Object.keys(sectionTwoTranslation)[5]
+              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[5]]}
           </Text>
           <Text
             w='100%'
@@ -94,7 +101,9 @@ export const SectionTwo = () => {
             borderRadius='15px'
             fontFamily='figTree'
           >
-            Humanitarian situation on the ground
+            {language === 'english'
+              ? Object.keys(sectionTwoTranslation)[6]
+              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[6]]}
           </Text>
         </VStack>
       </SimpleGrid>
@@ -104,20 +113,22 @@ export const SectionTwo = () => {
         px={{ base: '2rem', lg: '5rem' }}
       >
         <GridItem colSpan={1}>
-          <Text fontFamily='figTree' fontSize='1.5rem' fontWeight='bold'>
-            Safety First
+          <Text
+            fontFamily='figTree'
+            fontSize='1.5rem'
+            fontWeight='bold'
+            style={{ whiteSpace: 'pre-line' }}
+          >
+            {language === 'english'
+              ? Object.keys(sectionTwoTranslation)[7]
+              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[7]]}
           </Text>
         </GridItem>
         <GridItem colSpan={4} fontSize='1.2rem' mt={{ sm: '1rem', lg: '0rem' }}>
           <Text fontFamily='openSans'>
-            Kyiv Tech Summit will take place at a yet-to-be-disclosed secure
-            location, with a focus on activating only the community already in
-            close proximity, as well as to virtually enable the global community
-            to collaborate in building technology that will empower the
-            humanitarian aid efforts of tomorrow. We will include and onboard
-            both technical and non-technical community members into Web3 and
-            curate the hackathon bounties around making life within a warzone
-            safer and more efficient for Ukrainians.
+            {language === 'english'
+              ? Object.keys(sectionTwoTranslation)[8]
+              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[8]]}
           </Text>
         </GridItem>
       </Grid>

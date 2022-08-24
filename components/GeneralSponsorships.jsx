@@ -10,7 +10,9 @@ import {
   Tfoot
 } from '@chakra-ui/react';
 
-export const GeneralSponsorships = () => {
+import { generalSponsorshipsTranslation } from '../utils/language';
+
+export const GeneralSponsorships = ({ language }) => {
   return (
     <TableContainer
       py={{ base: '2rem', lg: '1rem' }}
@@ -31,7 +33,11 @@ export const GeneralSponsorships = () => {
               color='white'
               textTransform='none'
             >
-              Feature
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[0]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[0]
+                  ]}
             </Th>
             <Th
               fontFamily='figTree'
@@ -57,67 +63,157 @@ export const GeneralSponsorships = () => {
         </Thead>
         <Tbody fontFamily='openSans'>
           <Tr>
-            <Td>Logo across all digital campaigns</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[1]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[1]
+                  ]}
+            </Td>
             <Td textAlign='center'>Medium</Td>
             <Td textAlign='center'>Small</Td>
           </Tr>
           <Tr>
-            <Td>Logo on event / stage banners</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[2]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[2]
+                  ]}
+            </Td>
             <Td textAlign='center'>Medium</Td>
             <Td textAlign='center'>Small</Td>
           </Tr>
           <Tr>
-            <Td>Booth in sponsor area</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[3]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[3]
+                  ]}
+            </Td>
             <Td textAlign='center'>Medium</Td>
             <Td textAlign='center'>Small</Td>
           </Tr>
           <Tr>
-            <Td>Pre & during event/hackathon comms</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[4]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[4]
+                  ]}
+            </Td>
             <Td textAlign='center'>+</Td>
             <Td textAlign='center'>+</Td>
           </Tr>
           <Tr>
-            <Td>Speaker invitations</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[5]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[5]
+                  ]}
+            </Td>
             <Td textAlign='center'>2</Td>
             <Td textAlign='center'>1</Td>
           </Tr>
           <Tr>
-            <Td>IRL conference pass</Td>
-            <Td textAlign='center'>5</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[6]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[6]
+                  ]}
+            </Td>
             <Td textAlign='center'>2</Td>
           </Tr>
           <Tr>
-            <Td>Hosted livestreams</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[7]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[7]
+                  ]}
+            </Td>
             <Td textAlign='center'>2</Td>
             <Td textAlign='center'>1</Td>
           </Tr>
           <Tr>
-            <Td>Maximum # of Bounties in Hackathon</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[8]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[8]
+                  ]}
+            </Td>
             <Td textAlign='center'>4</Td>
             <Td textAlign='center'>2</Td>
           </Tr>
           <Tr>
-            <Td>Custom Promo Designs/POAPs</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[9]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[9]
+                  ]}
+            </Td>
             <Td textAlign='center'>+</Td>
             <Td textAlign='center'>-</Td>
           </Tr>
           <Tr>
-            <Td>Dedicated Partner Support</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[10]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[10]
+                  ]}
+            </Td>
             <Td textAlign='center'>+</Td>
             <Td textAlign='center'>-</Td>
           </Tr>
           <Tr>
-            <Td>Community Growth {'>'} Access to Participants Info</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[11]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[11]
+                  ]}
+            </Td>
             <Td textAlign='center'>+</Td>
             <Td textAlign='center'>-</Td>
           </Tr>
           <Tr>
-            <Td>Promotion to 50k+ tech talent of Ukraine</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[12]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[12]
+                  ]}
+            </Td>
             <Td textAlign='center'>+</Td>
             <Td textAlign='center'>-</Td>
           </Tr>
           <Tr>
-            <Td>Promotion to 1.5M+ Ukrainians via Media Partners</Td>
+            <Td>
+              {' '}
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[13]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[13]
+                  ]}
+            </Td>
             <Td textAlign='center'>+</Td>
             <Td textAlign='center'>-</Td>
           </Tr>
@@ -128,7 +224,11 @@ export const GeneralSponsorships = () => {
               fontSize='1.2rem'
               fontWeight='bold'
             >
-              Remaining Sponsorships
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[14]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[14]
+                  ]}
             </Th>
             <Th
               fontFamily='figTree'
@@ -159,7 +259,11 @@ export const GeneralSponsorships = () => {
               color='white'
               textTransform='none'
             >
-              Total
+              {language === 'english'
+                ? Object.keys(generalSponsorshipsTranslation)[15]
+                : generalSponsorshipsTranslation[
+                    Object.keys(generalSponsorshipsTranslation)[15]
+                  ]}
             </Th>
             <Th
               fontFamily='figTree'

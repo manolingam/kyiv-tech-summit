@@ -6,7 +6,9 @@ import {
   Link as ChakraLink
 } from '@chakra-ui/react';
 
-export const SectionThree = () => {
+import { sectionThreeTranslation } from '../utils/language';
+
+export const SectionThree = ({ language }) => {
   return (
     <Flex direction='column' pb={{ base: '1rem', lg: '2rem' }}>
       <Text
@@ -18,7 +20,9 @@ export const SectionThree = () => {
         fontWeight='bold'
         textAlign='center'
       >
-        Event Details
+        {language === 'english'
+          ? Object.keys(sectionThreeTranslation)[0]
+          : sectionThreeTranslation[Object.keys(sectionThreeTranslation)[0]]}
       </Text>
       <SimpleGrid
         columns={{ lg: 2, sm: 1 }}
@@ -28,7 +32,11 @@ export const SectionThree = () => {
       >
         <VStack alignItems='flex-start'>
           <Text fontFamily='openSans' fontSize='.8rem' fontWeight='bold'>
-            Location
+            {language === 'english'
+              ? Object.keys(sectionThreeTranslation)[1]
+              : sectionThreeTranslation[
+                  Object.keys(sectionThreeTranslation)[1]
+                ]}
           </Text>
           <Text
             fontFamily='figTree'
@@ -36,29 +44,46 @@ export const SectionThree = () => {
             fontSize='1.5rem'
             color='#0057b7'
           >
-            Secret Location*
+            {language === 'english'
+              ? Object.keys(sectionThreeTranslation)[2]
+              : sectionThreeTranslation[
+                  Object.keys(sectionThreeTranslation)[2]
+                ]}
+            *
           </Text>
           <Text fontFamily='openSans' fontSize='1.2rem'>
-            For safety and inclusion purposes, only participants local to Kyiv
-            (and nearby proximity) are invited to join in-person. Everyone else:
-            you can participate online - it’s a global hybrid event!{' '}
+            {language === 'english'
+              ? Object.keys(sectionThreeTranslation)[3]
+              : sectionThreeTranslation[
+                  Object.keys(sectionThreeTranslation)[3]
+                ]}
           </Text>
         </VStack>
 
         <VStack alignItems='flex-start'>
           <Text fontFamily='openSans' fontSize='.8rem' fontWeight='bold'>
-            Hackathon
+            {language === 'english'
+              ? Object.keys(sectionThreeTranslation)[4]
+              : sectionThreeTranslation[
+                  Object.keys(sectionThreeTranslation)[4]
+                ]}
           </Text>
           <Text fontFamily='openSans' fontSize='1.2rem'>
-            Prizes will be awarded, bounties available. Pre-existing projects
-            AND new projects are allowed to be submitted. What’s most important
-            is that the project is providing an impactful solution!
+            {language === 'english'
+              ? Object.keys(sectionThreeTranslation)[5]
+              : sectionThreeTranslation[
+                  Object.keys(sectionThreeTranslation)[5]
+                ]}
           </Text>
         </VStack>
 
         <VStack alignItems='flex-start' w='100%'>
           <Text fontFamily='openSans' fontSize='.8rem' fontWeight='bold'>
-            Duration & Dates
+            {language === 'english'
+              ? Object.keys(sectionThreeTranslation)[6]
+              : sectionThreeTranslation[
+                  Object.keys(sectionThreeTranslation)[6]
+                ]}
           </Text>
           <Text
             fontFamily='figTree'
@@ -66,17 +91,28 @@ export const SectionThree = () => {
             fontSize='1.5rem'
             color='#0057b7'
           >
-            September 6-9 2022
+            {language === 'english'
+              ? Object.keys(sectionThreeTranslation)[7]
+              : sectionThreeTranslation[
+                  Object.keys(sectionThreeTranslation)[7]
+                ]}
           </Text>
         </VStack>
 
-        <VStack alignItems='flex-start'>
+        <VStack alignItems='flex-start' w='100%'>
           <Text fontFamily='openSans' fontSize='.8rem' fontWeight='bold'>
-            Events
+            {language === 'english'
+              ? Object.keys(sectionThreeTranslation)[8]
+              : sectionThreeTranslation[
+                  Object.keys(sectionThreeTranslation)[8]
+                ]}
           </Text>
           <Text fontFamily='openSans' fontSize='1.2rem'>
-            All offline events will be live-streamed and accessible to online
-            participants.
+            {language === 'english'
+              ? Object.keys(sectionThreeTranslation)[9]
+              : sectionThreeTranslation[
+                  Object.keys(sectionThreeTranslation)[9]
+                ]}
           </Text>
         </VStack>
       </SimpleGrid>
@@ -88,7 +124,11 @@ export const SectionThree = () => {
         px={{ base: '2rem', lg: '5rem' }}
       >
         <Text fontFamily='openSans' fontSize='.8rem' fontWeight='bold'>
-          Find more details on our events page:{' '}
+          {language === 'english'
+            ? Object.keys(sectionThreeTranslation)[10]
+            : sectionThreeTranslation[
+                Object.keys(sectionThreeTranslation)[10]
+              ]}{' '}
         </Text>
         <ChakraLink
           href='https://kyiv-tech-summit.devpost.com'

@@ -6,30 +6,46 @@ import {
   HStack
 } from '@chakra-ui/react';
 
-const contributionOptions = [
-  {
-    name: 'Sponsorship',
-    class: 'fa-solid fa-hand-holding-dollar'
-  },
-  {
-    name: 'Partnership',
-    class: 'fa-solid fa-handshake'
-  },
-  {
-    name: 'Volunteer',
-    class: 'fa-solid fa-hand-holding-hand'
-  },
-  {
-    name: 'Mentorship',
-    class: 'fa-solid fa-book-open-reader'
-  },
-  {
-    name: 'Hacker Participation',
-    class: 'fa-solid fa-code'
-  }
-];
+import { sectionNineTranslation } from '../utils/language';
 
-export const SectionNine = () => {
+export const SectionNine = ({ language }) => {
+  const contributionOptions = [
+    {
+      name:
+        language === 'english'
+          ? Object.keys(sectionNineTranslation)[1]
+          : sectionNineTranslation[Object.keys(sectionNineTranslation)[1]],
+      class: 'fa-solid fa-hand-holding-dollar'
+    },
+    {
+      name:
+        language === 'english'
+          ? Object.keys(sectionNineTranslation)[2]
+          : sectionNineTranslation[Object.keys(sectionNineTranslation)[2]],
+      class: 'fa-solid fa-handshake'
+    },
+    {
+      name:
+        language === 'english'
+          ? Object.keys(sectionNineTranslation)[3]
+          : sectionNineTranslation[Object.keys(sectionNineTranslation)[3]],
+      class: 'fa-solid fa-hand-holding-hand'
+    },
+    {
+      name:
+        language === 'english'
+          ? Object.keys(sectionNineTranslation)[4]
+          : sectionNineTranslation[Object.keys(sectionNineTranslation)[4]],
+      class: 'fa-solid fa-book-open-reader'
+    },
+    {
+      name:
+        language === 'english'
+          ? Object.keys(sectionNineTranslation)[5]
+          : sectionNineTranslation[Object.keys(sectionNineTranslation)[5]],
+      class: 'fa-solid fa-code'
+    }
+  ];
   return (
     <Flex
       w='100%'
@@ -41,11 +57,13 @@ export const SectionNine = () => {
       bg='#F1F1F1'
     >
       <Text fontFamily='openSans' fontWeight='bold'>
-        Opportunities to Contribute
+        {language === 'english'
+          ? Object.keys(sectionNineTranslation)[0]
+          : sectionNineTranslation[Object.keys(sectionNineTranslation)[0]]}
       </Text>
 
       <SimpleGrid
-        w={{ lg: '60%', sm: '80%' }}
+        w={{ lg: '70%', sm: '80%' }}
         columns={{ lg: 3, sm: 1 }}
         gap='1rem'
         mt='2rem'
@@ -75,7 +93,7 @@ export const SectionNine = () => {
       </SimpleGrid>
 
       <SimpleGrid
-        w={{ lg: '40%', sm: '80%' }}
+        w={{ lg: '55%', sm: '80%' }}
         columns={{ lg: 2, sm: 1 }}
         gap='1rem'
         mt='1rem'
