@@ -63,7 +63,7 @@ export const SectionNine = ({ language }) => {
       </Text>
 
       <SimpleGrid
-        w={{ lg: '60%', sm: '80%' }}
+        w={{ lg: '70%', sm: '80%' }}
         columns={{ lg: 3, sm: 1 }}
         gap='1rem'
         mt='2rem'
@@ -93,7 +93,7 @@ export const SectionNine = ({ language }) => {
       </SimpleGrid>
 
       <SimpleGrid
-        w={{ lg: '40%', sm: '80%' }}
+        w={{ lg: '55%', sm: '80%' }}
         columns={{ lg: 2, sm: 1 }}
         gap='1rem'
         mt='1rem'
