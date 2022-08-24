@@ -45,16 +45,30 @@ export const Header = ({ windowWidth }) => {
 
       {windowWidth < 650 && (
         <Flex>
-          <FormControl
-            display='flex'
-            alignItems='center'
-            ml={{ lg: '2rem', sm: '.5rem' }}
-          >
-            <FormLabel mb='0' fontFamily='figTree'>
+          <Flex display='flex' alignItems='center' ml='2rem'>
+            <Button
+              size='xs'
+              fontSize='xs'
+              fontFamily='figTree'
+              border={!context.isUkraineVersion && '2px solid'}
+              borderColor='black'
+              onClick={context.switchToEnglish}
+              mr='5px'
+            >
+              🇺🇲
+            </Button>
+            <Button
+              size='xs'
+              fontSize='xs'
+              fontFamily='figTree'
+              border={context.isUkraineVersion && '2px solid'}
+              borderColor='black'
+              onClick={context.switchToUkrainian}
+              mr='5px'
+            >
               🇺🇦
-            </FormLabel>
-            <Switch size='sm' onChange={context.toggleUkraineVersion} />
-          </FormControl>
+            </Button>
+          </Flex>
           <Popover placement='bottom'>
             <PopoverTrigger>
               <Button
@@ -159,12 +173,27 @@ export const Header = ({ windowWidth }) => {
               <i className='fab fa-twitter'></i>
             </span>
           </ChakraLink>
-          <FormControl display='flex' alignItems='center' ml='2rem'>
-            <FormLabel mb='0' fontFamily='figTree'>
-              🇺🇦
-            </FormLabel>
-            <Switch size='sm' onChange={context.toggleUkraineVersion} />
-          </FormControl>
+          <Flex display='flex' alignItems='center' ml='2rem'>
+            <Button
+              fontSize='sm'
+              fontFamily='figTree'
+              border={!context.isUkraineVersion && '2px solid'}
+              borderColor='black'
+              onClick={context.switchToEnglish}
+              mr='5px'
+            >
+              English
+            </Button>
+            <Button
+              fontSize='sm'
+              fontFamily='figTree'
+              border={context.isUkraineVersion && '2px solid'}
+              borderColor='black'
+              onClick={context.switchToUkrainian}
+            >
+              Українська
+            </Button>
+          </Flex>
         </Flex>
       )}
     </Flex>

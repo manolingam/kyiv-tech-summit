@@ -124,7 +124,11 @@ export const SectionThree = ({ language }) => {
         px={{ base: '2rem', lg: '5rem' }}
       >
         <Text fontFamily='openSans' fontSize='.8rem' fontWeight='bold'>
-          Find more details on our events page:{' '}
+          {language === 'english'
+            ? Object.keys(sectionThreeTranslation)[10]
+            : sectionThreeTranslation[
+                Object.keys(sectionThreeTranslation)[10]
+              ]}{' '}
         </Text>
         <ChakraLink
           href='https://kyiv-tech-summit.devpost.com'

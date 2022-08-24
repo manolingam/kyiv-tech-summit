@@ -7,10 +7,12 @@ class AppContextProvider extends Component {
     isUkraineVersion: false
   };
 
-  toggleUkraineVersion = () => {
-    this.setState((prevState) => ({
-      isUkraineVersion: !prevState.isUkraineVersion
-    }));
+  switchToEnglish = () => {
+    this.setState({ isUkraineVersion: false });
+  };
+
+  switchToUkrainian = () => {
+    this.setState({ isUkraineVersion: true });
   };
 
   render() {
@@ -18,7 +20,8 @@ class AppContextProvider extends Component {
       <AppContext.Provider
         value={{
           ...this.state,
-          toggleUkraineVersion: this.toggleUkraineVersion
+          switchToEnglish: this.switchToEnglish,
+          switchToUkrainian: this.switchToUkrainian
         }}
       >
         {this.props.children}

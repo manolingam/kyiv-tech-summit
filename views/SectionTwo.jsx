@@ -113,7 +113,12 @@ export const SectionTwo = ({ language }) => {
         px={{ base: '2rem', lg: '5rem' }}
       >
         <GridItem colSpan={1}>
-          <Text fontFamily='figTree' fontSize='1.5rem' fontWeight='bold'>
+          <Text
+            fontFamily='figTree'
+            fontSize='1.5rem'
+            fontWeight='bold'
+            style={{ whiteSpace: 'pre-line' }}
+          >
             {language === 'english'
               ? Object.keys(sectionTwoTranslation)[7]
               : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[7]]}

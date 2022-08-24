@@ -130,7 +130,6 @@ export const GeneralSponsorships = ({ language }) => {
                 : generalSponsorshipsTranslation[
                     Object.keys(generalSponsorshipsTranslation)[6]
                   ]}
-              5
             </Td>
             <Td textAlign='center'>2</Td>
           </Tr>

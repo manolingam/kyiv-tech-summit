@@ -24,7 +24,7 @@ export const SectionOne = ({ language }) => {
         <Text fontFamily='openSans' fontWeight='bold' color='#0057b7' mt='1rem'>
           {language === 'english'
             ? Object.keys(sectionOneTranslation)[1]
-            : sectionOneTranslation[Object.keys(sectionOneTranslation)[2]]}
+            : sectionOneTranslation[Object.keys(sectionOneTranslation)[1]]}
         </Text>
         <Button
           fontSize='1.2rem'

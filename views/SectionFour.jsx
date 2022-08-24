@@ -53,7 +53,10 @@ export const SectionFour = ({ language }) => {
             borderRadius='10px'
             fontSize='.8rem'
           >
-            <Highlight query='Important' styles={{ fontWeight: 'bold' }}>
+            <Highlight
+              query={language === 'english' ? 'Important' : 'Важливо'}
+              styles={{ fontWeight: 'bold' }}
+            >
               {language === 'english'
                 ? Object.keys(sectionFourTranslation)[1]
                 : sectionFourTranslation[

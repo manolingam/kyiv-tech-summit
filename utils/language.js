@@ -35,7 +35,9 @@ export const sectionThreeTranslation = {
   'September 6-9 2022': '6-9 вересня 2022',
   Events: 'Події',
   'All offline events will be live-streamed and accessible to online participants.':
-    'Усі офлайн-події будуть доступні для онлайн-учасників.'
+    'Усі офлайн-події будуть доступні для онлайн-учасників.',
+  'Find more details on our events page:':
+    'Більше деталей на Девпост сторінці події:'
 };
 
 export const sectionFourTranslation = {
@@ -59,7 +61,7 @@ export const sectionFourTranslation = {
 };
 
 export const sectionSixTranslation = {
-  Organizers: 'Organizers',
+  Organizers: 'Організатори',
   'Kyiv Tech Summit is organized by Atlantis World, Unchain and UkraineDAO core contributors in collaboration with a dozen of community and partner supporters.':
     'Kyiv Tech Summit організований основними учасниками Atlantis World, Unchain і UkraineDAO у співпраці з десятком прихильників спільноти та партнерів.'
 };
