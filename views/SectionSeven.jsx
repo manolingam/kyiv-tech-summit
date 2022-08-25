@@ -55,6 +55,10 @@ const communityPartners = [
   {
     image: '/assets/partners/unitCity.png',
     link: 'https://unit.city/'
+  },
+  {
+    image: '/assets/partners/ideaSoft.png',
+    link: 'https://ideaSoft.io/'
   }
 ];
 
