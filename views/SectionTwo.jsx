@@ -4,14 +4,16 @@ import {
   SimpleGrid,
   Grid,
   GridItem,
-  Text
+  Text,
+  Image as ChakraImage,
+  Box
 } from '@chakra-ui/react';
 
 import { sectionTwoTranslation } from '../utils/language';
 
 export const SectionTwo = ({ language }) => {
   return (
-    <Flex direction='column' py={{ base: '2rem', lg: '1rem' }}>
+    <Flex direction='column' pt={{ base: '2rem', lg: '1rem' }}>
       <VStack
         justifyContent='center'
         alignItems='center'
@@ -132,6 +134,38 @@ export const SectionTwo = ({ language }) => {
           </Text>
         </GridItem>
       </Grid>
+      <Flex
+        w='100%'
+        direction='column'
+        justifyContent='center'
+        alignItems='center'
+        py='2rem'
+        bg='#0057b7'
+      >
+        <Box
+          display='flex'
+          alignItems={{ lg: 'flex-start', sm: 'center' }}
+          justifyContent='flex-end'
+          mb='2rem'
+        >
+          <Text fontFamily='openSans' color='white' fontSize='1.2rem'>
+            {language === 'english'
+              ? Object.keys(sectionTwoTranslation)[9]
+              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[9]]}
+          </Text>
+        </Box>
+        <Box display='flex' alignItems='flex-start' cursor='pointer'>
+          <ChakraImage
+            style={{ filter: 'brightness(0) invert(1)' }}
+            src='/assets/logos/ministryOfUkraine.png'
+            alt='Ministry of Ukraine'
+            w={{
+              lg: '500px',
+              sm: '300px'
+            }}
+          />
+        </Box>
+      </Flex>
     </Flex>
   );
 };
