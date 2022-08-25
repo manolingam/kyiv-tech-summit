@@ -19,7 +19,8 @@ export const sectionTwoTranslation = {
   'Humanitarian situation on the ground': 'Координація гуманітарної допомоги',
   'Safety First': 'Безпека перш за все',
   'Kyiv Tech Summit will take place at a yet-to-be-disclosed secure location, with a focus on activating only the community already in close proximity, as well as to virtually enable the global community to collaborate in building technology that will empower the humanitarian aid efforts of tomorrow. We will include and onboard both technical and non-technical community members into Web3 and curate the hackathon bounties around making life within a warzone safer and more efficient for Ukrainians.':
-    'Kyiv Tech Summit відбудеться у безпечному місці, яке ще не розголошується, зосереджуючись на активізації лише тієї спільноти, яка вже знаходиться безпосередньо в Києві. Ми також зосереджені на тому, щоб віртуально дозволити світовій спільноті співпрацювати у створенні технологій, які розширять можливості інноваційних гуманітарних зусиль. Ми залучатимемо до Web3 як технічних, так і нетехнічних членів спільноти, а також куруватимемо бонуси хакатону, щоб зробити життя в зоні бойових дій безпечнішим і ефективнішим для українців.'
+    'Kyiv Tech Summit відбудеться у безпечному місці, яке ще не розголошується, зосереджуючись на активізації лише тієї спільноти, яка вже знаходиться безпосередньо в Києві. Ми також зосереджені на тому, щоб віртуально дозволити світовій спільноті співпрацювати у створенні технологій, які розширять можливості інноваційних гуманітарних зусиль. Ми залучатимемо до Web3 як технічних, так і нетехнічних членів спільноти, а також куруватимемо бонуси хакатону, щоб зробити життя в зоні бойових дій безпечнішим і ефективнішим для українців.',
+  'Supported by': 'За Підтримки'
 };
 
 export const sectionThreeTranslation = {
