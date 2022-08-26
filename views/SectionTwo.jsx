@@ -56,56 +56,74 @@ export const SectionTwo = ({ language }) => {
         </Text>
         <VStack mt={{ sm: '2rem' }}>
           <Text
-            w='100%'
+            w={{ lg: '80%', sm: '100%' }}
             textAlign='center'
             bg='#251D3A'
             color='white'
             p='15px'
             borderRadius='15px'
             fontFamily='figTree'
+            fontSize='.8rem'
           >
             {language === 'english'
               ? Object.keys(sectionTwoTranslation)[3]
               : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[3]]}
           </Text>
           <Text
-            w='100%'
+            w={{ lg: '80%', sm: '100%' }}
             textAlign='center'
             bg='#251D3A'
             color='white'
             p='15px'
             borderRadius='15px'
             fontFamily='figTree'
+            fontSize='.8rem'
           >
             {language === 'english'
               ? Object.keys(sectionTwoTranslation)[4]
               : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[4]]}
           </Text>
           <Text
-            w='100%'
+            w={{ lg: '80%', sm: '100%' }}
             textAlign='center'
             bg='#251D3A'
             color='white'
             p='15px'
             borderRadius='15px'
             fontFamily='figTree'
+            fontSize='.8rem'
           >
             {language === 'english'
               ? Object.keys(sectionTwoTranslation)[5]
               : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[5]]}
           </Text>
           <Text
-            w='100%'
+            w={{ lg: '80%', sm: '100%' }}
             textAlign='center'
             bg='#251D3A'
             color='white'
             p='15px'
             borderRadius='15px'
             fontFamily='figTree'
+            fontSize='.8rem'
           >
             {language === 'english'
               ? Object.keys(sectionTwoTranslation)[6]
               : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[6]]}
+          </Text>
+          <Text
+            w={{ lg: '80%', sm: '100%' }}
+            textAlign='center'
+            bg='#251D3A'
+            color='white'
+            p='15px'
+            borderRadius='15px'
+            fontFamily='figTree'
+            fontSize='.8rem'
+          >
+            {language === 'english'
+              ? Object.keys(sectionTwoTranslation)[7]
+              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[7]]}
           </Text>
         </VStack>
       </SimpleGrid>
@@ -122,15 +140,15 @@ export const SectionTwo = ({ language }) => {
             style={{ whiteSpace: 'pre-line' }}
           >
             {language === 'english'
-              ? Object.keys(sectionTwoTranslation)[7]
-              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[7]]}
+              ? Object.keys(sectionTwoTranslation)[8]
+              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[8]]}
           </Text>
         </GridItem>
         <GridItem colSpan={4} fontSize='1.2rem' mt={{ sm: '1rem', lg: '0rem' }}>
           <Text fontFamily='openSans'>
             {language === 'english'
-              ? Object.keys(sectionTwoTranslation)[8]
-              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[8]]}
+              ? Object.keys(sectionTwoTranslation)[9]
+              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[9]]}
           </Text>
         </GridItem>
       </Grid>
@@ -150,8 +168,8 @@ export const SectionTwo = ({ language }) => {
         >
           <Text fontFamily='openSans' color='white' fontSize='1.2rem'>
             {language === 'english'
-              ? Object.keys(sectionTwoTranslation)[9]
-              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[9]]}
+              ? Object.keys(sectionTwoTranslation)[10]
+              : sectionTwoTranslation[Object.keys(sectionTwoTranslation)[10]]}
           </Text>
         </Box>
         <Box display='flex' alignItems='flex-start' cursor='pointer'>
@@ -159,6 +177,7 @@ export const SectionTwo = ({ language }) => {
             style={{ filter: 'brightness(0) invert(1)' }}
             src='/assets/logos/ministryOfUkraine.png'
             alt='Ministry of Ukraine'
+            onClick={() => window.open('https://thedigital.gov.ua', '_blank')}
             w={{
               lg: '500px',
               sm: '300px'

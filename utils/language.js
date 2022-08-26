@@ -12,11 +12,16 @@ export const sectionTwoTranslation = {
     'Створити технології, які зроблять життя під час війни легшим і безпечнішим для українців і всього світу. Залучити таланти Web2 до робочої економіки Web3 через існуючі  Web3 спільноти.',
   'Since the full-scale Russian invasion of Ukraine on 24th February 2022, the situation has quickly become dire for millions of Ukrainians. Outside of the humanitarian crisis and military needs required by Ukraine, there is an unprecedented need for new tools and solutions to systemically respond to the new reality of russian war in Ukraine.':
     'Після повномасштабного російського вторгнення в Україну 24 лютого 2022 року ситуація швидко стала жахливою для мільйонів українців. Окрім гуманітарної кризи та військових потреб, необхідних Україні, існує безпрецедентна потреба в нових інструментах і рішеннях для системної відповіді на нову реальність російської війни в Україні.',
-  'Broken communications and infrastructure': 'Протистояння дезінформації та',
-  'Massive disinformation campaign waged by russia':
-    'інформаційним маніпуляціям',
-  'Refugee crisis': 'Допомога переселенцям',
-  'Humanitarian situation on the ground': 'Координація гуманітарної допомоги',
+  'Software solutions to combat massive disinformation campaign waged by Russia':
+    'Програмні рішення для протистояння російській дезінформації та інформаційним маніпуляціям',
+  'Broken communications and infrastructure. Ways to preserve Internet connection for Ukrainians under occupation':
+    'Шляхи збереження інтернет-зв’язку для українців в окупації',
+  'Tokenization of the economy and methods & tooling to rebuild the Ukrainian economy':
+    'Токенізація економіки та інструменти для її відновлення',
+  'New methods of fundraising for Ukrainians':
+    'Нові моделі збору коштів для допомоги Україні',
+  'Onboarding Ukrainian IT professionals into the Web3 remote working economy':
+    'Залучення ІТ-спеціалістів до web3-економіки',
   'Safety First': 'Безпека перш за все',
   'Kyiv Tech Summit will take place at a yet-to-be-disclosed secure location, with a focus on activating only the community already in close proximity, as well as to virtually enable the global community to collaborate in building technology that will empower the humanitarian aid efforts of tomorrow. We will include and onboard both technical and non-technical community members into Web3 and curate the hackathon bounties around making life within a warzone safer and more efficient for Ukrainians.':
     'Kyiv Tech Summit відбудеться у безпечному місці, яке ще не розголошується, зосереджуючись на активізації лише тієї спільноти, яка вже знаходиться безпосередньо в Києві. Ми також зосереджені на тому, щоб віртуально дозволити світовій спільноті співпрацювати у створенні технологій, які розширять можливості інноваційних гуманітарних зусиль. Ми залучатимемо до Web3 як технічних, так і нетехнічних членів спільноти, а також куруватимемо бонуси хакатону, щоб зробити життя в зоні бойових дій безпечнішим і ефективнішим для українців.',
