@@ -45,7 +45,7 @@ const brandingPartner = [
 
 const communityPartners = [
   {
-    image: '/assets/partners/sigmaSoftware.jpeg',
+    image: '/assets/partners/sigmaSoftware.png',
     link: 'https://university.sigma.software/en/'
   },
   {
@@ -59,6 +59,22 @@ const communityPartners = [
   {
     image: '/assets/partners/ideaSoft.png',
     link: 'https://ideaSoft.io/'
+  },
+  {
+    image: '/assets/partners/bau.png',
+    link: 'https://bau.ai/'
+  },
+  {
+    image: '/assets/partners/hacken.png',
+    link: 'https://hacken.io/'
+  },
+  {
+    image: '/assets/partners/kuna.png',
+    link: 'https://kuna.io/'
+  },
+  {
+    image: '/assets/partners/metaHistory.png',
+    link: 'https://metahistory.gallery/'
   }
 ];
 
@@ -280,7 +296,7 @@ export const SectionSeven = () => {
                   src={partner.image}
                   alt='partner'
                   w={{
-                    lg: index === 0 ? '100px' : '150px',
+                    lg: [0, 4, 5, 7].includes(index) ? '100px' : '150px',
                     md: '100px',
                     sm: '70px'
                   }}
