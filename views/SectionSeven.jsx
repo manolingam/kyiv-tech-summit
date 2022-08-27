@@ -75,6 +75,10 @@ const communityPartners = [
   {
     image: '/assets/partners/metaHistory.png',
     link: 'https://metahistory.gallery/'
+  },
+  {
+    image: '/assets/partners/kyivEth.png',
+    link: 'https://facebook.com/kyivetherem'
   }
 ];
 
@@ -296,7 +300,7 @@ export const SectionSeven = () => {
                   src={partner.image}
                   alt='partner'
                   w={{
-                    lg: [0, 4, 5, 7].includes(index) ? '100px' : '150px',
+                    lg: [0, 4, 5, 7, 8].includes(index) ? '100px' : '150px',
                     md: '100px',
                     sm: '70px'
                   }}
