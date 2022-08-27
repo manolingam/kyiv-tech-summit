@@ -78,7 +78,7 @@ const communityPartners = [
   },
   {
     image: '/assets/partners/kyivEth.png',
-    link: 'https://facebook.com/kyivetherem'
+    link: 'https://facebook.com/kyivethereum'
   }
 ];
 
