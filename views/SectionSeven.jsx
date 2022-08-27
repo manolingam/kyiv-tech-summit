@@ -75,6 +75,10 @@ const communityPartners = [
   {
     image: '/assets/partners/metaHistory.png',
     link: 'https://metahistory.gallery/'
+  },
+  {
+    image: '/assets/partners/kyivEth.png',
+    link: 'https://facebook.com/kyivethereum'
   }
 ];
 
@@ -284,7 +288,9 @@ export const SectionSeven = () => {
                 w='100%'
                 h='125px'
                 display='flex'
+                flexDirection='column'
                 alignItems='center'
+                justifyContent='center'
                 borderRadius='10px'
                 bg='white'
                 p='1rem'
@@ -296,12 +302,26 @@ export const SectionSeven = () => {
                   src={partner.image}
                   alt='partner'
                   w={{
-                    lg: [0, 4, 5, 7].includes(index) ? '100px' : '150px',
+                    lg: [0, 4, 5, 7].includes(index)
+                      ? '100px'
+                      : index === 8
+                      ? '80px'
+                      : '150px',
                     md: '100px',
                     sm: '70px'
                   }}
                   m='auto'
                 />
+                {index === 8 && (
+                  <Text
+                    fontFamily='figTree'
+                    fontSize='.8rem'
+                    textAlign='center'
+                    pb='10px'
+                  >
+                    Kyiv ETH Community
+                  </Text>
+                )}
               </Box>
             );
           })}
