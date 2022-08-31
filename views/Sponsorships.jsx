@@ -21,7 +21,7 @@ import { GeneralSponsorships } from '../components/GeneralSponsorships';
 import { OtherSponsorships } from '../components/OtherSponsorships';
 import { sectionFourTranslation } from '../utils/language';
 
-export const SectionFour = ({ language }) => {
+export const Sponsorships = ({ language }) => {
   const [isGeneralSponsorshipsOpen, setGeneranSponsorshipsOpen] =
     useState(false);
 

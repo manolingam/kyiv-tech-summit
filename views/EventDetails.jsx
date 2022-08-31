@@ -8,7 +8,7 @@ import {
 
 import { sectionThreeTranslation } from '../utils/language';
 
-export const SectionThree = ({ language }) => {
+export const EventDetails = ({ language }) => {
   return (
     <Flex direction='column' pb={{ base: '1rem', lg: '2rem' }}>
       <Text

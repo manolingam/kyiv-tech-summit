@@ -6,34 +6,9 @@ import {
   Text
 } from '@chakra-ui/react';
 
-const sponsors = [
-  {
-    image: '/assets/sponsors/aragon.png',
-    link: 'https://aragon.org/'
-  },
-  {
-    image: '/assets/sponsors/near.png',
-    link: 'https://near.org/'
-  },
-  {
-    image: '/assets/sponsors/nym.png',
-    link: 'https://nymtech.net/'
-  },
-  {
-    image: '/assets/sponsors/aaveGrantsDao.png',
-    link: 'https://aavegrants.org/'
-  },
-  {
-    image: '/assets/sponsors/aurora.png',
-    link: 'https://aurora.dev/'
-  },
-  {
-    image: '/assets/sponsors/unstoppableDomains.png',
-    link: 'https://unstoppabledomains.com/'
-  }
-];
+import { sponsors } from '../utils/constants';
 
-export const SectionEight = () => {
+export const Sponsors = () => {
   return (
     <Flex
       w='100%'

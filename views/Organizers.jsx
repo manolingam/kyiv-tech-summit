@@ -9,58 +9,9 @@ import {
 
 import { sectionSixTranslation } from '../utils/language';
 
-const organizers = [
-  {
-    name: 'Inna Kosianets',
-    role: 'Operations / Contributors - Web3 Activist',
-    image: '/assets/profiles/Inna.png',
-    twitter: 'https://twitter.com/CyberF0x_',
-    linkedin: 'https://www.linkedin.com/in/inna-kosianets-70512a58/',
-    telegram: 'https://t.me/Cyber_F0x'
-  },
-  {
-    name: 'Rev Miller',
-    role: 'Operations / Partnerships - Co-founder @ Unchain & Atlantis World',
-    image: '/assets/profiles/r3v.png',
-    twitter: 'https://twitter.com/revrfg',
-    linkedin: 'https://www.linkedin.com/in/revmiller/',
-    telegram: 'https://t.me/revmiller'
-  },
-  {
-    name: 'CJ Hetherington',
-    role: 'Operations / Partnerships - Co-founder @ Atlantis World',
-    image: '/assets/profiles/CJ.png',
-    twitter: 'https://twitter.com/cjhtech',
-    linkedin: 'https://www.linkedin.com/in/cjhweb3/',
-    telegram: 'https://t.me/cjhtech'
-  },
-  {
-    name: 'Tyler Morrey',
-    role: 'Operations / Community - Co-founder @ pieFi ',
-    image: '/assets/profiles/Tyler.png',
-    twitter: 'https://twitter.com/TylerMorrey',
-    linkedin: 'https://www.linkedin.com/in/tylermorrey/',
-    telegram: 'https://t.me/upsidetyler'
-  },
-  {
-    name: 'Nadiia Yakubets',
-    role: 'PR / Communications - PR & Comms @ Unchain ',
-    image: '/assets/profiles/Nadiia.png',
-    twitter: 'https://twitter.com/nadiayakubets',
-    linkedin: 'https://www.linkedin.com/in/nadiia-yakubets-561654114/',
-    telegram: 'https://t.me/NadiiaYakubets'
-  },
-  {
-    name: 'Alona Shevchenko',
-    role: 'PR / Communications - Co-founder @ UkraineDAO',
-    image: '/assets/profiles/Alona.png',
-    twitter: 'https://twitter.com/cryptodrftng',
-    linkedin: 'https://www.linkedin.com/in/alona-s-4a25b5b6/',
-    telegram: 'https://t.me/drftng7'
-  }
-];
+import { organizers } from '../utils/constants';
 
-export const SectionSix = ({ language }) => {
+export const Organizers = ({ language }) => {
   return (
     <Flex direction='column'>
       <Text

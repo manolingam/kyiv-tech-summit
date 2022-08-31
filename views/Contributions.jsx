@@ -8,7 +8,7 @@ import {
 
 import { sectionNineTranslation } from '../utils/language';
 
-export const SectionNine = ({ language }) => {
+export const Contributions = ({ language }) => {
   const contributionOptions = [
     {
       name:
