@@ -6,83 +6,14 @@ import {
   Text
 } from '@chakra-ui/react';
 
-const mediaPartners = [
-  {
-    image: '/assets/partners/incrypted.png',
-    link: 'https://incrypted.com/'
-  },
-  {
-    image: '/assets/partners/forkLog.png',
-    link: 'https://forklog.com/'
-  },
-  {
-    image: '/assets/partners/coindesk.png',
-    link: 'https://www.coindesk.com/'
-  },
-  {
-    image: '/assets/partners/cointelegraph.png',
-    link: 'https://cointelegraph.com/'
-  },
-  {
-    image: '/assets/partners/cryptoDiffer.png',
-    link: 'https://cryptodiffer.com/'
-  }
-];
+import {
+  communityPartners,
+  mediaPartners,
+  techPartners,
+  brandingPartner
+} from '../utils/constants';
 
-const techPartners = [
-  {
-    image: '/assets/partners/devPost.png',
-    link: 'https://devpost.com/'
-  }
-];
-
-const brandingPartner = [
-  {
-    image: '/assets/partners/aragon.png',
-    link: 'https://aragon.org/'
-  }
-];
-
-const communityPartners = [
-  {
-    image: '/assets/partners/sigmaSoftware.png',
-    link: 'https://university.sigma.software/en/'
-  },
-  {
-    image: '/assets/partners/nym.png',
-    link: 'https://nymtech.net/'
-  },
-  {
-    image: '/assets/partners/unitCity.png',
-    link: 'https://unit.city/'
-  },
-  {
-    image: '/assets/partners/ideaSoft.png',
-    link: 'https://ideaSoft.io/'
-  },
-  {
-    image: '/assets/partners/bau.png',
-    link: 'https://bau.ai/'
-  },
-  {
-    image: '/assets/partners/hacken.png',
-    link: 'https://hacken.io/'
-  },
-  {
-    image: '/assets/partners/kuna.png',
-    link: 'https://kuna.io/'
-  },
-  {
-    image: '/assets/partners/metaHistory.png',
-    link: 'https://metahistory.gallery/'
-  },
-  {
-    image: '/assets/partners/kyivEth.png',
-    link: 'https://facebook.com/kyivethereum'
-  }
-];
-
-export const SectionSeven = () => {
+export const Partners = () => {
   return (
     <Flex
       w='100%'

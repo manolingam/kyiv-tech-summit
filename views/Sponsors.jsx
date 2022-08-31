@@ -6,34 +6,9 @@ import {
   Text
 } from '@chakra-ui/react';
 
-const sponsors = [
-  {
-    image: '/assets/sponsors/aragon.png',
-    link: 'https://aragon.org/'
-  },
-  {
-    image: '/assets/sponsors/near.png',
-    link: 'https://near.org/'
-  },
-  {
-    image: '/assets/sponsors/nym.png',
-    link: 'https://nymtech.net/'
-  },
-  {
-    image: '/assets/sponsors/aaveGrantsDao.png',
-    link: 'https://aavegrants.org/'
-  },
-  {
-    image: '/assets/sponsors/aurora.png',
-    link: 'https://aurora.dev/'
-  },
-  {
-    image: '/assets/sponsors/unstoppableDomains.png',
-    link: 'https://unstoppabledomains.com/'
-  }
-];
+import { sponsors } from '../utils/constants';
 
-export const SectionEight = () => {
+export const Sponsors = () => {
   return (
     <Flex
       w='100%'
@@ -77,7 +52,9 @@ export const SectionEight = () => {
                 w='100%'
                 h='125px'
                 display='flex'
+                flexDirection='column'
                 alignItems='center'
+                justifyContent='center'
                 border='2px solid #251D3A'
                 borderRadius='10px'
                 bg='white'
@@ -90,12 +67,22 @@ export const SectionEight = () => {
                   src={sponsor.image}
                   alt='partner'
                   w={{
-                    lg: index === 3 ? '100px' : '150px',
+                    lg: [3, 6].includes(index) ? '100px' : '150px',
                     md: '100px',
                     sm: '70px'
                   }}
                   m='auto'
                 />
+                {index === 6 && (
+                  <Text
+                    fontFamily='figTree'
+                    fontSize='.8rem'
+                    textAlign='center'
+                    pb='10px'
+                  >
+                    Ethereum Foundation
+                  </Text>
+                )}
               </Box>
             );
           })}

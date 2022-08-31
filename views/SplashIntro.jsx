@@ -8,7 +8,7 @@ import {
 
 import { sectionOneTranslation } from '../utils/language';
 
-export const SectionOne = ({ language }) => {
+export const SplashIntro = ({ language }) => {
   return (
     <Grid
       templateColumns={{ lg: 'repeat(5, 1fr)', sm: 'repeat(2, 1fr)' }}

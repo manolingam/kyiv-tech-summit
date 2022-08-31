@@ -1,45 +1,39 @@
 import { useContext } from 'react';
-import { Divider } from '@chakra-ui/react';
+// import { Divider } from '@chakra-ui/react';
 import { AppContext } from '../context/AppContext';
 
-import { SectionOne } from '../views/SectionOne';
-import { SectionTwo } from '../views/SectionTwo';
-import { SectionThree } from '../views/SectionThree';
-import { SectionFour } from '../views/SectionFour';
-// import { SectionFive } from '../views/SectionFive';
-import { SectionSix } from '../views/SectionSix';
-import { SectionSeven } from '../views/SectionSeven';
-import { SectionEight } from '../views/SectionEight';
-import { SectionNine } from '../views/SectionNine';
+import { SplashIntro } from '../views/SplashIntro';
+import { Goals } from '../views/Goals';
+import { Sponsors } from '../views/Sponsors';
+import { Partners } from '../views/Partners';
+import { EventDetails } from '../views/EventDetails';
+// import { Sponsorships } from '../views/Sponsorships';
+import { Speakers } from '../views/Speakers';
+import { Organizers } from '../views/Organizers';
+import { Contributions } from '../views/Contributions';
 
 export default function Home() {
   const context = useContext(AppContext);
   return (
     <>
-      <SectionOne
+      <SplashIntro
         language={context.isUkraineVersion ? 'ukrainian' : 'english'}
       />
-      <SectionTwo
+      <Goals language={context.isUkraineVersion ? 'ukrainian' : 'english'} />
+      <Sponsors />
+      <Partners />
+      <Speakers language={context.isUkraineVersion ? 'ukrainian' : 'english'} />
+      <EventDetails
         language={context.isUkraineVersion ? 'ukrainian' : 'english'}
       />
-
-      <SectionEight />
-      <SectionSeven />
-
-      <SectionThree
+      {/* <Divider opacity='0.9' borderBottomWidth='2px' maxW='90%' mt='1rem' /> */}
+      {/* <Sponsorships
+        language={context.isUkraineVersion ? 'ukrainian' : 'english'}
+      /> */}
+      <Organizers
         language={context.isUkraineVersion ? 'ukrainian' : 'english'}
       />
-
-      <Divider opacity='0.9' borderBottomWidth='2px' maxW='90%' mt='1rem' />
-      <SectionFour
-        language={context.isUkraineVersion ? 'ukrainian' : 'english'}
-      />
-      {/* <SectionFive /> */}
-      <SectionSix
-        language={context.isUkraineVersion ? 'ukrainian' : 'english'}
-      />
-
-      <SectionNine
+      <Contributions
         language={context.isUkraineVersion ? 'ukrainian' : 'english'}
       />
     </>

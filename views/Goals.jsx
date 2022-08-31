@@ -11,7 +11,7 @@ import {
 
 import { sectionTwoTranslation } from '../utils/language';
 
-export const SectionTwo = ({ language }) => {
+export const Goals = ({ language }) => {
   return (
     <Flex direction='column' pt={{ base: '2rem', lg: '1rem' }}>
       <VStack
