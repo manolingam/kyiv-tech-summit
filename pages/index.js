@@ -22,6 +22,7 @@ export default function Home() {
       <Goals language={context.isUkraineVersion ? 'ukrainian' : 'english'} />
       <Sponsors />
       <Partners />
+      <Speakers />
       <EventDetails
         language={context.isUkraineVersion ? 'ukrainian' : 'english'}
       />
@@ -29,7 +30,6 @@ export default function Home() {
       {/* <Sponsorships
         language={context.isUkraineVersion ? 'ukrainian' : 'english'}
       /> */}
-      <Speakers />
       <Organizers
         language={context.isUkraineVersion ? 'ukrainian' : 'english'}
       />

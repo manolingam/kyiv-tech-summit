@@ -127,6 +127,90 @@ export const communityPartners = [
 
 export const speakers = [
   {
+    name: 'Illia Polosukhin',
+    image: '/assets/speakers/illia_polosukhin.png',
+    role: 'Co-Founder - Near Protocol',
+    link: 'https://twitter.com/ilblackdragon',
+    linkType: 'twitter'
+  },
+  {
+    name: 'Marek Olszewski',
+    image: '/assets/speakers/marek_olszewski.png',
+    role: 'Co-Founder - Celo',
+    link: 'https://linkedin.com/in/marekolszewski',
+    linkType: 'linkedin'
+  },
+  {
+    name: 'Bogdan Gusiev',
+    image: '/assets/speakers/bogdan_gusiev.png',
+    role: 'Co-Founder - Unstoppable Domains',
+    link: 'https://linkedin.com/in/bogdangusiev',
+    linkType: 'linkedin'
+  },
+  {
+    name: 'Scott Moore',
+    image: '/assets/speakers/scott_moore.png',
+    role: 'Co-Founder - Gitcoin',
+    link: 'https://twitter.com/notscottmoore',
+    linkType: 'twitter'
+  },
+  {
+    name: 'Kiril Khomiakov',
+    image: '/assets/speakers/kiril_khomiakov.png',
+    role: 'General Manager - Ukraine & CEE - Binance',
+    link: 'https://linkedin.com/in/khomiakov',
+    linkType: 'linkedin'
+  },
+  {
+    name: 'Michael Chobanian',
+    image: '/assets/speakers/michael_chobanian.png',
+    role: 'President - Blockchain Association of Ukraine & Founder - Kuna Exchange',
+    link: 'https://linkedin.com/in/chobanian',
+    linkType: 'linkedin'
+  },
+  {
+    name: 'Inna Kosianets',
+    role: 'Senior Vice President - Fortress Investment Group & Web3 Activist',
+    image: '/assets/profiles/Inna.png',
+    link: 'https://twitter.com/CyberF0x_',
+    linkType: 'twitter'
+  },
+  {
+    name: 'CJ Hetherington',
+    image: '/assets/speakers/cj.png',
+    role: 'Co-Founder - Atlantis World',
+    link: 'https://twitter.com/cjhtech',
+    linkType: 'twitter'
+  },
+  {
+    name: 'Rev Miller',
+    image: '/assets/profiles/r3v.png',
+    role: 'Co-founder @ Unchain & Atlantis World',
+    link: 'https://twitter.com/revrfg',
+    linkType: 'twitter'
+  },
+  {
+    name: 'Alona Shevchenko',
+    image: '/assets/profiles/Alona.png',
+    role: 'Co-founder @ UkraineDAO',
+    link: 'https://twitter.com/cryptodrftng',
+    linkType: 'twitter'
+  },
+  {
+    name: 'Tyler Morrey',
+    role: 'Co-founder @ pieFi ',
+    image: '/assets/profiles/Tyler.png',
+    link: 'https://twitter.com/TylerMorrey',
+    linkType: 'twitter'
+  },
+  {
+    name: 'Nadiia Yakubets',
+    role: 'PR & Comms @ Unchain ',
+    image: '/assets/profiles/Nadiia.png',
+    link: 'https://twitter.com/nadiayakubets',
+    linkType: 'twitter'
+  },
+  {
     name: 'Ahmed Ghappour',
     image: '/assets/speakers/ahmed_ghappour.png',
     role: 'Chief Legal Officer - Nym Technologies & Associate Professor of Law - Boston University',
@@ -155,24 +239,10 @@ export const speakers = [
     linkType: 'twitter'
   },
   {
-    name: 'Bogdan Gusiev',
-    image: '/assets/speakers/bogdan_gusiev.png',
-    role: 'Co-Founder - Unstoppable Domains',
-    link: 'https://linkedin.com/in/bogdangusiev',
-    linkType: 'linkedin'
-  },
-  {
     name: 'Britanny Kaiser',
     image: '/assets/speakers/britanny_kaiser.png',
     role: 'Founder - Own Your Data',
     link: 'https://twitter.com/ownyourdatanow',
-    linkType: 'twitter'
-  },
-  {
-    name: 'CJ Hetherington',
-    image: '/assets/speakers/cj.png',
-    role: 'Co-Founder - Atlantis World',
-    link: 'https://twitter.com/cjhtech',
     linkType: 'twitter'
   },
   {
@@ -190,39 +260,11 @@ export const speakers = [
     linkType: 'linkedin'
   },
   {
-    name: 'Illia Polosukhin',
-    image: '/assets/speakers/illia_polosukhin.png',
-    role: 'Co-Founder - Near Protocol',
-    link: 'https://twitter.com/ilblackdragon',
-    linkType: 'twitter'
-  },
-  {
-    name: 'Kiril Khomiakov',
-    image: '/assets/speakers/kiril_khomiakov.png',
-    role: 'General Manager - Ukraine & CEE - Binance',
-    link: 'https://linkedin.com/in/khomiakov',
-    linkType: 'linkedin'
-  },
-  {
     name: 'Leighton Cusack',
     image: '/assets/speakers/leighton_cusack.png',
     role: 'Co-Founder - PoolTogether',
     link: 'https://twitter.com/lay2000lbs',
     linkType: 'twitter'
-  },
-  {
-    name: 'Marek Olszewski',
-    image: '/assets/speakers/marek_olszewski.png',
-    role: 'Co-Founder - Celo',
-    link: 'https://linkedin.com/in/marekolszewski',
-    linkType: 'linkedin'
-  },
-  {
-    name: 'Michael Chobanian',
-    image: '/assets/speakers/michael_chobanian.png',
-    role: 'President - Blockchain Association of Ukraine & Founder - Kuna Exchange',
-    link: 'https://linkedin.com/in/chobanian',
-    linkType: 'linkedin'
   },
   {
     name: 'Pavlo Kartashov',
@@ -237,27 +279,6 @@ export const speakers = [
     role: 'Founder - ETH Kyiv Community',
     link: 'https://linkedin.com/in/rostyslav-bortman-188622111',
     linkType: 'linkedin'
-  },
-  {
-    name: 'Scott Moore',
-    image: '/assets/speakers/scott_moore.png',
-    role: 'Co-Founder - Gitcoin',
-    link: 'https://twitter.com/notscottmoore',
-    linkType: 'twitter'
-  },
-  {
-    name: 'Rev Miller',
-    image: '/assets/profiles/r3v.png',
-    role: 'Operations / Partnerships - Co-founder @ Unchain & Atlantis World',
-    link: 'https://twitter.com/revrfg',
-    linkType: 'twitter'
-  },
-  {
-    name: 'Alona Shevchenko',
-    image: '/assets/profiles/Alona.png',
-    role: 'PR / Communications - Co-founder @ UkraineDAO',
-    link: 'https://twitter.com/cryptodrftng',
-    linkType: 'twitter'
   }
 ];
 
