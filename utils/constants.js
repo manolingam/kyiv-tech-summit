@@ -257,11 +257,11 @@ export const speakers = [
     linkType: 'linkedin'
   },
   {
-    name: 'Harry Halpin',
-    image: '/assets/speakers/harry_halpin.png',
-    role: 'Co-Founder & CEO - Nym Technologies',
-    link: 'https://ch.linkedin.com/in/harryhalpin',
-    linkType: 'linkedin'
+    name: 'Alexis Roussel',
+    image: '/assets/speakers/alexis_roussel.png',
+    role: 'COO - Nym Technologies',
+    link: 'https://twitter.com/alexis_roussel',
+    linkType: 'twitter'
   },
   {
     name: 'Leighton Cusack',
