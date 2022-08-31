@@ -22,7 +22,7 @@ export default function Home() {
       <Goals language={context.isUkraineVersion ? 'ukrainian' : 'english'} />
       <Sponsors />
       <Partners />
-      <Speakers />
+      <Speakers language={context.isUkraineVersion ? 'ukrainian' : 'english'} />
       <EventDetails
         language={context.isUkraineVersion ? 'ukrainian' : 'english'}
       />

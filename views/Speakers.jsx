@@ -16,7 +16,7 @@ import {
 
 import { speakers } from '../utils/constants';
 
-export const Speakers = () => {
+export const Speakers = ({ language }) => {
   return (
     <Flex
       w='100%'
@@ -34,7 +34,7 @@ export const Speakers = () => {
               textAlign='center'
               w='100%'
             >
-              Speakers
+              {language === 'english' ? 'Speakers' : 'колонки'}
             </Text>
             <AccordionIcon />
           </AccordionButton>
@@ -133,7 +133,9 @@ export const Speakers = () => {
                   color='#0057b7'
                   px='1rem'
                 >
-                  And 4 more top secret keynote speakers
+                  {language === 'english'
+                    ? 'And 4 more top secret keynote speakers'
+                    : 'І ще 4 секретних доповідача'}
                 </Text>
               </VStack>
             </SimpleGrid>

@@ -122,6 +122,10 @@ export const communityPartners = [
   {
     image: '/assets/partners/kyivEth.png',
     link: 'https://facebook.com/kyivethereum'
+  },
+  {
+    image: '/assets/partners/4irelabs.png',
+    link: 'https://4irelabs.com'
   }
 ];
 
@@ -170,7 +174,7 @@ export const speakers = [
   },
   {
     name: 'Inna Kosianets',
-    role: 'Senior Vice President - Fortress Investment Group & Web3 Activist',
+    role: 'Web3 Activist & Co-Organizer of KTS',
     image: '/assets/profiles/Inna.png',
     link: 'https://twitter.com/CyberF0x_',
     linkType: 'twitter'
