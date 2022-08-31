@@ -310,5 +310,9 @@ export const sponsors = [
   {
     image: '/assets/sponsors/unstoppableDomains.png',
     link: 'https://unstoppabledomains.com/'
+  },
+  {
+    image: '/assets/partners/kyivEth.png',
+    link: 'https://ethereum.org/'
   }
 ];

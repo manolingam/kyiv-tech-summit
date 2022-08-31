@@ -52,7 +52,9 @@ export const Sponsors = () => {
                 w='100%'
                 h='125px'
                 display='flex'
+                flexDirection='column'
                 alignItems='center'
+                justifyContent='center'
                 border='2px solid #251D3A'
                 borderRadius='10px'
                 bg='white'
@@ -65,12 +67,22 @@ export const Sponsors = () => {
                   src={sponsor.image}
                   alt='partner'
                   w={{
-                    lg: index === 3 ? '100px' : '150px',
+                    lg: [3, 6].includes(index) ? '100px' : '150px',
                     md: '100px',
                     sm: '70px'
                   }}
                   m='auto'
                 />
+                {index === 6 && (
+                  <Text
+                    fontFamily='figTree'
+                    fontSize='.8rem'
+                    textAlign='center'
+                    pb='10px'
+                  >
+                    Ethereum Foundation
+                  </Text>
+                )}
               </Box>
             );
           })}
