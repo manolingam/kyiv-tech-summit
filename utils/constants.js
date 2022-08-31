@@ -280,7 +280,7 @@ export const speakers = [
   {
     name: 'Rostyslav Bortman',
     image: '/assets/speakers/rostyslav_bortman.png',
-    role: 'Founder - ETH Kyiv Community',
+    role: 'Founder - ETH Kyiv Community & Head of Blockchain - IdeaSoft (Sigma Software Group)',
     link: 'https://linkedin.com/in/rostyslav-bortman-188622111',
     linkType: 'linkedin'
   }
