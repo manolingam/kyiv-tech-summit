@@ -283,6 +283,13 @@ export const speakers = [
     role: 'Founder - ETH Kyiv Community & Head of Blockchain - IdeaSoft (Sigma Software Group)',
     link: 'https://linkedin.com/in/rostyslav-bortman-188622111',
     linkType: 'linkedin'
+  },
+  {
+    name: 'Harry Halpin',
+    image: '/assets/speakers/harry_halpin.png',
+    role: 'CEO - Nym Technologies',
+    link: 'https://ch.linkedin.com/in/harryhalpin',
+    linkType: 'linkedin'
   }
 ];
 
