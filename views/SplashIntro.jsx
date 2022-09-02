@@ -1,12 +1,9 @@
-import {
-  Grid,
-  GridItem,
-  Image as ChakraImage,
-  Text,
-  Button
-} from '@chakra-ui/react';
+import { Grid, GridItem, Text, Button, Box } from '@chakra-ui/react';
+import Image from 'next/image';
 
 import { sectionOneTranslation } from '../utils/language';
+
+import kyiv_tech_summit_mono_logo from '../public/assets/logos/kyiv_tech_summit_mono.png';
 
 export const SplashIntro = ({ language }) => {
   return (
@@ -45,13 +42,14 @@ export const SplashIntro = ({ language }) => {
         </Button>
       </GridItem>
       <GridItem colSpan={2}>
-        <ChakraImage
-          src='/assets/logos/kyiv_tech_summit_mono.png'
-          alt='logo'
-          w='250px'
-          m='auto'
-          mt={{ sm: '2rem', lg: 'auto' }}
-        />
+        <Box w='250px' m='auto' mt={{ sm: '2rem', lg: 'auto' }}>
+          <Image
+            src={kyiv_tech_summit_mono_logo}
+            alt='Kyiv Tech Summit'
+            placeholder='blur'
+            priority
+          />
+        </Box>
       </GridItem>
     </Grid>
   );

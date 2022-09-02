@@ -1,21 +1,20 @@
 import {
   Flex,
-  Image as ChakraImage,
   Link as ChakraLink,
-  FormControl,
-  FormLabel,
-  Switch,
   Popover,
   PopoverContent,
   PopoverTrigger,
   Button,
-  Text
+  Text,
+  Box
 } from '@chakra-ui/react';
 import { useContext } from 'react';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { AppContext } from '../context/AppContext';
+import kyiv_tech_summit_logo from '../public/assets/logos/kyiv_tech_summit.png';
 
 export const Header = ({ windowWidth }) => {
   const context = useContext(AppContext);
@@ -35,11 +34,14 @@ export const Header = ({ windowWidth }) => {
           justifyContent='center'
           cursor='pointer'
         >
-          <ChakraImage
-            src='/assets/logos/kyiv_tech_summit.png'
-            alt='logo'
-            w={{ lg: '300px', sm: '150px' }}
-          />
+          <Box w={{ lg: '300px', sm: '150px' }}>
+            <Image
+              src={kyiv_tech_summit_logo}
+              alt='Kyiv Tech Summit'
+              placeholder='blur'
+              priority
+            />
+          </Box>
         </Flex>
       </Link>
 

@@ -1,10 +1,5 @@
-import {
-  Flex,
-  SimpleGrid,
-  Box,
-  Image as ChakraImage,
-  Text
-} from '@chakra-ui/react';
+import { Flex, SimpleGrid, Box, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 
 import {
   communityPartners,
@@ -63,13 +58,13 @@ export const Partners = () => {
                 onClick={() => window.open(partner.link, '_blank')}
                 cursor='pointer'
               >
-                <ChakraImage
+                <Box
                   style={{ filter: 'grayscale(1)' }}
-                  src={partner.image}
-                  alt='partner'
                   w={{ lg: '150px', md: '100px', sm: '70px' }}
                   m='auto'
-                />
+                >
+                  <Image src={partner.image} alt='partner' placeholder='blur' />
+                </Box>
               </Box>
             );
           })}
@@ -116,17 +111,17 @@ export const Partners = () => {
                 onClick={() => window.open(partner.link, '_blank')}
                 cursor='pointer'
               >
-                <ChakraImage
+                <Box
                   style={{ filter: 'grayscale(1)' }}
-                  src={partner.image}
-                  alt='partner'
                   w={{
                     lg: index === 0 ? '100px' : '150px',
                     md: '100px',
                     sm: '70px'
                   }}
                   m='auto'
-                />
+                >
+                  <Image src={partner.image} alt='partner' placeholder='blur' />
+                </Box>
               </Box>
             );
           })}
@@ -173,13 +168,13 @@ export const Partners = () => {
                 onClick={() => window.open(partner.link, '_blank')}
                 cursor='pointer'
               >
-                <ChakraImage
+                <Box
                   style={{ filter: 'grayscale(1)' }}
-                  src={partner.image}
-                  alt='partner'
                   w={{ lg: '150px', md: '100px', sm: '70px' }}
                   m='auto'
-                />
+                >
+                  <Image src={partner.image} alt='partner' placeholder='blur' />
+                </Box>
               </Box>
             );
           })}
@@ -228,10 +223,8 @@ export const Partners = () => {
                 onClick={() => window.open(partner.link, '_blank')}
                 cursor='pointer'
               >
-                <ChakraImage
+                <Box
                   style={{ filter: 'grayscale(1)' }}
-                  src={partner.image}
-                  alt='partner'
                   w={{
                     lg: [0, 4, 5, 7, 11].includes(index)
                       ? '100px'
@@ -242,7 +235,9 @@ export const Partners = () => {
                     sm: '70px'
                   }}
                   m='auto'
-                />
+                >
+                  <Image src={partner.image} alt='partner' placeholder='blur' />
+                </Box>
                 {index === 8 && (
                   <Text
                     fontFamily='figTree'
