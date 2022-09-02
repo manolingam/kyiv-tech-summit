@@ -126,6 +126,14 @@ export const communityPartners = [
   {
     image: '/assets/partners/4irelabs.png',
     link: 'https://4irelabs.com'
+  },
+  {
+    image: '/assets/partners/dataArt.png',
+    link: 'https://dataart.team'
+  },
+  {
+    image: '/assets/partners/sigmaSoftwareLabs.png',
+    link: 'https://sigmasoftwarelabs.com/'
   }
 ];
 
