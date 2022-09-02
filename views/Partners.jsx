@@ -226,7 +226,7 @@ export const Partners = () => {
                 <Box
                   style={{ filter: 'grayscale(1)' }}
                   w={{
-                    lg: [0, 4, 5, 7, 11].includes(index)
+                    lg: [0, 4, 5, 7, 11, 12].includes(index)
                       ? '100px'
                       : index === 8
                       ? '80px'

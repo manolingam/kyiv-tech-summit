@@ -35,6 +35,7 @@ import communityPartner_kyiveth from '../public/assets/partners/kyivEth.png';
 import communityPartner_4irelabs from '../public/assets/partners/4irelabs.png';
 import communityPartner_dataart from '../public/assets/partners/dataArt.png';
 import communityPartner_sigmasoftwarelabs from '../public/assets/partners/sigmaSoftwareLabs.png';
+import communityPartner_zksync from '../public/assets/partners/zksync.png';
 
 import speaker_illia from '../public/assets/speakers/illia_polosukhin.png';
 import speaker_marek from '../public/assets/speakers/marek_olszewski.png';
@@ -196,6 +197,10 @@ export const communityPartners = [
   {
     image: communityPartner_sigmasoftwarelabs,
     link: 'https://sigmasoftwarelabs.com/'
+  },
+  {
+    image: communityPartner_zksync,
+    link: 'https://zksync.io/'
   }
 ];
 
