@@ -233,7 +233,7 @@ export const Partners = () => {
                   src={partner.image}
                   alt='partner'
                   w={{
-                    lg: [0, 4, 5, 7].includes(index)
+                    lg: [0, 4, 5, 7, 11].includes(index)
                       ? '100px'
                       : index === 8
                       ? '80px'
