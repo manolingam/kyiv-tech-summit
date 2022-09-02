@@ -5,11 +5,13 @@ import {
   Grid,
   GridItem,
   Text,
-  Image as ChakraImage,
   Box
 } from '@chakra-ui/react';
+import Image from 'next/image';
 
 import { sectionTwoTranslation } from '../utils/language';
+
+import ministry_logo from '../public/assets/logos/ministryOfUkraine.png';
 
 export const Goals = ({ language }) => {
   return (
@@ -173,16 +175,21 @@ export const Goals = ({ language }) => {
           </Text>
         </Box>
         <Box display='flex' alignItems='flex-start' cursor='pointer'>
-          <ChakraImage
+          <Box
             style={{ filter: 'brightness(0) invert(1)' }}
-            src='/assets/logos/ministryOfUkraine.png'
-            alt='Ministry of Ukraine'
             onClick={() => window.open('https://thedigital.gov.ua', '_blank')}
             w={{
               lg: '500px',
               sm: '300px'
             }}
-          />
+          >
+            <Image
+              src={ministry_logo}
+              alt='Ministry of Ukraine'
+              placeholder='blur'
+              priority
+            />
+          </Box>
         </Box>
       </Flex>
     </Flex>

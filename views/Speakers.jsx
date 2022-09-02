@@ -4,7 +4,6 @@ import {
   VStack,
   SimpleGrid,
   Link as ChakraLink,
-  Image as ChakraImage,
   Text,
   Accordion,
   AccordionItem,
@@ -13,6 +12,7 @@ import {
   AccordionIcon,
   Box
 } from '@chakra-ui/react';
+import Image from 'next/image';
 
 import { speakers } from '../utils/constants';
 
@@ -58,13 +58,18 @@ export const Speakers = ({ language }) => {
                     w='100%'
                     borderRadius='5px'
                   >
-                    <ChakraImage
-                      w='auto'
-                      h='140px'
-                      src={speaker.image}
-                      alt={speaker.name}
+                    <Box
+                      w='150px'
+                      h='150px'
                       borderRadius='50%'
-                    />
+                      overflow='hidden'
+                    >
+                      <Image
+                        src={speaker.image}
+                        alt={speaker.name}
+                        placeholder='blur'
+                      />
+                    </Box>
                     <Box
                       display='flex'
                       flexDirection='column'

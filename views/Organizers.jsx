@@ -1,15 +1,20 @@
 import {
-  Image as ChakraImage,
   Text,
   Flex,
   SimpleGrid,
   HStack,
-  Link as ChakraLink
+  Link as ChakraLink,
+  Box
 } from '@chakra-ui/react';
+import Image from 'next/image';
 
 import { sectionSixTranslation } from '../utils/language';
 
 import { organizers } from '../utils/constants';
+
+import unchain_logo from '../public/assets/logos/unchain.png';
+import ukraineDao_logo from '../public/assets/logos/ukrainedao.png';
+import atlantis_logo from '../public/assets/logos/atlantisWorld.png';
 
 export const Organizers = ({ language }) => {
   return (
@@ -37,7 +42,7 @@ export const Organizers = ({ language }) => {
           fontFamily='figTree'
           fontSize='1.2rem'
           textAlign='center'
-          maxW='70%'
+          maxW={{ lg: '70%', sm: '100%' }}
           mb='2rem'
         >
           {language === 'english'
@@ -52,30 +57,34 @@ export const Organizers = ({ language }) => {
           alignItems='center'
           mb='2rem'
         >
-          <ChakraImage
-            src='/assets/logos/atlantisWorld.png'
-            alt=''
+          <Box
             w='200px'
             h='50px'
             mb={{ sm: '1.5rem' }}
             style={{ filter: 'grayscale(1)' }}
-          />
-          <ChakraImage
-            src='/assets/logos/unchain.png'
-            alt=''
+          >
+            <Image
+              src={atlantis_logo}
+              alt='atlantis world'
+              placeholder='blur'
+            />
+          </Box>
+          <Box
             w='250px'
             h='130px'
             mb={{ sm: '1.5rem' }}
             style={{ filter: 'grayscale(1)' }}
-          />
-          <ChakraImage
-            src='/assets/logos/ukrainedao.png'
-            alt=''
+          >
+            <Image src={unchain_logo} alt='unchain' placeholder='blur' />
+          </Box>
+          <Box
             w='200px'
             h='60px'
             mb={{ sm: '1.5rem' }}
             style={{ filter: 'grayscale(1)' }}
-          />
+          >
+            <Image src={ukraineDao_logo} alt='Ukraine Dao' placeholder='blur' />
+          </Box>
         </Flex>
 
         <SimpleGrid columns={{ lg: 3, sm: 1 }} gap='2rem'>
@@ -91,15 +100,20 @@ export const Organizers = ({ language }) => {
                 p='1rem'
                 borderRadius='5px'
               >
-                <ChakraImage
-                  w='auto'
+                <Box
+                  w='150px'
                   h='150px'
-                  src={organizer.image}
-                  alt={organizer.name}
+                  overflow='hidden'
                   borderRadius='50%'
                   style={{ filter: 'grayscale(1)' }}
                   mb='15px'
-                />
+                >
+                  <Image
+                    src={organizer.image}
+                    alt={organizer.name}
+                    placeholder='blur'
+                  />
+                </Box>
                 <Text
                   color='white'
                   fontSize='1.2rem'

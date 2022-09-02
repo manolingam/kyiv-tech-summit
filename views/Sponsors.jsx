@@ -1,10 +1,5 @@
-import {
-  Flex,
-  SimpleGrid,
-  Box,
-  Image as ChakraImage,
-  Text
-} from '@chakra-ui/react';
+import { Flex, SimpleGrid, Box, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 
 import { sponsors } from '../utils/constants';
 
@@ -62,7 +57,7 @@ export const Sponsors = () => {
                 onClick={() => window.open(sponsor.link, '_blank')}
                 cursor='pointer'
               >
-                <ChakraImage
+                <Box
                   style={{ filter: 'grayscale(1)' }}
                   src={sponsor.image}
                   alt='partner'
@@ -72,7 +67,9 @@ export const Sponsors = () => {
                     sm: '70px'
                   }}
                   m='auto'
-                />
+                >
+                  <Image src={sponsor.image} alt='sponsor' placeholder='blur' />
+                </Box>
                 {index === 6 && (
                   <Text
                     fontFamily='figTree'
