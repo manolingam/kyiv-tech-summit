@@ -39,7 +39,7 @@ import communityPartner_dataart from '../public/assets/partners/dataArt.png';
 import communityPartner_sigmasoftwarelabs from '../public/assets/partners/sigmaSoftwareLabs.png';
 import communityPartner_zksync from '../public/assets/partners/zksync.png';
 import communityPartner_englishForIt from '../public/assets/partners/englishForIt.png';
-import communityPartner_nftlook from '../public/assets/partners/nftLook.png';
+import communityPartner_nftlook from '../public/assets/partners/nftlook.png';
 import communityPartner_allbridge from '../public/assets/partners/allbridge.png';
 import communityPartner_ethwarsaw from '../public/assets/partners/ethwarsaw.png';
 
