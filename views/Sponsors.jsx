@@ -64,7 +64,7 @@ export const Sponsors = () => {
                   w={{
                     lg: [3].includes(index) ? '100px' : '150px',
                     md: '100px',
-                    sm: '70px'
+                    sm: '100px'
                   }}
                   m='auto'
                 >

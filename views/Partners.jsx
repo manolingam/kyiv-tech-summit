@@ -60,7 +60,7 @@ export const Partners = () => {
               >
                 <Box
                   // style={{ filter: 'grayscale(1)' }}
-                  w={{ lg: '150px', md: '100px', sm: '70px' }}
+                  w={{ lg: '150px', md: '100px', sm: '100px' }}
                   m='auto'
                 >
                   <Image src={partner.image} alt='partner' placeholder='blur' />
@@ -116,7 +116,7 @@ export const Partners = () => {
                   w={{
                     lg: index === 0 ? '100px' : '150px',
                     md: '100px',
-                    sm: '70px'
+                    sm: '100px'
                   }}
                   m='auto'
                 >
@@ -170,7 +170,7 @@ export const Partners = () => {
               >
                 <Box
                   // style={{ filter: 'grayscale(1)' }}
-                  w={{ lg: '150px', md: '100px', sm: '70px' }}
+                  w={{ lg: '150px', md: '100px', sm: '100px' }}
                   m='auto'
                 >
                   <Image src={partner.image} alt='partner' placeholder='blur' />
@@ -226,19 +226,19 @@ export const Partners = () => {
                 <Box
                   // style={{ filter: 'grayscale(1)' }}
                   w={{
-                    lg: [0, 4, 5, 7, 11, 12, 13, 15].includes(index)
+                    lg: [0, 4, 5, 7, 11, 13, 15].includes(index)
                       ? '100px'
                       : index === 8
                       ? '80px'
                       : '150px',
                     md: '100px',
-                    sm: '70px'
+                    sm: '100px'
                   }}
                   m='auto'
                 >
                   <Image src={partner.image} alt='partner' placeholder='blur' />
                 </Box>
-                {index === 8 && (
+                {/* {index === 8 && (
                   <Text
                     fontFamily='figTree'
                     fontSize='.8rem'
@@ -247,7 +247,7 @@ export const Partners = () => {
                   >
                     Kyiv ETH Community
                   </Text>
-                )}
+                )} */}
               </Box>
             );
           })}
