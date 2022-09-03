@@ -58,28 +58,18 @@ export const Sponsors = () => {
                 cursor='pointer'
               >
                 <Box
-                  style={{ filter: 'grayscale(1)' }}
+                  // style={{ filter: 'grayscale(1)' }}
                   src={sponsor.image}
                   alt='partner'
                   w={{
-                    lg: [3, 6].includes(index) ? '100px' : '150px',
+                    lg: [3].includes(index) ? '100px' : '150px',
                     md: '100px',
-                    sm: '70px'
+                    sm: '100px'
                   }}
                   m='auto'
                 >
                   <Image src={sponsor.image} alt='sponsor' placeholder='blur' />
                 </Box>
-                {index === 6 && (
-                  <Text
-                    fontFamily='figTree'
-                    fontSize='.8rem'
-                    textAlign='center'
-                    pb='10px'
-                  >
-                    Ethereum Foundation
-                  </Text>
-                )}
               </Box>
             );
           })}
