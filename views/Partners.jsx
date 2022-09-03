@@ -59,7 +59,7 @@ export const Partners = () => {
                 cursor='pointer'
               >
                 <Box
-                  style={{ filter: 'grayscale(1)' }}
+                  // style={{ filter: 'grayscale(1)' }}
                   w={{ lg: '150px', md: '100px', sm: '70px' }}
                   m='auto'
                 >
@@ -112,7 +112,7 @@ export const Partners = () => {
                 cursor='pointer'
               >
                 <Box
-                  style={{ filter: 'grayscale(1)' }}
+                  // style={{ filter: 'grayscale(1)' }}
                   w={{
                     lg: index === 0 ? '100px' : '150px',
                     md: '100px',
@@ -169,7 +169,7 @@ export const Partners = () => {
                 cursor='pointer'
               >
                 <Box
-                  style={{ filter: 'grayscale(1)' }}
+                  // style={{ filter: 'grayscale(1)' }}
                   w={{ lg: '150px', md: '100px', sm: '70px' }}
                   m='auto'
                 >
@@ -224,9 +224,9 @@ export const Partners = () => {
                 cursor='pointer'
               >
                 <Box
-                  style={{ filter: 'grayscale(1)' }}
+                  // style={{ filter: 'grayscale(1)' }}
                   w={{
-                    lg: [0, 4, 5, 7, 11, 12].includes(index)
+                    lg: [0, 4, 5, 7, 11, 12, 13, 15].includes(index)
                       ? '100px'
                       : index === 8
                       ? '80px'

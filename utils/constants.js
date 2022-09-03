@@ -11,7 +11,9 @@ import sponsor_nymtech from '../public/assets/sponsors/nym.png';
 import sponsor_aavegrants from '../public/assets/sponsors/aaveGrantsDao.png';
 import sponsor_aurora from '../public/assets/sponsors/aurora.png';
 import sponsor_unstoppabledomains from '../public/assets/sponsors/unstoppableDomains.png';
-import sponsor_ethereumFoundation from '../public/assets/partners/kyivEth.png';
+import sponsor_ethereumFoundation from '../public/assets/sponsors/ethFoundation.png';
+import sponsor_filecoin from '../public/assets/sponsors/filecoin.png';
+import sponsor_celo from '../public/assets/sponsors/celo.png';
 
 import mediaPartner_incrypted from '../public/assets/partners/incrypted.png';
 import mediaPartner_forklog from '../public/assets/partners/forkLog.png';
@@ -36,6 +38,10 @@ import communityPartner_4irelabs from '../public/assets/partners/4irelabs.png';
 import communityPartner_dataart from '../public/assets/partners/dataArt.png';
 import communityPartner_sigmasoftwarelabs from '../public/assets/partners/sigmaSoftwareLabs.png';
 import communityPartner_zksync from '../public/assets/partners/zksync.png';
+import communityPartner_englishForIt from '../public/assets/partners/englishForIt.png';
+import communityPartner_nftlook from '../public/assets/partners/nftLook.png';
+import communityPartner_allbridge from '../public/assets/partners/allbridge.png';
+import communityPartner_ethwarsaw from '../public/assets/partners/ethwarsaw.png';
 
 import speaker_illia from '../public/assets/speakers/illia_polosukhin.png';
 import speaker_marek from '../public/assets/speakers/marek_olszewski.png';
@@ -56,7 +62,7 @@ import speaker_andriy from '../public/assets/speakers/andriy_velykyy.png';
 import speaker_britanny from '../public/assets/speakers/britanny_kaiser.png';
 import speaker_dyma from '../public/assets/speakers/dyma_budorin.png';
 import speaker_alexis from '../public/assets/speakers/alexis_roussel.png';
-import speaker_leighton from '../public/assets/speakers/leighton_cusack.png';
+// import speaker_leighton from '../public/assets/speakers/leighton_cusack.png';
 import speaker_pavlo from '../public/assets/speakers/pavlo_kartashov.png';
 import speaker_rostyslav from '../public/assets/speakers/rostyslav_bortman.png';
 import speaker_harry from '../public/assets/speakers/harry_halpin.png';
@@ -201,6 +207,22 @@ export const communityPartners = [
   {
     image: communityPartner_zksync,
     link: 'https://zksync.io/'
+  },
+  {
+    image: communityPartner_englishForIt,
+    link: 'https://english4it.online'
+  },
+  {
+    image: communityPartner_allbridge,
+    link: 'https://allbridge.io/'
+  },
+  {
+    image: communityPartner_nftlook,
+    link: 'https://nftlook.io/'
+  },
+  {
+    image: communityPartner_ethwarsaw,
+    link: 'https://www.ethwarsaw.dev/'
   }
 ];
 
@@ -338,13 +360,13 @@ export const speakers = [
     link: 'https://twitter.com/alexis_roussel',
     linkType: 'twitter'
   },
-  {
-    name: 'Leighton Cusack',
-    image: speaker_leighton,
-    role: 'Co-Founder - PoolTogether',
-    link: 'https://twitter.com/lay2000lbs',
-    linkType: 'twitter'
-  },
+  // {
+  //   name: 'Leighton Cusack',
+  //   image: speaker_leighton,
+  //   role: 'Co-Founder - PoolTogether',
+  //   link: 'https://twitter.com/lay2000lbs',
+  //   linkType: 'twitter'
+  // },
   {
     name: 'Pavlo Kartashov',
     image: speaker_pavlo,
@@ -396,5 +418,13 @@ export const sponsors = [
   {
     image: sponsor_ethereumFoundation,
     link: 'https://ethereum.org/'
+  },
+  {
+    image: sponsor_filecoin,
+    link: 'https://filecoin.io/'
+  },
+  {
+    image: sponsor_celo,
+    link: 'https://celo.org/'
   }
 ];
