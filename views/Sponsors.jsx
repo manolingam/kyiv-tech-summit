@@ -62,7 +62,7 @@ export const Sponsors = () => {
                   src={sponsor.image}
                   alt='partner'
                   w={{
-                    lg: [3].includes(index) ? '100px' : '150px',
+                    lg: [4].includes(index) ? '100px' : '150px',
                     md: '100px',
                     sm: '100px'
                   }}
