@@ -66,6 +66,7 @@ import speaker_alexis from '../public/assets/speakers/alexis_roussel.png';
 import speaker_pavlo from '../public/assets/speakers/pavlo_kartashov.png';
 import speaker_rostyslav from '../public/assets/speakers/rostyslav_bortman.png';
 import speaker_harry from '../public/assets/speakers/harry_halpin.png';
+import peter_robinson from '../public/assets/speakers/peter_robinson.png';
 
 export const organizers = [
   {
@@ -387,10 +388,21 @@ export const speakers = [
     role: 'CEO - Nym Technologies',
     link: 'https://ch.linkedin.com/in/harryhalpin',
     linkType: 'linkedin'
+  },
+  {
+    name: 'Peter Robinson',
+    image: peter_robinson,
+    role: 'Technical Director & Applied Cryptographer - Consensys',
+    link: 'https://twitter.com/drinkcoffee2010',
+    linkType: 'twitter'
   }
 ];
 
 export const sponsors = [
+  {
+    image: sponsor_celo,
+    link: 'https://celo.org/'
+  },
   {
     image: sponsor_aragon,
     link: 'https://aragon.org/'
@@ -422,9 +434,5 @@ export const sponsors = [
   {
     image: sponsor_filecoin,
     link: 'https://filecoin.io/'
-  },
-  {
-    image: sponsor_celo,
-    link: 'https://celo.org/'
   }
 ];
