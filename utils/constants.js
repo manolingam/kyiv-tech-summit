@@ -71,6 +71,7 @@ import speaker_rostyslav from '../public/assets/speakers/rostyslav_bortman.png';
 import speaker_harry from '../public/assets/speakers/harry_halpin.png';
 import speaker_peter_robinson from '../public/assets/speakers/peter_robinson.png';
 import speaker_pavel from '../public/assets/speakers/pavel.png';
+import speaker_jaya from '../public/assets/speakers/jaya.png';
 
 export const organizers = [
   {
@@ -422,6 +423,13 @@ export const speakers = [
     role: 'Co-Founder - Distributed Labs',
     link: 'https://linkedin.com/in/pkravchenko',
     linkType: 'linkedin'
+  },
+  {
+    name: 'Jaya Klara Brekke',
+    image: speaker_jaya,
+    role: 'Chief Strategy Officer - Nym Technologies',
+    link: 'https://twitter.com/jayapapaya',
+    linkType: 'twitter'
   }
 ];
 

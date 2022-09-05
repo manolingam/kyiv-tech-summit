@@ -226,13 +226,13 @@ export const Partners = () => {
                 <Box
                   // style={{ filter: 'grayscale(1)' }}
                   w={{
-                    lg: [0, 4, 5, 7, 11, 13, 15].includes(index)
+                    lg: [0, 4, 5, 7, 10, 12, 14].includes(index)
                       ? '100px'
                       : index === 8
                       ? '80px'
-                      : '150px',
+                      : '160px',
                     md: '100px',
-                    sm: '100px'
+                    sm: [16].includes(index) ? '120px' : '100px'
                   }}
                   m='auto'
                 >
