@@ -3,7 +3,8 @@ export const sectionOneTranslation = {
     'Kyiv Tech Summit це перша в своєму роді унікальна подія! Наша мета — об’єднати найкращих розробників, постачальників технологій, дизайнерів, інноваторів і проповідників продуктів, які прагнуть вирішити проблеми на місцях, щоб допомогти українцям у їхній боротьбі за свободу.',
   'This project and its outcomes will literally save lives!':
     'Цей проект та його результати буквально врятують життя!',
-  'Join hackathon': 'Долучитися'
+  'Join as Hacker': 'Join as Hacker',
+  'Join as Non hacker': 'Join as Non Hacker'
 };
 
 export const sectionTwoTranslation = {

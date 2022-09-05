@@ -1,4 +1,4 @@
-import { Grid, GridItem, Text, Button, Box } from '@chakra-ui/react';
+import { Flex, Grid, GridItem, Text, Button, Box } from '@chakra-ui/react';
 import Image from 'next/image';
 
 import { sectionOneTranslation } from '../utils/language';
@@ -23,23 +23,45 @@ export const SplashIntro = ({ language }) => {
             ? Object.keys(sectionOneTranslation)[1]
             : sectionOneTranslation[Object.keys(sectionOneTranslation)[1]]}
         </Text>
-        <Button
-          fontSize='1.2rem'
-          fontFamily='figTree'
-          bg='#0057b7'
-          color='white'
-          p='2rem'
-          mt='1rem'
-          textTransform='uppercase'
-          onClick={() =>
-            window.open('https://kyiv-tech-summit.devpost.com', '_blank')
-          }
-          _hover={{ opacity: '0.8' }}
-        >
-          {language === 'english'
-            ? Object.keys(sectionOneTranslation)[2]
-            : sectionOneTranslation[Object.keys(sectionOneTranslation)[2]]}
-        </Button>
+        <Flex direction={{ lg: 'row', sm: 'column' }}>
+          <Button
+            w='100%'
+            fontSize='1rem'
+            fontFamily='figTree'
+            bg='#0057b7'
+            color='white'
+            p='1.5rem'
+            mt='1rem'
+            mr='1rem'
+            textTransform='uppercase'
+            onClick={() =>
+              window.open('https://kyiv-tech-summit.devpost.com', '_blank')
+            }
+            _hover={{ opacity: '0.8' }}
+          >
+            {language === 'english'
+              ? Object.keys(sectionOneTranslation)[2]
+              : sectionOneTranslation[Object.keys(sectionOneTranslation)[2]]}
+          </Button>
+          <Button
+            w='100%'
+            fontSize='1rem'
+            fontFamily='figTree'
+            border='2px solid #0057b7'
+            color='#0057b7'
+            p='1.5rem'
+            mt='1rem'
+            textTransform='uppercase'
+            onClick={() =>
+              window.open('https://join.kyivtechsummit.com', '_blank')
+            }
+            _hover={{ opacity: '0.8' }}
+          >
+            {language === 'english'
+              ? Object.keys(sectionOneTranslation)[3]
+              : sectionOneTranslation[Object.keys(sectionOneTranslation)[3]]}
+          </Button>
+        </Flex>
       </GridItem>
       <GridItem colSpan={2}>
         <Box w='250px' m='auto' mt={{ sm: '2rem', lg: 'auto' }}>
