@@ -20,6 +20,7 @@ import mediaPartner_forklog from '../public/assets/partners/forkLog.png';
 import mediaPartner_coindesk from '../public/assets/partners/coindesk.png';
 import mediaPartner_cointelegraph from '../public/assets/partners/cointelegraph.png';
 import mediaPartner_cryptoDiffer from '../public/assets/partners/cryptoDiffer.png';
+import mediaPartner_doubletop from '../public/assets/partners/doubleTop.png';
 
 import techPartner_devpost from '../public/assets/partners/devPost.png';
 
@@ -42,6 +43,7 @@ import communityPartner_englishForIt from '../public/assets/partners/englishForI
 import communityPartner_nftlook from '../public/assets/partners/nftlook.png';
 import communityPartner_allbridge from '../public/assets/partners/allbridge.png';
 import communityPartner_ethwarsaw from '../public/assets/partners/ethwarsaw.png';
+import communityPartner_blockchainUA from '../public/assets/partners/BlockchainUA.png';
 
 import speaker_illia from '../public/assets/speakers/illia_polosukhin.png';
 import speaker_marek from '../public/assets/speakers/marek_olszewski.png';
@@ -66,7 +68,8 @@ import speaker_alexis from '../public/assets/speakers/alexis_roussel.png';
 import speaker_pavlo from '../public/assets/speakers/pavlo_kartashov.png';
 import speaker_rostyslav from '../public/assets/speakers/rostyslav_bortman.png';
 import speaker_harry from '../public/assets/speakers/harry_halpin.png';
-import peter_robinson from '../public/assets/speakers/peter_robinson.png';
+import speaker_peter_robinson from '../public/assets/speakers/peter_robinson.png';
+import speaker_pavel from '../public/assets/speakers/pavel.png';
 
 export const organizers = [
   {
@@ -139,6 +142,10 @@ export const mediaPartners = [
   {
     image: mediaPartner_cryptoDiffer,
     link: 'https://cryptodiffer.com/'
+  },
+  {
+    image: mediaPartner_doubletop,
+    link: 'https://doubletop.io'
   }
 ];
 
@@ -224,6 +231,10 @@ export const communityPartners = [
   {
     image: communityPartner_ethwarsaw,
     link: 'https://www.ethwarsaw.dev/'
+  },
+  {
+    image: communityPartner_blockchainUA,
+    link: 'https://blockchainua.com/'
   }
 ];
 
@@ -391,10 +402,17 @@ export const speakers = [
   },
   {
     name: 'Peter Robinson',
-    image: peter_robinson,
+    image: speaker_peter_robinson,
     role: 'Technical Director & Applied Cryptographer - Consensys',
     link: 'https://twitter.com/drinkcoffee2010',
     linkType: 'twitter'
+  },
+  {
+    name: 'Pavel Kravchenko',
+    image: speaker_pavel,
+    role: 'Co-Founder - Distributed Labs',
+    link: 'https://linkedin.com/in/pkravchenko',
+    linkType: 'linkedin'
   }
 ];
 
