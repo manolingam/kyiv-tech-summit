@@ -3,7 +3,7 @@ import Head from 'next/head';
 const logo =
   'https://res.cloudinary.com/saimano/image/upload/v1662473143/Kyiv%20Tech%20Summit/KTS_Logo_hfbyxr.png';
 
-export const Meta = () => {
+export const ScheduleMeta = () => {
   return (
     <>
       <Head>
