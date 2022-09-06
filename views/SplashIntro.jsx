@@ -18,7 +18,7 @@ import kyiv_tech_summit_mono_logo from '../public/assets/logos/kyiv_tech_summit_
 export const SplashIntro = ({ language }) => {
   return (
     <>
-      <SimpleGrid w='100%' columns={{ lg: '2', sm: '1' }} cursor='pointer'>
+      <SimpleGrid w='100%' columns='1' cursor='pointer'>
         <Link href='/schedule' passHref>
           <Text
             fontFamily='figTree'
@@ -33,7 +33,7 @@ export const SplashIntro = ({ language }) => {
             Latest - View Event Schedule
           </Text>
         </Link>
-        <ChakraLink
+        {/* <ChakraLink
           isExternal
           href='https://www.youtube.com/watch?v=6ZErlxKgZoo'
           _hover={{
@@ -50,7 +50,7 @@ export const SplashIntro = ({ language }) => {
           >
             <i className='fa-brands fa-youtube'></i> View Youtube Live - Day 1
           </Text>
-        </ChakraLink>
+        </ChakraLink> */}
       </SimpleGrid>
 
       <Grid
