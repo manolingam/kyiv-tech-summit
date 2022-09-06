@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 const logo =
-  'https://res.cloudinary.com/saimano/image/upload/v1662473143/Kyiv%20Tech%20Summit/KTS_Logo_hfbyxr.png';
+  'https://res.cloudinary.com/saimano/image/upload/v1662474619/Kyiv%20Tech%20Summit/KTS_Logo_nwfugd.png';
 
 export const ScheduleMeta = () => {
   return (
