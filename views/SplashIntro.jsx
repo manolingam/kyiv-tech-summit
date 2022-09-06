@@ -18,7 +18,7 @@ import kyiv_tech_summit_mono_logo from '../public/assets/logos/kyiv_tech_summit_
 export const SplashIntro = ({ language }) => {
   return (
     <>
-      <SimpleGrid w='100%' columns='1' cursor='pointer'>
+      <SimpleGrid w='100%' columns={{ lg: '2', sm: '1' }} cursor='pointer'>
         <Link href='/schedule' passHref>
           <Text
             fontFamily='figTree'
