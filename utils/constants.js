@@ -471,3 +471,106 @@ export const sponsors = [
     link: 'https://filecoin.io/'
   }
 ];
+
+export const schedule_6 = [
+  {
+    time: '9:00',
+    brief: 'Venue Opens',
+    details: 'Venue opens for registration, networking & morning snacks'
+  },
+  {
+    time: '10:30',
+    brief: 'Opening remarks & secret keynote speaker',
+    details:
+      'Join CJ Hetherington & Rev Miller from the Kyiv Tech Summit org team with a special guest!'
+  },
+  {
+    time: '11:00',
+    brief: 'How Ukrainians Build Web3 Unicorns 🦄',
+    details:
+      'Join Illia Polosukhin (Co-Founder, NEAR) & Bogdan Gusiev (Co-Founder, Unstoppable Domains) to hear about what it takes to build a Web3 unicorn and the future of the Ukrainian startup ecosystem, moderated by Rev Miller.'
+  },
+  {
+    time: '12:00 - 13:30',
+    brief: 'Lunch, networking & ideation',
+    details: ''
+  },
+  {
+    time: '13:30 - 14:15',
+    brief: 'Crypto Cards Helping Ukraine',
+    details:
+      'Join Unchain Fund co-founder Alexey Bobok chatting with Kiril Khomyakov, general manager of Binance Ukraine, discussing the revolutionary technology and direct aid model that have provided support to hundreds of thousands of Ukrainians affected by war.'
+  },
+  {
+    time: '14:15',
+    brief: 'What it takes to #Hack4Ukraine',
+    details:
+      'Serial hacker, social impact driver, Web3 startup operator and Kyiv Tech Summit co-founder CJ outlines the mode of operation for Kyiv Tech Summit; including an overview of the prizes on offer and special tracks to help Ukraine, best practices, guidelines, advice, learnings & schedule!'
+  },
+  {
+    time: '16:00 - 16:45',
+    brief: 'Idea validation / feedback session with mentors & judges',
+    details:
+      'Brainstorm and ideate with Kyiv Tech Summit mentors & judges to refine your #Hack4Ukraine direction! There will be an optional virtual and IRL feedback session taking place in parallel.'
+  },
+  {
+    time: '17:00 - 19:00',
+    brief: 'ETH Kyiv: Solidity 0 to 1, development environment workshop',
+    details: ''
+  }
+];
+
+export const schedule_7 = [
+  {
+    time: '9:00',
+    brief: 'Venue Opens',
+    details: 'Join us for breakfast, networking & continue your #Hack4Ukraine!'
+  },
+  {
+    time: '11:00',
+    brief: 'Blockchain Security Leaders Panel',
+    details:
+      'Join Dyma Budorin (CEO, Hacken), Jaya Klara Brekke (Nym), Peter Robinson (Technical Director & Applied Cryptographer, Consensys) discussing about ever important security practices & risks on the frontline of innovative technology! '
+  },
+  {
+    time: '12:00 - 13:30',
+    brief: 'Lunch & networking'
+  },
+  {
+    time: '13:30',
+    brief: 'Unstoppable Inna-vation',
+    details:
+      'Join the org team- Nadiia Yakubets, Rev Miller, CJ Hetherington, Inna Kosianets, Tyler Morrey & Alona Shevchenko- about the goals & vision of Kyiv Tech Summit, as well as some of the challenges when it comes to drumming up support for a tech event and ensuring safety of participants during a war.'
+  },
+  {
+    time: '14:30 - 15:00',
+    brief:
+      'How we can achieve privacy against surveillance on the internet in war times',
+    details:
+      "Join Harry Halpin (CEO Nym) and Ahmed Ghappour (CLO Nym) as they explain how a history of cryptography and signals intelligence from the 1970s onwards shows how secret military technology can be put in the hands of ordinary people, but that further work must be done to allow people to fight back against nation-state adversaries. We will use examples from warzones, primarily Syria, to outline some of the tasks for future programmers. Nym's ability to fight mass surveillance via a decentralized mixnet is one finger that together can make a fist to fight back."
+  },
+  {
+    time: '17:00 - 17:30',
+    brief: 'Alex Shevchenko, Scaling Ukraine',
+    details:
+      'Join the CEO of leading Ukrainian blockchain scaling solution Aurora, Alex Shevchenko, outlining their future plans hand in hand with the Ukrainian Web3 and developer ecosystem!'
+  },
+  {
+    time: '17:30',
+    brief: 'Peace as a Public Good',
+    details:
+      'Join Scott Moore (Co-Founder, Gitcoin), Marek Olszewski (Co-Founder, Celo) and Veronica Coutts (Community Lead @ Optimism) with moderator CJ Hetherington to discuss about how the rails of the new web can become the internet of impact, and how we can leverage emergent technologies to further the advancement of peace & prosperity around the world!'
+  },
+  {
+    time: '18:30 - 19:00',
+    brief: 'How to build great products, learnings & inspirations from GitHub',
+    details:
+      'Go on a journey of discovery with Kasia Sitkiewicz, staff product manager at GitHub, about what it takes to ship incrementally, stay focused and build truly great products!'
+  },
+  {
+    time: '19:00 - 20:00',
+    brief: 'How to give a perfect pitch',
+    details:
+      'Join expert Anna Gandrabura, founder of English for IT, sharing her experience about what it takes to prepare your deck and tell the story of your hack to our international judges here at Kyiv Tech Summit.'
+  }
+];

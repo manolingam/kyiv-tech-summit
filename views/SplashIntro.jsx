@@ -1,4 +1,13 @@
-import { Flex, Grid, GridItem, Text, Button, Box } from '@chakra-ui/react';
+import {
+  Flex,
+  Grid,
+  GridItem,
+  Text,
+  Button,
+  Box,
+  SimpleGrid,
+  Link as ChakraLink
+} from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,13 +18,27 @@ import kyiv_tech_summit_mono_logo from '../public/assets/logos/kyiv_tech_summit_
 export const SplashIntro = ({ language }) => {
   return (
     <>
-      <Link href='/schedule' passHref>
-        <Box
-          w='100%'
-          background='linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);'
-          backgroundSize='200% 200%;'
-          animation='gradient 5s ease infinite'
-          cursor='pointer'
+      <SimpleGrid w='100%' columns='1' cursor='pointer'>
+        <Link href='/schedule' passHref>
+          <Text
+            fontFamily='figTree'
+            color='white'
+            p='.5rem'
+            fontWeight='bold'
+            textAlign='center'
+            background='linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);'
+            backgroundSize='200% 200%;'
+            animation='gradient 5s ease infinite'
+          >
+            Latest - View Event Schedule
+          </Text>
+        </Link>
+        {/* <ChakraLink
+          isExternal
+          href='https://www.youtube.com/watch?v=6ZErlxKgZoo'
+          _hover={{
+            textDecoration: 'none'
+          }}
         >
           <Text
             fontFamily='figTree'
@@ -23,11 +46,13 @@ export const SplashIntro = ({ language }) => {
             p='.5rem'
             fontWeight='bold'
             textAlign='center'
+            bg='#FF0000'
           >
-            Latest - View Event Schedule
+            <i className='fa-brands fa-youtube'></i> View Youtube Live - Day 1
           </Text>
-        </Box>
-      </Link>
+        </ChakraLink> */}
+      </SimpleGrid>
+
       <Grid
         templateColumns={{ lg: 'repeat(5, 1fr)', sm: 'repeat(2, 1fr)' }}
         px={{ base: '2rem', lg: '5rem' }}
