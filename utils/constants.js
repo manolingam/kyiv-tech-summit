@@ -574,3 +574,47 @@ export const schedule_7 = [
       'Join expert Anna Gandrabura, founder of English for IT, sharing her experience about what it takes to prepare your deck and tell the story of your hack to our international judges here at Kyiv Tech Summit.'
   }
 ];
+
+export const schedule_8 = [
+  {
+    time: '9:00',
+    brief: 'Venue Opens',
+    details: 'Join us for breakfast, networking & continue your #Hack4Ukraine!'
+  },
+  {
+    time: '11:00',
+    brief: 'Co-ordinating crypto community & capital for Ukraine',
+    details:
+      'Join Alona Shevchenko (Co-Founder, UkraineDAO), Brittany Kaiser (Founder, Own Your Data Foundation), Michael Chobanian (Founder, Kuna & BAU) & Rev Miller (Co-Founder, Unchain Fund) about Web3 fundraising for Ukraine and efforts to maintain momentum months after the most recent invasion.'
+  },
+  {
+    time: '12:00 - 13:30',
+    brief: 'Lunch & networking'
+  },
+  {
+    time: '13:30- 14:00',
+    brief: 'Ukrainian Startup Fund Keynote',
+    details:
+      'Join USF Director Pavlo Kartashov as he spotlights all of the incredible work being done by the Ukrainian Startup Fund including their grants program and assistance co-ordinating recent hackathons on the ground in Ukraine!'
+  },
+  {
+    time: '14:00',
+    brief: 'Ukraine Redevelopment & Recovery Plan',
+    details:
+      'Join Andrey Kolodyuk, Chairman of the Supervisory Board of the Ukrainian Venture Capital and Private Equity Association (UVCA), as he outlines the initiated plan to redevelop Ukraine.'
+  },
+  {
+    time: '14:30',
+    brief: 'Ukraine Redevelopment Platform',
+    details:
+      'Join Dmytro Kuzmenko, CEO of UVCA, as he outlines the platform being built as the key element and tool for the implementation of the Ukraine Redevelopment & Recovery program and other recovery projects.'
+  },
+  {
+    time: '15:00',
+    brief: 'Introduction to Filecoin & IPFS by Lukas from Protocol Labs'
+  },
+  {
+    time: 'TBD',
+    brief: 'Ethereum Workshop'
+  }
+];
