@@ -35,7 +35,7 @@ export const SplashIntro = ({ language }) => {
         </Link>
         <ChakraLink
           isExternal
-          href='https://www.youtube.com/watch?v=6ZErlxKgZoo'
+          href='https://www.youtube.com/watch?v=lQI2pXXxC7A'
           _hover={{
             textDecoration: 'none'
           }}
@@ -48,7 +48,7 @@ export const SplashIntro = ({ language }) => {
             textAlign='center'
             bg='#FF0000'
           >
-            <i className='fa-brands fa-youtube'></i> View Day 1 Stream
+            <i className='fa-brands fa-youtube'></i> View Day 2 Stream
           </Text>
         </ChakraLink>
       </SimpleGrid>

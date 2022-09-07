@@ -1,4 +1,4 @@
-import { Flex, Box, Text } from '@chakra-ui/react';
+import { Flex, Box, Text, Link as ChakraLink } from '@chakra-ui/react';
 
 import { ScheduleMeta } from '../shared/ScheduleMeta';
 import { schedule_6, schedule_7 } from '../utils/constants';
@@ -18,13 +18,32 @@ const Schedule = () => {
           fontFamily='figTree'
           bg='#0057b7'
           color='white'
-          mb='1rem'
           p='1rem'
           fontWeight='bold'
           textAlign='center'
         >
           6th September 2022
         </Text>
+        <ChakraLink
+          isExternal
+          href='https://www.youtube.com/watch?v=6ZErlxKgZoo'
+          _hover={{
+            textDecoration: 'none'
+          }}
+          w='200px'
+          ml='auto'
+        >
+          <Text
+            fontFamily='figTree'
+            color='white'
+            p='.5rem'
+            fontWeight='bold'
+            textAlign='center'
+            bg='#FF0000'
+          >
+            <i className='fa-brands fa-youtube'></i> View Day 1 Stream
+          </Text>
+        </ChakraLink>
         {schedule_6.map((item, index) => {
           return (
             <Flex
