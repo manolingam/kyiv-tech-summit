@@ -45,6 +45,8 @@ import communityPartner_nftlook from '../public/assets/partners/nftlook.png';
 import communityPartner_allbridge from '../public/assets/partners/allbridge.png';
 import communityPartner_ethwarsaw from '../public/assets/partners/ethwarsaw.png';
 import communityPartner_blockchainUA from '../public/assets/partners/BlockchainUA.png';
+import communityPartner_gitcoin from '../public/assets/logos/gitcoin.png';
+import communityPartner_optimism from '../public/assets/logos/optimism.png';
 
 import speaker_illia from '../public/assets/speakers/illia_polosukhin.png';
 import speaker_marek from '../public/assets/speakers/marek_olszewski.png';
@@ -245,6 +247,14 @@ export const communityPartners = [
   {
     image: communityPartner_blockchainUA,
     link: 'https://blockchainua.com/'
+  },
+  {
+    image: communityPartner_gitcoin,
+    link: 'https://gitcoin.co/'
+  },
+  {
+    image: communityPartner_optimism,
+    link: 'https://www.optimism.io/'
   }
 ];
 
@@ -592,7 +602,7 @@ export const schedule_8 = [
     brief: 'Lunch & networking'
   },
   {
-    time: '13:30- 14:00',
+    time: '13:30 - 14:00',
     brief: 'Ukrainian Startup Fund Keynote',
     details:
       'Join USF Director Pavlo Kartashov as he spotlights all of the incredible work being done by the Ukrainian Startup Fund including their grants program and assistance co-ordinating recent hackathons on the ground in Ukraine!'
@@ -610,11 +620,11 @@ export const schedule_8 = [
       'Join Dmytro Kuzmenko, CEO of UVCA, as he outlines the platform being built as the key element and tool for the implementation of the Ukraine Redevelopment & Recovery program and other recovery projects.'
   },
   {
-    time: '15:00',
-    brief: 'Introduction to Filecoin & IPFS by Lukas from Protocol Labs'
+    time: '15:00 - 17:00',
+    brief: 'ETH Kyiv: NFT Performance workshop'
   },
   {
-    time: 'TBD',
-    brief: 'Ethereum Workshop'
+    time: '17:00',
+    brief: 'Introduction to Filecoin & IPFS by Lukas from Protocol Labs'
   }
 ];
