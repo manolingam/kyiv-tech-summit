@@ -145,6 +145,7 @@ const Schedule = () => {
           p='1rem'
           fontWeight='bold'
           textAlign='center'
+          mt='1rem'
         >
           6th September 2022
         </Text>

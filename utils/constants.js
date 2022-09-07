@@ -608,5 +608,13 @@ export const schedule_8 = [
     brief: 'Ukraine Redevelopment Platform',
     details:
       'Join Dmytro Kuzmenko, CEO of UVCA, as he outlines the platform being built as the key element and tool for the implementation of the Ukraine Redevelopment & Recovery program and other recovery projects.'
+  },
+  {
+    time: '15:00',
+    brief: 'Introduction to Filecoin & IPFS by Lukas from Protocol Labs'
+  },
+  {
+    time: 'TBD',
+    brief: 'Ethereum Workshop'
   }
 ];
