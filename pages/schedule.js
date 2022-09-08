@@ -81,13 +81,33 @@ const Schedule = () => {
           fontFamily='figTree'
           bg='#0057b7'
           color='white'
-          my='1rem'
+          mt='1rem'
           p='1rem'
           fontWeight='bold'
           textAlign='center'
         >
           7th September 2022
         </Text>
+        <ChakraLink
+          isExternal
+          href='https://www.youtube.com/watch?v=lQI2pXXxC7A'
+          _hover={{
+            textDecoration: 'none'
+          }}
+          w='200px'
+          ml='auto'
+        >
+          <Text
+            fontFamily='figTree'
+            color='white'
+            p='.5rem'
+            fontWeight='bold'
+            textAlign='center'
+            bg='#FF0000'
+          >
+            <i className='fa-brands fa-youtube'></i> View Day 2 Stream
+          </Text>
+        </ChakraLink>
         {schedule_7.map((item, index) => {
           return (
             <Flex
