@@ -592,14 +592,14 @@ export const schedule_8 = [
     details: 'Join us for breakfast, networking & continue your #Hack4Ukraine!'
   },
   {
-    time: '11:00',
+    time: '11:30 - 12:30',
+    brief: 'Lunch & networking'
+  },
+  {
+    time: '12:30',
     brief: 'Co-ordinating crypto community & capital for Ukraine',
     details:
       'Join Alona Shevchenko (Co-Founder, UkraineDAO), Brittany Kaiser (Founder, Own Your Data Foundation), Michael Chobanian (Founder, Kuna & BAU) & Rev Miller (Co-Founder, Unchain Fund) about Web3 fundraising for Ukraine and efforts to maintain momentum months after the most recent invasion. '
-  },
-  {
-    time: '12:00 - 13:30',
-    brief: 'Lunch & networking'
   },
   {
     time: '13:30 - 14:00',
