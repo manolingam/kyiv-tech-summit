@@ -592,14 +592,14 @@ export const schedule_8 = [
     details: 'Join us for breakfast, networking & continue your #Hack4Ukraine!'
   },
   {
-    time: '11:00 - 12:30',
-    brief: 'Lunch & networking'
-  },
-  {
-    time: '12:30',
+    time: '11:00',
     brief: 'Co-ordinating crypto community & capital for Ukraine',
     details:
-      'Join Alona Shevchenko (Co-Founder, UkraineDAO), Brittany Kaiser (Founder, Own Your Data Foundation), Michael Chobanian (Founder, Kuna & BAU) & Rev Miller (Co-Founder, Unchain Fund) about Web3 fundraising for Ukraine and efforts to maintain momentum months after the most recent invasion.'
+      'Join Alona Shevchenko (Co-Founder, UkraineDAO), Brittany Kaiser (Founder, Own Your Data Foundation), Michael Chobanian (Founder, Kuna & BAU) & Rev Miller (Co-Founder, Unchain Fund) about Web3 fundraising for Ukraine and efforts to maintain momentum months after the most recent invasion. '
+  },
+  {
+    time: '12:00 - 13:30',
+    brief: 'Lunch & networking'
   },
   {
     time: '13:30 - 14:00',
@@ -608,13 +608,13 @@ export const schedule_8 = [
       'Join USF Director Pavlo Kartashov as he spotlights all of the incredible work being done by the Ukrainian Startup Fund including their grants program and assistance co-ordinating recent hackathons on the ground in Ukraine!'
   },
   {
-    time: '14:00',
+    time: '14:00 - 14:30',
     brief: 'Ukraine Redevelopment & Recovery Plan',
     details:
       'Join Andrey Kolodyuk, Chairman of the Supervisory Board of the Ukrainian Venture Capital and Private Equity Association (UVCA), as he outlines the initiated plan to redevelop Ukraine.'
   },
   {
-    time: '14:30',
+    time: '14:30 - 15:00',
     brief: 'Ukraine Redevelopment Platform',
     details:
       'Join Dmytro Kuzmenko, CEO of UVCA, as he outlines the platform being built as the key element and tool for the implementation of the Ukraine Redevelopment & Recovery program and other recovery projects.'
@@ -632,5 +632,13 @@ export const schedule_8 = [
     brief: 'Submission Guide Talk',
     details:
       'Join CJ from the org team as he walks through submitting your hackathon project, alongside tips & best practices, a final rundown on timings and the judging process.'
+  },
+  {
+    time: '18:30',
+    brief: 'Fireside chat with Brittany Kaiser'
+  },
+  {
+    time: '19:00',
+    brief: 'Pavel from Distributed Labs'
   }
 ];
