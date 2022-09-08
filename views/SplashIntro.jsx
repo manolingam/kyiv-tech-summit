@@ -76,7 +76,6 @@ export const SplashIntro = ({ language }) => {
           </Text>
           <Flex direction={{ lg: 'row', sm: 'column' }}>
             <Button
-              w='100%'
               fontSize='1rem'
               fontFamily='figTree'
               bg='#0057b7'
@@ -93,24 +92,6 @@ export const SplashIntro = ({ language }) => {
               {language === 'english'
                 ? Object.keys(sectionOneTranslation)[2]
                 : sectionOneTranslation[Object.keys(sectionOneTranslation)[2]]}
-            </Button>
-            <Button
-              w='100%'
-              fontSize='1rem'
-              fontFamily='figTree'
-              border='2px solid #0057b7'
-              color='#0057b7'
-              p='1.5rem'
-              mt='1rem'
-              textTransform='uppercase'
-              onClick={() =>
-                window.open('https://join.kyivtechsummit.com', '_blank')
-              }
-              _hover={{ opacity: '0.8' }}
-            >
-              {language === 'english'
-                ? Object.keys(sectionOneTranslation)[3]
-                : sectionOneTranslation[Object.keys(sectionOneTranslation)[3]]}
             </Button>
           </Flex>
         </GridItem>
