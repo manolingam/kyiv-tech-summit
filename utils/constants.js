@@ -47,6 +47,7 @@ import communityPartner_ethwarsaw from '../public/assets/partners/ethwarsaw.png'
 import communityPartner_blockchainUA from '../public/assets/partners/BlockchainUA.png';
 import communityPartner_gitcoin from '../public/assets/logos/gitcoin.png';
 import communityPartner_optimism from '../public/assets/logos/optimism.png';
+import communityPartner_chainboard from '../public/assets/partners/chainboard.png';
 
 import speaker_illia from '../public/assets/speakers/illia_polosukhin.png';
 import speaker_marek from '../public/assets/speakers/marek_olszewski.png';
@@ -255,6 +256,10 @@ export const communityPartners = [
   {
     image: communityPartner_optimism,
     link: 'https://www.optimism.io/'
+  },
+  {
+    image: communityPartner_chainboard,
+    link: 'https://chainboard.academy'
   }
 ];
 
