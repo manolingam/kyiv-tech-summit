@@ -26,6 +26,26 @@ const Schedule = () => {
         >
           8th September 2022
         </Text>
+        <ChakraLink
+          isExternal
+          href='https://www.youtube.com/watch?v=tR40wKzN3MU'
+          _hover={{
+            textDecoration: 'none'
+          }}
+          w='200px'
+          ml='auto'
+        >
+          <Text
+            fontFamily='figTree'
+            color='white'
+            p='.5rem'
+            fontWeight='bold'
+            textAlign='center'
+            bg='#FF0000'
+          >
+            <i className='fa-brands fa-youtube'></i> View Day 3 Stream
+          </Text>
+        </ChakraLink>
         {schedule_8.map((item, index) => {
           return (
             <Flex

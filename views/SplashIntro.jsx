@@ -26,16 +26,17 @@ export const SplashIntro = ({ language }) => {
             p='.5rem'
             fontWeight='bold'
             textAlign='center'
-            background='linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);'
-            backgroundSize='200% 200%;'
-            animation='gradient 5s ease infinite'
+            bg='#03001e'
+            // background='linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);'
+            // backgroundSize='200% 200%;'
+            // animation='gradient 5s ease infinite'
           >
-            Latest - View Event Schedule
+            View Past Event Schedule
           </Text>
         </Link>
         <ChakraLink
           isExternal
-          href='https://www.youtube.com/watch?v=tR40wKzN3MU'
+          href='https://kyiv-tech-summit.devpost.com'
           _hover={{
             textDecoration: 'none'
           }}
@@ -46,9 +47,9 @@ export const SplashIntro = ({ language }) => {
             p='.5rem'
             fontWeight='bold'
             textAlign='center'
-            bg='#FF0000'
+            bg='#0057b7'
           >
-            <i className='fa-brands fa-youtube'></i> View Day 3 Stream
+            View Hackathon Projects
           </Text>
         </ChakraLink>
       </SimpleGrid>
@@ -84,9 +85,7 @@ export const SplashIntro = ({ language }) => {
               mt='1rem'
               mr='1rem'
               textTransform='uppercase'
-              onClick={() =>
-                window.open('https://kyiv-tech-summit.devpost.com', '_blank')
-              }
+              disabled
               _hover={{ opacity: '0.8' }}
             >
               {language === 'english'
