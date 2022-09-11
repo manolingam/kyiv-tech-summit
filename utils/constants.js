@@ -142,7 +142,7 @@ export const mediaPartners = [
   },
   {
     image: mediaPartner_forklog,
-    link: 'https://forklog.com/'
+    link: 'https://forklog.com.ua'
   },
   {
     image: mediaPartner_coindesk,
