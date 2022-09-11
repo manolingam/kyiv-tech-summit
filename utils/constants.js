@@ -48,6 +48,7 @@ import communityPartner_blockchainUA from '../public/assets/partners/BlockchainU
 import communityPartner_gitcoin from '../public/assets/logos/gitcoin.png';
 import communityPartner_optimism from '../public/assets/logos/optimism.png';
 import communityPartner_chainboard from '../public/assets/partners/chainboard.png';
+import communityPartner_cyberacademy from '../public/assets/partners/cyberAcademy.png';
 
 import speaker_illia from '../public/assets/speakers/illia_polosukhin.png';
 import speaker_marek from '../public/assets/speakers/marek_olszewski.png';
@@ -260,6 +261,10 @@ export const communityPartners = [
   {
     image: communityPartner_chainboard,
     link: 'https://chainboard.academy'
+  },
+  {
+    image: communityPartner_cyberacademy,
+    link: 'https://cyberacademy.dev/'
   }
 ];
 
