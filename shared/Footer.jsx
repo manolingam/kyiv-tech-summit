@@ -1,4 +1,4 @@
-import { Flex, Text, Link as ChakraLink } from '@chakra-ui/react';
+import { Flex, Text, Link as ChakraLink, VStack } from '@chakra-ui/react';
 
 export const Footer = () => {
   return (
@@ -12,30 +12,31 @@ export const Footer = () => {
       mt='auto'
       bg='#ffd700'
     >
-      <Text fontFamily='figTree' fontWeight='bold' color='#0057b7' mr='1rem'>
-        #Hack4Ukraine
-      </Text>
+      <Flex direction='column' alignItems='flex-start'>
+        <Text fontFamily='figTree' fontWeight='bold' color='#0057b7'>
+          #Hack4Ukraine
+        </Text>
+        <Text
+          fontSize='.6rem'
+          fontFamily='figTree'
+          fontWeight='bold'
+          color='#0057b7'
+          mt='2px'
+        >
+          Kyiv Tech Summit © 2022
+        </Text>
+      </Flex>
 
       <ChakraLink
         color='#0057b7'
-        href='https://twitter.com/KyivTechSummit'
+        href='https://twitter.com/saimano1996'
         isExternal
-        fontSize='15px'
-      >
-        <span>
-          <i className='fab fa-twitter'></i>
-        </span>
-      </ChakraLink>
-
-      <Text
         fontSize='.6rem'
         fontFamily='figTree'
         fontWeight='bold'
-        color='#0057b7'
-        mr='1rem'
       >
-        Kyiv Tech Summit © 2022
-      </Text>
+        built with ❤️ by Saimano
+      </ChakraLink>
     </Flex>
   );
 };

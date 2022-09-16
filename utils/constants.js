@@ -4,7 +4,6 @@ import organizer_cj from '../public/assets/profiles/CJ.png';
 import organizer_tyler from '../public/assets/profiles/Tyler.png';
 import organizer_nadiia from '../public/assets/profiles/Nadiia.png';
 import organizer_alona from '../public/assets/profiles/Alona.png';
-import organizer_saimano from '../public/assets/profiles/Saimano.png';
 
 import sponsor_aragon from '../public/assets/sponsors/aragon.png';
 import sponsor_near from '../public/assets/sponsors/near.png';
@@ -125,14 +124,6 @@ export const organizers = [
     twitter: 'https://twitter.com/cryptodrftng',
     linkedin: 'https://www.linkedin.com/in/alona-s-4a25b5b6/',
     telegram: 'https://t.me/drftng7'
-  },
-  {
-    name: 'Saimano',
-    role: 'Technical Operations - Web3 Developer @ RaidGuild',
-    image: organizer_saimano,
-    twitter: 'https://www.linkedin.com/in/saimano1996/',
-    linkedin: 'https://twitter.com/saimano1996',
-    telegram: 'https://t.me/saimano1996'
   }
 ];
 
