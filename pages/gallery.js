@@ -78,7 +78,7 @@ export default function Gallery() {
           return (
             <ChakraLink
               key={index}
-              href={`${process.env.NEXT_PUBLIC_IPFS_SUBDOMAIN}/ipfs/${file.cid}`}
+              href={`${process.env.NEXT_PUBLIC_PUBLIC_IPFS_GATEWAY}/ipfs/${file.cid}`}
               isExternal
               _hover={{
                 opacity: 0.8
