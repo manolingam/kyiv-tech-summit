@@ -92,6 +92,21 @@ export const SplashIntro = ({ language }) => {
                 ? Object.keys(sectionOneTranslation)[2]
                 : sectionOneTranslation[Object.keys(sectionOneTranslation)[2]]}
             </Button>
+            <Link href='/gallery' passHref>
+              <Button
+                fontSize='1rem'
+                fontFamily='figTree'
+                bg='#0057b7'
+                color='white'
+                p='1.5rem'
+                mt='1rem'
+                mr='1rem'
+                textTransform='uppercase'
+                _hover={{ opacity: '0.8' }}
+              >
+                View gallery
+              </Button>
+            </Link>
           </Flex>
         </GridItem>
         <GridItem colSpan={2}>
